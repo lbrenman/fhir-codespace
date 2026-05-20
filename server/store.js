@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
-const DATA_DIR = path.join(__dirname, '..', 'data');
+const DATA_DIR = path.join(__dirname, 'data');
 
 class FhirStore {
   constructor() {
@@ -134,7 +134,7 @@ class FhirStore {
   getStats() {
     const stats = {};
     for (const [type, bucket] of Object.entries(this.resources)) {
-      stats[type] = Object.keys(bucket).length;
+      stats[type] = { count: Object.keys(bucket).length };
     }
     return stats;
   }
