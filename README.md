@@ -6,6 +6,8 @@ A complete FHIR R4 development environment with a Node.js/Express backend, reali
 ![Node.js](https://img.shields.io/badge/Node.js-20-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/lbrenman/fhir-codespace?quickstart=1)
+
 ## What's Inside
 
 - **FHIR R4 API Server** — Express server implementing the full FHIR R4 REST API (GET/POST/PUT/DELETE) across 14 resource types
