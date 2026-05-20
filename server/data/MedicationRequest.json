@@ -1,0 +1,2402 @@
+[
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-001-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.906Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197591",
+          "display": "Ibuprofen 400 MG Oral Tablet"
+        }
+      ],
+      "text": "Ibuprofen 400 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-001",
+      "display": "Margaret Thompson"
+    },
+    "authoredOn": "2023-07-08",
+    "requester": {
+      "reference": "Practitioner/prac-chen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-001-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.906Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "310798",
+          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
+        }
+      ],
+      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
+    },
+    "subject": {
+      "reference": "Patient/pat-001",
+      "display": "Margaret Thompson"
+    },
+    "authoredOn": "2024-01-23",
+    "requester": {
+      "reference": "Practitioner/prac-chen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-002-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.906Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
+        }
+      ],
+      "text": "Simvastatin 20 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-002",
+      "display": "Robert Davis"
+    },
+    "authoredOn": "2024-09-23",
+    "requester": {
+      "reference": "Practitioner/prac-okonkwo"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-002-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.906Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197361",
+          "display": "Amlodipine 5 MG Oral Tablet"
+        }
+      ],
+      "text": "Amlodipine 5 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-002",
+      "display": "Robert Davis"
+    },
+    "authoredOn": "2024-07-15",
+    "requester": {
+      "reference": "Practitioner/prac-okonkwo"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-003-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.906Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "198211",
+          "display": "Omeprazole 20 MG Delayed Release Oral Capsule"
+        }
+      ],
+      "text": "Omeprazole 20 MG Delayed Release Oral Capsule"
+    },
+    "subject": {
+      "reference": "Patient/pat-003",
+      "display": "Isabella Martinez"
+    },
+    "authoredOn": "2023-11-10",
+    "requester": {
+      "reference": "Practitioner/prac-rodriguez"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-003-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.906Z"
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }
+      ],
+      "text": "Lisinopril 10 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-003",
+      "display": "Isabella Martinez"
+    },
+    "authoredOn": "2024-03-14",
+    "requester": {
+      "reference": "Practitioner/prac-rodriguez"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-004-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.906Z"
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "372614",
+          "display": "Sertraline 50 MG Oral Tablet"
+        }
+      ],
+      "text": "Sertraline 50 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-004",
+      "display": "James Williams"
+    },
+    "authoredOn": "2023-11-17",
+    "requester": {
+      "reference": "Practitioner/prac-johnson"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-004-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "310798",
+          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
+        }
+      ],
+      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
+    },
+    "subject": {
+      "reference": "Patient/pat-004",
+      "display": "James Williams"
+    },
+    "authoredOn": "2023-11-01",
+    "requester": {
+      "reference": "Practitioner/prac-johnson"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-004-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "198211",
+          "display": "Omeprazole 20 MG Delayed Release Oral Capsule"
+        }
+      ],
+      "text": "Omeprazole 20 MG Delayed Release Oral Capsule"
+    },
+    "subject": {
+      "reference": "Patient/pat-004",
+      "display": "James Williams"
+    },
+    "authoredOn": "2025-07-21",
+    "requester": {
+      "reference": "Practitioner/prac-johnson"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-005-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197361",
+          "display": "Amlodipine 5 MG Oral Tablet"
+        }
+      ],
+      "text": "Amlodipine 5 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-005",
+      "display": "Yuki Nakamura"
+    },
+    "authoredOn": "2025-08-17",
+    "requester": {
+      "reference": "Practitioner/prac-patel"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-005-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "860975",
+          "display": "Metformin 500 MG Oral Tablet"
+        }
+      ],
+      "text": "Metformin 500 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-005",
+      "display": "Yuki Nakamura"
+    },
+    "authoredOn": "2024-04-06",
+    "requester": {
+      "reference": "Practitioner/prac-patel"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-006-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
+        }
+      ],
+      "text": "Simvastatin 20 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-006",
+      "display": "Charles Brown"
+    },
+    "authoredOn": "2024-12-07",
+    "requester": {
+      "reference": "Practitioner/prac-chen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-006-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "310798",
+          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
+        }
+      ],
+      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
+    },
+    "subject": {
+      "reference": "Patient/pat-006",
+      "display": "Charles Brown"
+    },
+    "authoredOn": "2024-12-16",
+    "requester": {
+      "reference": "Practitioner/prac-chen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-006-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "198211",
+          "display": "Omeprazole 20 MG Delayed Release Oral Capsule"
+        }
+      ],
+      "text": "Omeprazole 20 MG Delayed Release Oral Capsule"
+    },
+    "subject": {
+      "reference": "Patient/pat-006",
+      "display": "Charles Brown"
+    },
+    "authoredOn": "2024-02-25",
+    "requester": {
+      "reference": "Practitioner/prac-chen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-007-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
+        }
+      ],
+      "text": "Simvastatin 20 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-007",
+      "display": "Sofia Garcia"
+    },
+    "authoredOn": "2024-01-22",
+    "requester": {
+      "reference": "Practitioner/prac-rodriguez"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-007-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "310798",
+          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
+        }
+      ],
+      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
+    },
+    "subject": {
+      "reference": "Patient/pat-007",
+      "display": "Sofia Garcia"
+    },
+    "authoredOn": "2024-04-02",
+    "requester": {
+      "reference": "Practitioner/prac-rodriguez"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-007-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "205532",
+          "display": "Amoxicillin 500 MG Oral Capsule"
+        }
+      ],
+      "text": "Amoxicillin 500 MG Oral Capsule"
+    },
+    "subject": {
+      "reference": "Patient/pat-007",
+      "display": "Sofia Garcia"
+    },
+    "authoredOn": "2024-06-08",
+    "requester": {
+      "reference": "Practitioner/prac-rodriguez"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-008-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "310798",
+          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
+        }
+      ],
+      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
+    },
+    "subject": {
+      "reference": "Patient/pat-008",
+      "display": "Daniel Lee"
+    },
+    "authoredOn": "2024-10-23",
+    "requester": {
+      "reference": "Practitioner/prac-kim"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-009-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
+        }
+      ],
+      "text": "Simvastatin 20 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-009",
+      "display": "Patricia Anderson"
+    },
+    "authoredOn": "2025-03-14",
+    "requester": {
+      "reference": "Practitioner/prac-okonkwo"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-010-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197361",
+          "display": "Amlodipine 5 MG Oral Tablet"
+        }
+      ],
+      "text": "Amlodipine 5 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-010",
+      "display": "Michael Taylor"
+    },
+    "authoredOn": "2024-06-12",
+    "requester": {
+      "reference": "Practitioner/prac-nguyen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-010-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197591",
+          "display": "Ibuprofen 400 MG Oral Tablet"
+        }
+      ],
+      "text": "Ibuprofen 400 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-010",
+      "display": "Michael Taylor"
+    },
+    "authoredOn": "2025-07-15",
+    "requester": {
+      "reference": "Practitioner/prac-nguyen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-010-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314200",
+          "display": "Atorvastatin 10 MG Oral Tablet"
+        }
+      ],
+      "text": "Atorvastatin 10 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-010",
+      "display": "Michael Taylor"
+    },
+    "authoredOn": "2025-05-25",
+    "requester": {
+      "reference": "Practitioner/prac-nguyen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-011-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }
+      ],
+      "text": "Lisinopril 10 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-011",
+      "display": "Elena Hernandez"
+    },
+    "authoredOn": "2025-11-07",
+    "requester": {
+      "reference": "Practitioner/prac-patel"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-011-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "860975",
+          "display": "Metformin 500 MG Oral Tablet"
+        }
+      ],
+      "text": "Metformin 500 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-011",
+      "display": "Elena Hernandez"
+    },
+    "authoredOn": "2024-07-24",
+    "requester": {
+      "reference": "Practitioner/prac-patel"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-011-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197361",
+          "display": "Amlodipine 5 MG Oral Tablet"
+        }
+      ],
+      "text": "Amlodipine 5 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-011",
+      "display": "Elena Hernandez"
+    },
+    "authoredOn": "2025-05-23",
+    "requester": {
+      "reference": "Practitioner/prac-patel"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-012-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "198211",
+          "display": "Omeprazole 20 MG Delayed Release Oral Capsule"
+        }
+      ],
+      "text": "Omeprazole 20 MG Delayed Release Oral Capsule"
+    },
+    "subject": {
+      "reference": "Patient/pat-012",
+      "display": "William Moore"
+    },
+    "authoredOn": "2024-05-09",
+    "requester": {
+      "reference": "Practitioner/prac-brown"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-012-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "310798",
+          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
+        }
+      ],
+      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
+    },
+    "subject": {
+      "reference": "Patient/pat-012",
+      "display": "William Moore"
+    },
+    "authoredOn": "2025-03-16",
+    "requester": {
+      "reference": "Practitioner/prac-brown"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-012-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }
+      ],
+      "text": "Lisinopril 10 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-012",
+      "display": "William Moore"
+    },
+    "authoredOn": "2025-02-05",
+    "requester": {
+      "reference": "Practitioner/prac-brown"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-013-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }
+      ],
+      "text": "Lisinopril 10 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-013",
+      "display": "Jennifer Clark"
+    },
+    "authoredOn": "2025-06-25",
+    "requester": {
+      "reference": "Practitioner/prac-rodriguez"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-013-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197591",
+          "display": "Ibuprofen 400 MG Oral Tablet"
+        }
+      ],
+      "text": "Ibuprofen 400 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-013",
+      "display": "Jennifer Clark"
+    },
+    "authoredOn": "2025-03-11",
+    "requester": {
+      "reference": "Practitioner/prac-rodriguez"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-013-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "205532",
+          "display": "Amoxicillin 500 MG Oral Capsule"
+        }
+      ],
+      "text": "Amoxicillin 500 MG Oral Capsule"
+    },
+    "subject": {
+      "reference": "Patient/pat-013",
+      "display": "Jennifer Clark"
+    },
+    "authoredOn": "2024-09-01",
+    "requester": {
+      "reference": "Practitioner/prac-rodriguez"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-014-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "310798",
+          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
+        }
+      ],
+      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
+    },
+    "subject": {
+      "reference": "Patient/pat-014",
+      "display": "Thomas Lewis"
+    },
+    "authoredOn": "2023-10-15",
+    "requester": {
+      "reference": "Practitioner/prac-kim"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-014-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "860975",
+          "display": "Metformin 500 MG Oral Tablet"
+        }
+      ],
+      "text": "Metformin 500 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-014",
+      "display": "Thomas Lewis"
+    },
+    "authoredOn": "2024-07-08",
+    "requester": {
+      "reference": "Practitioner/prac-kim"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-014-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
+        }
+      ],
+      "text": "Simvastatin 20 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-014",
+      "display": "Thomas Lewis"
+    },
+    "authoredOn": "2024-06-14",
+    "requester": {
+      "reference": "Practitioner/prac-kim"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-015-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "860975",
+          "display": "Metformin 500 MG Oral Tablet"
+        }
+      ],
+      "text": "Metformin 500 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-015",
+      "display": "Sarah Robinson"
+    },
+    "authoredOn": "2023-12-15",
+    "requester": {
+      "reference": "Practitioner/prac-chen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-015-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
+        }
+      ],
+      "text": "Simvastatin 20 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-015",
+      "display": "Sarah Robinson"
+    },
+    "authoredOn": "2023-09-11",
+    "requester": {
+      "reference": "Practitioner/prac-chen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-015-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197591",
+          "display": "Ibuprofen 400 MG Oral Tablet"
+        }
+      ],
+      "text": "Ibuprofen 400 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-015",
+      "display": "Sarah Robinson"
+    },
+    "authoredOn": "2023-08-12",
+    "requester": {
+      "reference": "Practitioner/prac-chen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-016-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "860975",
+          "display": "Metformin 500 MG Oral Tablet"
+        }
+      ],
+      "text": "Metformin 500 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-016",
+      "display": "Richard Walker"
+    },
+    "authoredOn": "2023-10-03",
+    "requester": {
+      "reference": "Practitioner/prac-johnson"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-017-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "310798",
+          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
+        }
+      ],
+      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
+    },
+    "subject": {
+      "reference": "Patient/pat-017",
+      "display": "Emily Hall"
+    },
+    "authoredOn": "2025-10-12",
+    "requester": {
+      "reference": "Practitioner/prac-patel"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-017-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "205532",
+          "display": "Amoxicillin 500 MG Oral Capsule"
+        }
+      ],
+      "text": "Amoxicillin 500 MG Oral Capsule"
+    },
+    "subject": {
+      "reference": "Patient/pat-017",
+      "display": "Emily Hall"
+    },
+    "authoredOn": "2024-07-20",
+    "requester": {
+      "reference": "Practitioner/prac-patel"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-017-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "372614",
+          "display": "Sertraline 50 MG Oral Tablet"
+        }
+      ],
+      "text": "Sertraline 50 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-017",
+      "display": "Emily Hall"
+    },
+    "authoredOn": "2025-08-30",
+    "requester": {
+      "reference": "Practitioner/prac-patel"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-018-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "198211",
+          "display": "Omeprazole 20 MG Delayed Release Oral Capsule"
+        }
+      ],
+      "text": "Omeprazole 20 MG Delayed Release Oral Capsule"
+    },
+    "subject": {
+      "reference": "Patient/pat-018",
+      "display": "George Allen"
+    },
+    "authoredOn": "2025-03-17",
+    "requester": {
+      "reference": "Practitioner/prac-okonkwo"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-019-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
+        }
+      ],
+      "text": "Simvastatin 20 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-019",
+      "display": "Amanda Young"
+    },
+    "authoredOn": "2025-06-07",
+    "requester": {
+      "reference": "Practitioner/prac-nguyen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-019-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.907Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "205532",
+          "display": "Amoxicillin 500 MG Oral Capsule"
+        }
+      ],
+      "text": "Amoxicillin 500 MG Oral Capsule"
+    },
+    "subject": {
+      "reference": "Patient/pat-019",
+      "display": "Amanda Young"
+    },
+    "authoredOn": "2024-12-14",
+    "requester": {
+      "reference": "Practitioner/prac-nguyen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-019-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "860975",
+          "display": "Metformin 500 MG Oral Tablet"
+        }
+      ],
+      "text": "Metformin 500 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-019",
+      "display": "Amanda Young"
+    },
+    "authoredOn": "2023-08-16",
+    "requester": {
+      "reference": "Practitioner/prac-nguyen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-020-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197591",
+          "display": "Ibuprofen 400 MG Oral Tablet"
+        }
+      ],
+      "text": "Ibuprofen 400 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-020",
+      "display": "Joseph King"
+    },
+    "authoredOn": "2023-06-26",
+    "requester": {
+      "reference": "Practitioner/prac-kim"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-020-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "205532",
+          "display": "Amoxicillin 500 MG Oral Capsule"
+        }
+      ],
+      "text": "Amoxicillin 500 MG Oral Capsule"
+    },
+    "subject": {
+      "reference": "Patient/pat-020",
+      "display": "Joseph King"
+    },
+    "authoredOn": "2024-01-13",
+    "requester": {
+      "reference": "Practitioner/prac-kim"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-020-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }
+      ],
+      "text": "Lisinopril 10 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-020",
+      "display": "Joseph King"
+    },
+    "authoredOn": "2023-06-24",
+    "requester": {
+      "reference": "Practitioner/prac-kim"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-021-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }
+      ],
+      "text": "Lisinopril 10 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-021",
+      "display": "Lisa Wright"
+    },
+    "authoredOn": "2024-04-27",
+    "requester": {
+      "reference": "Practitioner/prac-brown"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-021-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "860975",
+          "display": "Metformin 500 MG Oral Tablet"
+        }
+      ],
+      "text": "Metformin 500 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-021",
+      "display": "Lisa Wright"
+    },
+    "authoredOn": "2023-07-09",
+    "requester": {
+      "reference": "Practitioner/prac-brown"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-021-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197361",
+          "display": "Amlodipine 5 MG Oral Tablet"
+        }
+      ],
+      "text": "Amlodipine 5 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-021",
+      "display": "Lisa Wright"
+    },
+    "authoredOn": "2024-08-05",
+    "requester": {
+      "reference": "Practitioner/prac-brown"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-022-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }
+      ],
+      "text": "Lisinopril 10 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-022",
+      "display": "Kevin Scott"
+    },
+    "authoredOn": "2023-09-27",
+    "requester": {
+      "reference": "Practitioner/prac-johnson"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-022-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
+        }
+      ],
+      "text": "Simvastatin 20 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-022",
+      "display": "Kevin Scott"
+    },
+    "authoredOn": "2024-09-23",
+    "requester": {
+      "reference": "Practitioner/prac-johnson"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-023-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197361",
+          "display": "Amlodipine 5 MG Oral Tablet"
+        }
+      ],
+      "text": "Amlodipine 5 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-023",
+      "display": "Nancy Green"
+    },
+    "authoredOn": "2025-05-25",
+    "requester": {
+      "reference": "Practitioner/prac-patel"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-023-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197591",
+          "display": "Ibuprofen 400 MG Oral Tablet"
+        }
+      ],
+      "text": "Ibuprofen 400 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-023",
+      "display": "Nancy Green"
+    },
+    "authoredOn": "2024-10-17",
+    "requester": {
+      "reference": "Practitioner/prac-patel"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-023-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "198211",
+          "display": "Omeprazole 20 MG Delayed Release Oral Capsule"
+        }
+      ],
+      "text": "Omeprazole 20 MG Delayed Release Oral Capsule"
+    },
+    "subject": {
+      "reference": "Patient/pat-023",
+      "display": "Nancy Green"
+    },
+    "authoredOn": "2025-06-26",
+    "requester": {
+      "reference": "Practitioner/prac-patel"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-024-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }
+      ],
+      "text": "Lisinopril 10 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-024",
+      "display": "Anthony Baker"
+    },
+    "authoredOn": "2023-10-26",
+    "requester": {
+      "reference": "Practitioner/prac-chen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-024-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "372614",
+          "display": "Sertraline 50 MG Oral Tablet"
+        }
+      ],
+      "text": "Sertraline 50 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-024",
+      "display": "Anthony Baker"
+    },
+    "authoredOn": "2025-05-20",
+    "requester": {
+      "reference": "Practitioner/prac-chen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-025-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
+        }
+      ],
+      "text": "Simvastatin 20 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-025",
+      "display": "Karen Adams"
+    },
+    "authoredOn": "2024-04-21",
+    "requester": {
+      "reference": "Practitioner/prac-rodriguez"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-025-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.908Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197361",
+          "display": "Amlodipine 5 MG Oral Tablet"
+        }
+      ],
+      "text": "Amlodipine 5 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-025",
+      "display": "Karen Adams"
+    },
+    "authoredOn": "2024-08-12",
+    "requester": {
+      "reference": "Practitioner/prac-rodriguez"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  }
+]

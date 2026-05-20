@@ -1,0 +1,24 @@
+{
+  "name": "FHIR R4 Backend + Dashboard",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "forwardPorts": [3000, 5173],
+  "portsAttributes": {
+    "3000": { "label": "FHIR API Server", "onAutoForward": "notify" },
+    "5173": { "label": "FHIR Dashboard", "onAutoForward": "openBrowser" }
+  },
+  "postCreateCommand": "cd server && npm install && cd ../dashboard && npm install",
+  "postStartCommand": "cd server && npm start &",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "humao.rest-client"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      }
+    }
+  }
+}

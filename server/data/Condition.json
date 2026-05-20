@@ -1,0 +1,2864 @@
+[
+  {
+    "resourceType": "Condition",
+    "id": "cond-001-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "G43.909",
+          "display": "Migraine, unspecified, not intractable"
+        }
+      ],
+      "text": "Migraine, unspecified, not intractable"
+    },
+    "subject": {
+      "reference": "Patient/pat-001",
+      "display": "Margaret Thompson"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-001-1"
+    },
+    "onsetDateTime": "2022-02-13",
+    "recordedDate": "2025-04-30"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-001-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "N39.0",
+          "display": "Urinary tract infection, site not specified"
+        }
+      ],
+      "text": "Urinary tract infection, site not specified"
+    },
+    "subject": {
+      "reference": "Patient/pat-001",
+      "display": "Margaret Thompson"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-001-1"
+    },
+    "onsetDateTime": "2020-09-18",
+    "recordedDate": "2025-06-07"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-001-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "I25.10",
+          "display": "Atherosclerotic heart disease of native coronary artery"
+        }
+      ],
+      "text": "Atherosclerotic heart disease of native coronary artery"
+    },
+    "subject": {
+      "reference": "Patient/pat-001",
+      "display": "Margaret Thompson"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-001-1"
+    },
+    "onsetDateTime": "2021-03-05",
+    "recordedDate": "2023-06-01"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-002-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "N39.0",
+          "display": "Urinary tract infection, site not specified"
+        }
+      ],
+      "text": "Urinary tract infection, site not specified"
+    },
+    "subject": {
+      "reference": "Patient/pat-002",
+      "display": "Robert Davis"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-002-1"
+    },
+    "onsetDateTime": "2023-11-23",
+    "recordedDate": "2024-12-09"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-002-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }
+      ],
+      "text": "Essential (primary) hypertension"
+    },
+    "subject": {
+      "reference": "Patient/pat-002",
+      "display": "Robert Davis"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-002-1"
+    },
+    "onsetDateTime": "2022-05-27",
+    "recordedDate": "2023-10-07"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-003-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "E11.9",
+          "display": "Type 2 diabetes mellitus without complications"
+        }
+      ],
+      "text": "Type 2 diabetes mellitus without complications"
+    },
+    "subject": {
+      "reference": "Patient/pat-003",
+      "display": "Isabella Martinez"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-003-1"
+    },
+    "onsetDateTime": "2024-02-24",
+    "recordedDate": "2024-03-28"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-003-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "G43.909",
+          "display": "Migraine, unspecified, not intractable"
+        }
+      ],
+      "text": "Migraine, unspecified, not intractable"
+    },
+    "subject": {
+      "reference": "Patient/pat-003",
+      "display": "Isabella Martinez"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-003-1"
+    },
+    "onsetDateTime": "2022-08-21",
+    "recordedDate": "2024-08-02"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-004-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "I25.10",
+          "display": "Atherosclerotic heart disease of native coronary artery"
+        }
+      ],
+      "text": "Atherosclerotic heart disease of native coronary artery"
+    },
+    "subject": {
+      "reference": "Patient/pat-004",
+      "display": "James Williams"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-004-1"
+    },
+    "onsetDateTime": "2021-11-09",
+    "recordedDate": "2023-04-19"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-004-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "M54.5",
+          "display": "Low back pain"
+        }
+      ],
+      "text": "Low back pain"
+    },
+    "subject": {
+      "reference": "Patient/pat-004",
+      "display": "James Williams"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-004-1"
+    },
+    "onsetDateTime": "2023-12-22",
+    "recordedDate": "2024-09-07"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-004-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }
+      ],
+      "text": "Essential (primary) hypertension"
+    },
+    "subject": {
+      "reference": "Patient/pat-004",
+      "display": "James Williams"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-004-1"
+    },
+    "onsetDateTime": "2024-11-14",
+    "recordedDate": "2024-01-10"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-005-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "M54.5",
+          "display": "Low back pain"
+        }
+      ],
+      "text": "Low back pain"
+    },
+    "subject": {
+      "reference": "Patient/pat-005",
+      "display": "Yuki Nakamura"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-005-1"
+    },
+    "onsetDateTime": "2021-08-28",
+    "recordedDate": "2025-10-16"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-005-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "J06.9",
+          "display": "Acute upper respiratory infection, unspecified"
+        }
+      ],
+      "text": "Acute upper respiratory infection, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-005",
+      "display": "Yuki Nakamura"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-005-1"
+    },
+    "onsetDateTime": "2023-01-28",
+    "recordedDate": "2023-02-01"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-006-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "M54.5",
+          "display": "Low back pain"
+        }
+      ],
+      "text": "Low back pain"
+    },
+    "subject": {
+      "reference": "Patient/pat-006",
+      "display": "Charles Brown"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-006-1"
+    },
+    "onsetDateTime": "2022-11-24",
+    "recordedDate": "2023-03-29"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-006-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "J06.9",
+          "display": "Acute upper respiratory infection, unspecified"
+        }
+      ],
+      "text": "Acute upper respiratory infection, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-006",
+      "display": "Charles Brown"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-006-1"
+    },
+    "onsetDateTime": "2021-03-23",
+    "recordedDate": "2024-03-29"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-006-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "M79.3",
+          "display": "Panniculitis, unspecified"
+        }
+      ],
+      "text": "Panniculitis, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-006",
+      "display": "Charles Brown"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-006-1"
+    },
+    "onsetDateTime": "2020-03-02",
+    "recordedDate": "2025-06-24"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-007-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "J06.9",
+          "display": "Acute upper respiratory infection, unspecified"
+        }
+      ],
+      "text": "Acute upper respiratory infection, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-007",
+      "display": "Sofia Garcia"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-007-1"
+    },
+    "onsetDateTime": "2024-04-28",
+    "recordedDate": "2024-01-24"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-008-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }
+      ],
+      "text": "Essential (primary) hypertension"
+    },
+    "subject": {
+      "reference": "Patient/pat-008",
+      "display": "Daniel Lee"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-008-1"
+    },
+    "onsetDateTime": "2022-12-07",
+    "recordedDate": "2025-05-13"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-008-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "E11.9",
+          "display": "Type 2 diabetes mellitus without complications"
+        }
+      ],
+      "text": "Type 2 diabetes mellitus without complications"
+    },
+    "subject": {
+      "reference": "Patient/pat-008",
+      "display": "Daniel Lee"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-008-1"
+    },
+    "onsetDateTime": "2023-09-16",
+    "recordedDate": "2024-06-08"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-008-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "F32.1",
+          "display": "Major depressive disorder, single episode, moderate"
+        }
+      ],
+      "text": "Major depressive disorder, single episode, moderate"
+    },
+    "subject": {
+      "reference": "Patient/pat-008",
+      "display": "Daniel Lee"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-008-1"
+    },
+    "onsetDateTime": "2023-12-12",
+    "recordedDate": "2024-04-16"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-009-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.893Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "F32.1",
+          "display": "Major depressive disorder, single episode, moderate"
+        }
+      ],
+      "text": "Major depressive disorder, single episode, moderate"
+    },
+    "subject": {
+      "reference": "Patient/pat-009",
+      "display": "Patricia Anderson"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-009-1"
+    },
+    "onsetDateTime": "2020-12-09",
+    "recordedDate": "2024-03-25"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-009-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "M54.5",
+          "display": "Low back pain"
+        }
+      ],
+      "text": "Low back pain"
+    },
+    "subject": {
+      "reference": "Patient/pat-009",
+      "display": "Patricia Anderson"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-009-1"
+    },
+    "onsetDateTime": "2023-08-01",
+    "recordedDate": "2025-07-05"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-010-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "N39.0",
+          "display": "Urinary tract infection, site not specified"
+        }
+      ],
+      "text": "Urinary tract infection, site not specified"
+    },
+    "subject": {
+      "reference": "Patient/pat-010",
+      "display": "Michael Taylor"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-010-1"
+    },
+    "onsetDateTime": "2025-01-15",
+    "recordedDate": "2023-08-14"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-010-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }
+      ],
+      "text": "Essential (primary) hypertension"
+    },
+    "subject": {
+      "reference": "Patient/pat-010",
+      "display": "Michael Taylor"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-010-1"
+    },
+    "onsetDateTime": "2022-05-17",
+    "recordedDate": "2023-08-11"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-011-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "E11.9",
+          "display": "Type 2 diabetes mellitus without complications"
+        }
+      ],
+      "text": "Type 2 diabetes mellitus without complications"
+    },
+    "subject": {
+      "reference": "Patient/pat-011",
+      "display": "Elena Hernandez"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-011-1"
+    },
+    "onsetDateTime": "2024-05-09",
+    "recordedDate": "2025-01-12"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-012-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "J06.9",
+          "display": "Acute upper respiratory infection, unspecified"
+        }
+      ],
+      "text": "Acute upper respiratory infection, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-012",
+      "display": "William Moore"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-012-1"
+    },
+    "onsetDateTime": "2021-09-22",
+    "recordedDate": "2023-01-21"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-013-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }
+      ],
+      "text": "Essential (primary) hypertension"
+    },
+    "subject": {
+      "reference": "Patient/pat-013",
+      "display": "Jennifer Clark"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-013-1"
+    },
+    "onsetDateTime": "2023-07-31",
+    "recordedDate": "2024-07-30"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-013-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "M79.3",
+          "display": "Panniculitis, unspecified"
+        }
+      ],
+      "text": "Panniculitis, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-013",
+      "display": "Jennifer Clark"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-013-1"
+    },
+    "onsetDateTime": "2023-03-12",
+    "recordedDate": "2024-09-14"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-013-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "M54.5",
+          "display": "Low back pain"
+        }
+      ],
+      "text": "Low back pain"
+    },
+    "subject": {
+      "reference": "Patient/pat-013",
+      "display": "Jennifer Clark"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-013-1"
+    },
+    "onsetDateTime": "2020-12-20",
+    "recordedDate": "2024-01-17"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-014-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "J06.9",
+          "display": "Acute upper respiratory infection, unspecified"
+        }
+      ],
+      "text": "Acute upper respiratory infection, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-014",
+      "display": "Thomas Lewis"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-014-1"
+    },
+    "onsetDateTime": "2022-06-03",
+    "recordedDate": "2023-05-31"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-014-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "J45.20",
+          "display": "Mild intermittent asthma, uncomplicated"
+        }
+      ],
+      "text": "Mild intermittent asthma, uncomplicated"
+    },
+    "subject": {
+      "reference": "Patient/pat-014",
+      "display": "Thomas Lewis"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-014-1"
+    },
+    "onsetDateTime": "2022-02-01",
+    "recordedDate": "2025-08-11"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-014-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "M79.3",
+          "display": "Panniculitis, unspecified"
+        }
+      ],
+      "text": "Panniculitis, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-014",
+      "display": "Thomas Lewis"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-014-1"
+    },
+    "onsetDateTime": "2020-10-24",
+    "recordedDate": "2024-09-02"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-015-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "M54.5",
+          "display": "Low back pain"
+        }
+      ],
+      "text": "Low back pain"
+    },
+    "subject": {
+      "reference": "Patient/pat-015",
+      "display": "Sarah Robinson"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-015-1"
+    },
+    "onsetDateTime": "2024-09-13",
+    "recordedDate": "2023-06-24"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-015-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "J06.9",
+          "display": "Acute upper respiratory infection, unspecified"
+        }
+      ],
+      "text": "Acute upper respiratory infection, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-015",
+      "display": "Sarah Robinson"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-015-1"
+    },
+    "onsetDateTime": "2023-11-11",
+    "recordedDate": "2025-06-23"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-015-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "N39.0",
+          "display": "Urinary tract infection, site not specified"
+        }
+      ],
+      "text": "Urinary tract infection, site not specified"
+    },
+    "subject": {
+      "reference": "Patient/pat-015",
+      "display": "Sarah Robinson"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-015-1"
+    },
+    "onsetDateTime": "2022-04-21",
+    "recordedDate": "2023-07-07"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-016-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "G43.909",
+          "display": "Migraine, unspecified, not intractable"
+        }
+      ],
+      "text": "Migraine, unspecified, not intractable"
+    },
+    "subject": {
+      "reference": "Patient/pat-016",
+      "display": "Richard Walker"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-016-1"
+    },
+    "onsetDateTime": "2020-02-22",
+    "recordedDate": "2024-10-27"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-016-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "I10",
+          "display": "Essential (primary) hypertension"
+        }
+      ],
+      "text": "Essential (primary) hypertension"
+    },
+    "subject": {
+      "reference": "Patient/pat-016",
+      "display": "Richard Walker"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-016-1"
+    },
+    "onsetDateTime": "2023-10-07",
+    "recordedDate": "2024-06-08"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-017-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "K21.0",
+          "display": "Gastro-esophageal reflux disease with esophagitis"
+        }
+      ],
+      "text": "Gastro-esophageal reflux disease with esophagitis"
+    },
+    "subject": {
+      "reference": "Patient/pat-017",
+      "display": "Emily Hall"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-017-1"
+    },
+    "onsetDateTime": "2022-05-16",
+    "recordedDate": "2025-09-25"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-017-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.894Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "J45.20",
+          "display": "Mild intermittent asthma, uncomplicated"
+        }
+      ],
+      "text": "Mild intermittent asthma, uncomplicated"
+    },
+    "subject": {
+      "reference": "Patient/pat-017",
+      "display": "Emily Hall"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-017-1"
+    },
+    "onsetDateTime": "2020-04-26",
+    "recordedDate": "2024-06-14"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-018-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "E78.5",
+          "display": "Hyperlipidemia, unspecified"
+        }
+      ],
+      "text": "Hyperlipidemia, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-018",
+      "display": "George Allen"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-018-1"
+    },
+    "onsetDateTime": "2023-05-11",
+    "recordedDate": "2025-04-26"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-019-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "J45.20",
+          "display": "Mild intermittent asthma, uncomplicated"
+        }
+      ],
+      "text": "Mild intermittent asthma, uncomplicated"
+    },
+    "subject": {
+      "reference": "Patient/pat-019",
+      "display": "Amanda Young"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-019-1"
+    },
+    "onsetDateTime": "2021-02-24",
+    "recordedDate": "2024-09-13"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-019-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "I25.10",
+          "display": "Atherosclerotic heart disease of native coronary artery"
+        }
+      ],
+      "text": "Atherosclerotic heart disease of native coronary artery"
+    },
+    "subject": {
+      "reference": "Patient/pat-019",
+      "display": "Amanda Young"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-019-1"
+    },
+    "onsetDateTime": "2025-01-12",
+    "recordedDate": "2025-07-25"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-019-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "J06.9",
+          "display": "Acute upper respiratory infection, unspecified"
+        }
+      ],
+      "text": "Acute upper respiratory infection, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-019",
+      "display": "Amanda Young"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-019-1"
+    },
+    "onsetDateTime": "2020-08-18",
+    "recordedDate": "2023-11-03"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-020-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "E78.5",
+          "display": "Hyperlipidemia, unspecified"
+        }
+      ],
+      "text": "Hyperlipidemia, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-020",
+      "display": "Joseph King"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-020-1"
+    },
+    "onsetDateTime": "2021-09-14",
+    "recordedDate": "2025-10-14"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-020-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "J06.9",
+          "display": "Acute upper respiratory infection, unspecified"
+        }
+      ],
+      "text": "Acute upper respiratory infection, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-020",
+      "display": "Joseph King"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-020-1"
+    },
+    "onsetDateTime": "2022-02-13",
+    "recordedDate": "2025-06-08"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-020-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "K21.0",
+          "display": "Gastro-esophageal reflux disease with esophagitis"
+        }
+      ],
+      "text": "Gastro-esophageal reflux disease with esophagitis"
+    },
+    "subject": {
+      "reference": "Patient/pat-020",
+      "display": "Joseph King"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-020-1"
+    },
+    "onsetDateTime": "2024-04-21",
+    "recordedDate": "2023-12-18"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-021-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "J06.9",
+          "display": "Acute upper respiratory infection, unspecified"
+        }
+      ],
+      "text": "Acute upper respiratory infection, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-021",
+      "display": "Lisa Wright"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-021-1"
+    },
+    "onsetDateTime": "2022-01-10",
+    "recordedDate": "2025-04-10"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-022-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "M79.3",
+          "display": "Panniculitis, unspecified"
+        }
+      ],
+      "text": "Panniculitis, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-022",
+      "display": "Kevin Scott"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-022-1"
+    },
+    "onsetDateTime": "2023-11-26",
+    "recordedDate": "2023-05-12"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-023-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "F32.1",
+          "display": "Major depressive disorder, single episode, moderate"
+        }
+      ],
+      "text": "Major depressive disorder, single episode, moderate"
+    },
+    "subject": {
+      "reference": "Patient/pat-023",
+      "display": "Nancy Green"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-023-1"
+    },
+    "onsetDateTime": "2020-04-24",
+    "recordedDate": "2024-05-03"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-023-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "E11.9",
+          "display": "Type 2 diabetes mellitus without complications"
+        }
+      ],
+      "text": "Type 2 diabetes mellitus without complications"
+    },
+    "subject": {
+      "reference": "Patient/pat-023",
+      "display": "Nancy Green"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-023-1"
+    },
+    "onsetDateTime": "2023-03-25",
+    "recordedDate": "2025-06-26"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-023-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "M79.3",
+          "display": "Panniculitis, unspecified"
+        }
+      ],
+      "text": "Panniculitis, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-023",
+      "display": "Nancy Green"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-023-1"
+    },
+    "onsetDateTime": "2023-01-03",
+    "recordedDate": "2025-09-25"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-024-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "E78.5",
+          "display": "Hyperlipidemia, unspecified"
+        }
+      ],
+      "text": "Hyperlipidemia, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-024",
+      "display": "Anthony Baker"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-024-1"
+    },
+    "onsetDateTime": "2022-08-22",
+    "recordedDate": "2025-02-03"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-025-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "M79.3",
+          "display": "Panniculitis, unspecified"
+        }
+      ],
+      "text": "Panniculitis, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-025",
+      "display": "Karen Adams"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-025-1"
+    },
+    "onsetDateTime": "2025-01-29",
+    "recordedDate": "2024-07-15"
+  },
+  {
+    "resourceType": "Condition",
+    "id": "cond-025-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.895Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code": "encounter-diagnosis",
+          "display": "Encounter Diagnosis"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10",
+          "code": "J06.9",
+          "display": "Acute upper respiratory infection, unspecified"
+        }
+      ],
+      "text": "Acute upper respiratory infection, unspecified"
+    },
+    "subject": {
+      "reference": "Patient/pat-025",
+      "display": "Karen Adams"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-025-1"
+    },
+    "onsetDateTime": "2020-05-11",
+    "recordedDate": "2025-04-21"
+  }
+]

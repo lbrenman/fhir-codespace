@@ -1,0 +1,542 @@
+[
+  {
+    "resourceType": "Appointment",
+    "id": "appt-001",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "cancelled",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "General checkup"
+          }
+        ]
+      }
+    ],
+    "start": "2026-04-17T09:00:00Z",
+    "end": "2026-04-17T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-001",
+          "display": "Margaret Thompson"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-chen"
+        },
+        "status": "accepted"
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "appt-002",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "booked",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "General checkup"
+          }
+        ]
+      }
+    ],
+    "start": "2025-12-10T09:00:00Z",
+    "end": "2025-12-10T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-002",
+          "display": "Robert Davis"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-okonkwo"
+        },
+        "status": "accepted"
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "appt-003",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "booked",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "Lab work"
+          }
+        ]
+      }
+    ],
+    "start": "2026-05-07T09:00:00Z",
+    "end": "2026-05-07T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-003",
+          "display": "Isabella Martinez"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-rodriguez"
+        },
+        "status": "accepted"
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "appt-004",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "booked",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "General checkup"
+          }
+        ]
+      }
+    ],
+    "start": "2025-07-09T09:00:00Z",
+    "end": "2025-07-09T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-004",
+          "display": "James Williams"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-johnson"
+        },
+        "status": "accepted"
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "appt-005",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "cancelled",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "Follow-up"
+          }
+        ]
+      }
+    ],
+    "start": "2025-11-28T09:00:00Z",
+    "end": "2025-11-28T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-005",
+          "display": "Yuki Nakamura"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-patel"
+        },
+        "status": "accepted"
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "appt-006",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "cancelled",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "Specialist consultation"
+          }
+        ]
+      }
+    ],
+    "start": "2025-07-10T09:00:00Z",
+    "end": "2025-07-10T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-006",
+          "display": "Charles Brown"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-chen"
+        },
+        "status": "accepted"
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "appt-007",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "fulfilled",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "General checkup"
+          }
+        ]
+      }
+    ],
+    "start": "2026-02-17T09:00:00Z",
+    "end": "2026-02-17T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-007",
+          "display": "Sofia Garcia"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-rodriguez"
+        },
+        "status": "accepted"
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "appt-008",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "booked",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "Lab work"
+          }
+        ]
+      }
+    ],
+    "start": "2026-05-18T09:00:00Z",
+    "end": "2026-05-18T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-008",
+          "display": "Daniel Lee"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-kim"
+        },
+        "status": "accepted"
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "appt-009",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "arrived",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "Follow-up"
+          }
+        ]
+      }
+    ],
+    "start": "2026-04-22T09:00:00Z",
+    "end": "2026-04-22T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-009",
+          "display": "Patricia Anderson"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-okonkwo"
+        },
+        "status": "accepted"
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "appt-010",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "arrived",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "General checkup"
+          }
+        ]
+      }
+    ],
+    "start": "2026-05-12T09:00:00Z",
+    "end": "2026-05-12T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-010",
+          "display": "Michael Taylor"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-nguyen"
+        },
+        "status": "accepted"
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "appt-011",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "arrived",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "General checkup"
+          }
+        ]
+      }
+    ],
+    "start": "2026-04-11T09:00:00Z",
+    "end": "2026-04-11T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-011",
+          "display": "Elena Hernandez"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-patel"
+        },
+        "status": "accepted"
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "appt-012",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "cancelled",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "Lab work"
+          }
+        ]
+      }
+    ],
+    "start": "2025-08-09T09:00:00Z",
+    "end": "2025-08-09T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-012",
+          "display": "William Moore"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-brown"
+        },
+        "status": "accepted"
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "appt-013",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "booked",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "General checkup"
+          }
+        ]
+      }
+    ],
+    "start": "2026-01-13T09:00:00Z",
+    "end": "2026-01-13T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-013",
+          "display": "Jennifer Clark"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-rodriguez"
+        },
+        "status": "accepted"
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "appt-014",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "booked",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "Follow-up"
+          }
+        ]
+      }
+    ],
+    "start": "2025-07-14T09:00:00Z",
+    "end": "2025-07-14T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-014",
+          "display": "Thomas Lewis"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-kim"
+        },
+        "status": "accepted"
+      }
+    ]
+  },
+  {
+    "resourceType": "Appointment",
+    "id": "appt-015",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-20T18:02:45.917Z"
+    },
+    "status": "booked",
+    "serviceType": [
+      {
+        "coding": [
+          {
+            "display": "Follow-up"
+          }
+        ]
+      }
+    ],
+    "start": "2025-11-27T09:00:00Z",
+    "end": "2025-11-27T09:30:00Z",
+    "minutesDuration": 30,
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-015",
+          "display": "Sarah Robinson"
+        },
+        "status": "accepted"
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/prac-chen"
+        },
+        "status": "accepted"
+      }
+    ]
+  }
+]

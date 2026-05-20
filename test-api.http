@@ -1,0 +1,73 @@
+### FHIR R4 API Test Requests
+### Use with VS Code REST Client extension
+
+@baseUrl = http://localhost:3000
+
+### Health Check
+GET {{baseUrl}}/health
+
+### FHIR Capability Statement
+GET {{baseUrl}}/fhir/r4/metadata
+
+### List all Patients
+GET {{baseUrl}}/fhir/r4/Patient
+
+### List Patients with pagination
+GET {{baseUrl}}/fhir/r4/Patient?_count=5&_offset=0
+
+### List Encounters
+GET {{baseUrl}}/fhir/r4/Encounter
+
+### List Observations
+GET {{baseUrl}}/fhir/r4/Observation?_count=10
+
+### List Conditions
+GET {{baseUrl}}/fhir/r4/Condition
+
+### List Medications
+GET {{baseUrl}}/fhir/r4/MedicationRequest
+
+### List Allergies
+GET {{baseUrl}}/fhir/r4/AllergyIntolerance
+
+### List Immunizations
+GET {{baseUrl}}/fhir/r4/Immunization
+
+### List Procedures
+GET {{baseUrl}}/fhir/r4/Procedure
+
+### List Appointments
+GET {{baseUrl}}/fhir/r4/Appointment
+
+### List Claims
+GET {{baseUrl}}/fhir/r4/Claim
+
+### List Organizations
+GET {{baseUrl}}/fhir/r4/Organization
+
+### List Practitioners
+GET {{baseUrl}}/fhir/r4/Practitioner
+
+### List Locations
+GET {{baseUrl}}/fhir/r4/Location
+
+### Create a Patient
+POST {{baseUrl}}/fhir/r4/Patient
+Content-Type: application/fhir+json
+
+{
+  "resourceType": "Patient",
+  "name": [
+    {
+      "use": "official",
+      "family": "TestPatient",
+      "given": ["Demo"]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1990-01-15",
+  "active": true
+}
+
+### OpenAPI Spec
+GET {{baseUrl}}/openapi.json
