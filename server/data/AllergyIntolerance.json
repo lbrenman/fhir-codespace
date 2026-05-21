@@ -4,7 +4,7 @@
     "id": "allergy-001-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.908Z"
+      "lastUpdated": "2026-05-21T11:28:49.671Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -31,27 +31,88 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "36437",
-          "display": "Latex"
+          "code": "2670",
+          "display": "Codeine"
         }
       ],
-      "text": "Latex"
+      "text": "Codeine"
     },
     "patient": {
       "reference": "Patient/pat-001",
       "display": "Margaret Thompson"
     },
-    "recordedDate": "2023-06-22",
+    "recordedDate": "2025-02-27",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Contact dermatitis"
-            }
-          ],
-          "text": "Contact dermatitis"
-        },
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Nausea"
+              }
+            ],
+            "text": "Nausea"
+          }
+        ],
+        "severity": "mild"
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-001-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.671Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed"
+        }
+      ]
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "low",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "70618",
+          "display": "Sulfamethoxazole"
+        }
+      ],
+      "text": "Sulfamethoxazole"
+    },
+    "patient": {
+      "reference": "Patient/pat-001",
+      "display": "Margaret Thompson"
+    },
+    "recordedDate": "2025-04-06",
+    "reaction": [
+      {
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Rash"
+              }
+            ],
+            "text": "Rash"
+          }
+        ],
         "severity": "moderate"
       }
     ]
@@ -61,7 +122,7 @@
     "id": "allergy-002-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.908Z"
+      "lastUpdated": "2026-05-21T11:28:49.671Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -98,198 +159,29 @@
       "reference": "Patient/pat-002",
       "display": "Robert Davis"
     },
-    "recordedDate": "2020-07-08",
+    "recordedDate": "2022-05-25",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Anaphylaxis"
-            }
-          ],
-          "text": "Anaphylaxis"
-        },
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Anaphylaxis"
+              }
+            ],
+            "text": "Anaphylaxis"
+          }
+        ],
         "severity": "severe"
       }
     ]
   },
   {
     "resourceType": "AllergyIntolerance",
-    "id": "allergy-003-1",
+    "id": "allergy-002-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.908Z"
-    },
-    "clinicalStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-          "code": "active"
-        }
-      ]
-    },
-    "verificationStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-          "code": "confirmed"
-        }
-      ]
-    },
-    "type": "allergy",
-    "category": [
-      "medication"
-    ],
-    "criticality": "low",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "7980",
-          "display": "Penicillin"
-        }
-      ],
-      "text": "Penicillin"
-    },
-    "patient": {
-      "reference": "Patient/pat-003",
-      "display": "Isabella Martinez"
-    },
-    "recordedDate": "2021-09-26",
-    "reaction": [
-      {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Hives"
-            }
-          ],
-          "text": "Hives"
-        },
-        "severity": "moderate"
-      }
-    ]
-  },
-  {
-    "resourceType": "AllergyIntolerance",
-    "id": "allergy-003-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.908Z"
-    },
-    "clinicalStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-          "code": "active"
-        }
-      ]
-    },
-    "verificationStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-          "code": "confirmed"
-        }
-      ]
-    },
-    "type": "allergy",
-    "category": [
-      "medication"
-    ],
-    "criticality": "high",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1191",
-          "display": "Aspirin"
-        }
-      ],
-      "text": "Aspirin"
-    },
-    "patient": {
-      "reference": "Patient/pat-003",
-      "display": "Isabella Martinez"
-    },
-    "recordedDate": "2024-03-08",
-    "reaction": [
-      {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Anaphylaxis"
-            }
-          ],
-          "text": "Anaphylaxis"
-        },
-        "severity": "severe"
-      }
-    ]
-  },
-  {
-    "resourceType": "AllergyIntolerance",
-    "id": "allergy-004-1",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.908Z"
-    },
-    "clinicalStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-          "code": "active"
-        }
-      ]
-    },
-    "verificationStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-          "code": "confirmed"
-        }
-      ]
-    },
-    "type": "allergy",
-    "category": [
-      "medication"
-    ],
-    "criticality": "low",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "36437",
-          "display": "Latex"
-        }
-      ],
-      "text": "Latex"
-    },
-    "patient": {
-      "reference": "Patient/pat-004",
-      "display": "James Williams"
-    },
-    "recordedDate": "2024-08-27",
-    "reaction": [
-      {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Contact dermatitis"
-            }
-          ],
-          "text": "Contact dermatitis"
-        },
-        "severity": "moderate"
-      }
-    ]
-  },
-  {
-    "resourceType": "AllergyIntolerance",
-    "id": "allergy-005-1",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.908Z"
+      "lastUpdated": "2026-05-21T11:28:49.671Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -323,372 +215,32 @@
       "text": "Codeine"
     },
     "patient": {
-      "reference": "Patient/pat-005",
-      "display": "Yuki Nakamura"
+      "reference": "Patient/pat-002",
+      "display": "Robert Davis"
     },
-    "recordedDate": "2021-02-26",
+    "recordedDate": "2024-04-07",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Nausea"
-            }
-          ],
-          "text": "Nausea"
-        },
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Nausea"
+              }
+            ],
+            "text": "Nausea"
+          }
+        ],
         "severity": "mild"
       }
     ]
   },
   {
     "resourceType": "AllergyIntolerance",
-    "id": "allergy-005-2",
+    "id": "allergy-003-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.908Z"
-    },
-    "clinicalStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-          "code": "active"
-        }
-      ]
-    },
-    "verificationStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-          "code": "confirmed"
-        }
-      ]
-    },
-    "type": "allergy",
-    "category": [
-      "medication"
-    ],
-    "criticality": "low",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "70618",
-          "display": "Sulfamethoxazole"
-        }
-      ],
-      "text": "Sulfamethoxazole"
-    },
-    "patient": {
-      "reference": "Patient/pat-005",
-      "display": "Yuki Nakamura"
-    },
-    "recordedDate": "2024-06-08",
-    "reaction": [
-      {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Rash"
-            }
-          ],
-          "text": "Rash"
-        },
-        "severity": "moderate"
-      }
-    ]
-  },
-  {
-    "resourceType": "AllergyIntolerance",
-    "id": "allergy-008-1",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.908Z"
-    },
-    "clinicalStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-          "code": "active"
-        }
-      ]
-    },
-    "verificationStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-          "code": "confirmed"
-        }
-      ]
-    },
-    "type": "allergy",
-    "category": [
-      "medication"
-    ],
-    "criticality": "low",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "7980",
-          "display": "Penicillin"
-        }
-      ],
-      "text": "Penicillin"
-    },
-    "patient": {
-      "reference": "Patient/pat-008",
-      "display": "Daniel Lee"
-    },
-    "recordedDate": "2023-05-24",
-    "reaction": [
-      {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Hives"
-            }
-          ],
-          "text": "Hives"
-        },
-        "severity": "moderate"
-      }
-    ]
-  },
-  {
-    "resourceType": "AllergyIntolerance",
-    "id": "allergy-008-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.908Z"
-    },
-    "clinicalStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-          "code": "active"
-        }
-      ]
-    },
-    "verificationStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-          "code": "confirmed"
-        }
-      ]
-    },
-    "type": "allergy",
-    "category": [
-      "medication"
-    ],
-    "criticality": "high",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1191",
-          "display": "Aspirin"
-        }
-      ],
-      "text": "Aspirin"
-    },
-    "patient": {
-      "reference": "Patient/pat-008",
-      "display": "Daniel Lee"
-    },
-    "recordedDate": "2023-04-06",
-    "reaction": [
-      {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Anaphylaxis"
-            }
-          ],
-          "text": "Anaphylaxis"
-        },
-        "severity": "severe"
-      }
-    ]
-  },
-  {
-    "resourceType": "AllergyIntolerance",
-    "id": "allergy-009-1",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
-    },
-    "clinicalStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-          "code": "active"
-        }
-      ]
-    },
-    "verificationStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-          "code": "confirmed"
-        }
-      ]
-    },
-    "type": "allergy",
-    "category": [
-      "medication"
-    ],
-    "criticality": "low",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "7980",
-          "display": "Penicillin"
-        }
-      ],
-      "text": "Penicillin"
-    },
-    "patient": {
-      "reference": "Patient/pat-009",
-      "display": "Patricia Anderson"
-    },
-    "recordedDate": "2025-03-22",
-    "reaction": [
-      {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Hives"
-            }
-          ],
-          "text": "Hives"
-        },
-        "severity": "moderate"
-      }
-    ]
-  },
-  {
-    "resourceType": "AllergyIntolerance",
-    "id": "allergy-009-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
-    },
-    "clinicalStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-          "code": "active"
-        }
-      ]
-    },
-    "verificationStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-          "code": "confirmed"
-        }
-      ]
-    },
-    "type": "allergy",
-    "category": [
-      "medication"
-    ],
-    "criticality": "high",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1191",
-          "display": "Aspirin"
-        }
-      ],
-      "text": "Aspirin"
-    },
-    "patient": {
-      "reference": "Patient/pat-009",
-      "display": "Patricia Anderson"
-    },
-    "recordedDate": "2022-10-30",
-    "reaction": [
-      {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Anaphylaxis"
-            }
-          ],
-          "text": "Anaphylaxis"
-        },
-        "severity": "severe"
-      }
-    ]
-  },
-  {
-    "resourceType": "AllergyIntolerance",
-    "id": "allergy-010-1",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
-    },
-    "clinicalStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-          "code": "active"
-        }
-      ]
-    },
-    "verificationStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-          "code": "confirmed"
-        }
-      ]
-    },
-    "type": "allergy",
-    "category": [
-      "medication"
-    ],
-    "criticality": "high",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1191",
-          "display": "Aspirin"
-        }
-      ],
-      "text": "Aspirin"
-    },
-    "patient": {
-      "reference": "Patient/pat-010",
-      "display": "Michael Taylor"
-    },
-    "recordedDate": "2023-10-22",
-    "reaction": [
-      {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Anaphylaxis"
-            }
-          ],
-          "text": "Anaphylaxis"
-        },
-        "severity": "severe"
-      }
-    ]
-  },
-  {
-    "resourceType": "AllergyIntolerance",
-    "id": "allergy-010-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
+      "lastUpdated": "2026-05-21T11:28:49.671Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -722,144 +274,32 @@
       "text": "Latex"
     },
     "patient": {
-      "reference": "Patient/pat-010",
-      "display": "Michael Taylor"
+      "reference": "Patient/pat-003",
+      "display": "Isabella Martinez"
     },
-    "recordedDate": "2022-07-27",
+    "recordedDate": "2024-11-26",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Contact dermatitis"
-            }
-          ],
-          "text": "Contact dermatitis"
-        },
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Contact dermatitis"
+              }
+            ],
+            "text": "Contact dermatitis"
+          }
+        ],
         "severity": "moderate"
       }
     ]
   },
   {
     "resourceType": "AllergyIntolerance",
-    "id": "allergy-011-1",
+    "id": "allergy-003-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
-    },
-    "clinicalStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-          "code": "active"
-        }
-      ]
-    },
-    "verificationStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-          "code": "confirmed"
-        }
-      ]
-    },
-    "type": "allergy",
-    "category": [
-      "medication"
-    ],
-    "criticality": "high",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1191",
-          "display": "Aspirin"
-        }
-      ],
-      "text": "Aspirin"
-    },
-    "patient": {
-      "reference": "Patient/pat-011",
-      "display": "Elena Hernandez"
-    },
-    "recordedDate": "2021-06-26",
-    "reaction": [
-      {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Anaphylaxis"
-            }
-          ],
-          "text": "Anaphylaxis"
-        },
-        "severity": "severe"
-      }
-    ]
-  },
-  {
-    "resourceType": "AllergyIntolerance",
-    "id": "allergy-011-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
-    },
-    "clinicalStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-          "code": "active"
-        }
-      ]
-    },
-    "verificationStatus": {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-          "code": "confirmed"
-        }
-      ]
-    },
-    "type": "allergy",
-    "category": [
-      "medication"
-    ],
-    "criticality": "low",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "7980",
-          "display": "Penicillin"
-        }
-      ],
-      "text": "Penicillin"
-    },
-    "patient": {
-      "reference": "Patient/pat-011",
-      "display": "Elena Hernandez"
-    },
-    "recordedDate": "2020-02-26",
-    "reaction": [
-      {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Hives"
-            }
-          ],
-          "text": "Hives"
-        },
-        "severity": "moderate"
-      }
-    ]
-  },
-  {
-    "resourceType": "AllergyIntolerance",
-    "id": "allergy-012-1",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
+      "lastUpdated": "2026-05-21T11:28:49.671Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -893,30 +333,91 @@
       "text": "Erythromycin"
     },
     "patient": {
-      "reference": "Patient/pat-012",
-      "display": "William Moore"
+      "reference": "Patient/pat-003",
+      "display": "Isabella Martinez"
     },
-    "recordedDate": "2020-03-16",
+    "recordedDate": "2021-07-21",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "GI upset"
-            }
-          ],
-          "text": "GI upset"
-        },
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "GI upset"
+              }
+            ],
+            "text": "GI upset"
+          }
+        ],
         "severity": "mild"
       }
     ]
   },
   {
     "resourceType": "AllergyIntolerance",
-    "id": "allergy-012-2",
+    "id": "allergy-004-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
+      "lastUpdated": "2026-05-21T11:28:49.671Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed"
+        }
+      ]
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "low",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "2670",
+          "display": "Codeine"
+        }
+      ],
+      "text": "Codeine"
+    },
+    "patient": {
+      "reference": "Patient/pat-004",
+      "display": "James Williams"
+    },
+    "recordedDate": "2023-07-23",
+    "reaction": [
+      {
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Nausea"
+              }
+            ],
+            "text": "Nausea"
+          }
+        ],
+        "severity": "mild"
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-006-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.671Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -950,21 +451,377 @@
       "text": "Penicillin"
     },
     "patient": {
+      "reference": "Patient/pat-006",
+      "display": "Charles Brown"
+    },
+    "recordedDate": "2020-07-25",
+    "reaction": [
+      {
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Hives"
+              }
+            ],
+            "text": "Hives"
+          }
+        ],
+        "severity": "moderate"
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-008-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.671Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed"
+        }
+      ]
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "low",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "2670",
+          "display": "Codeine"
+        }
+      ],
+      "text": "Codeine"
+    },
+    "patient": {
+      "reference": "Patient/pat-008",
+      "display": "Daniel Lee"
+    },
+    "recordedDate": "2022-08-22",
+    "reaction": [
+      {
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Nausea"
+              }
+            ],
+            "text": "Nausea"
+          }
+        ],
+        "severity": "mild"
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-009-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed"
+        }
+      ]
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "low",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "4582",
+          "display": "Erythromycin"
+        }
+      ],
+      "text": "Erythromycin"
+    },
+    "patient": {
+      "reference": "Patient/pat-009",
+      "display": "Patricia Anderson"
+    },
+    "recordedDate": "2022-08-17",
+    "reaction": [
+      {
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "GI upset"
+              }
+            ],
+            "text": "GI upset"
+          }
+        ],
+        "severity": "mild"
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-010-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed"
+        }
+      ]
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "low",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "7980",
+          "display": "Penicillin"
+        }
+      ],
+      "text": "Penicillin"
+    },
+    "patient": {
+      "reference": "Patient/pat-010",
+      "display": "Michael Taylor"
+    },
+    "recordedDate": "2024-11-03",
+    "reaction": [
+      {
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Hives"
+              }
+            ],
+            "text": "Hives"
+          }
+        ],
+        "severity": "moderate"
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-011-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed"
+        }
+      ]
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "low",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "4582",
+          "display": "Erythromycin"
+        }
+      ],
+      "text": "Erythromycin"
+    },
+    "patient": {
+      "reference": "Patient/pat-011",
+      "display": "Elena Hernandez"
+    },
+    "recordedDate": "2025-05-08",
+    "reaction": [
+      {
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "GI upset"
+              }
+            ],
+            "text": "GI upset"
+          }
+        ],
+        "severity": "mild"
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-011-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed"
+        }
+      ]
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "low",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "7980",
+          "display": "Penicillin"
+        }
+      ],
+      "text": "Penicillin"
+    },
+    "patient": {
+      "reference": "Patient/pat-011",
+      "display": "Elena Hernandez"
+    },
+    "recordedDate": "2021-08-13",
+    "reaction": [
+      {
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Hives"
+              }
+            ],
+            "text": "Hives"
+          }
+        ],
+        "severity": "moderate"
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-012-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed"
+        }
+      ]
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "high",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "1191",
+          "display": "Aspirin"
+        }
+      ],
+      "text": "Aspirin"
+    },
+    "patient": {
       "reference": "Patient/pat-012",
       "display": "William Moore"
     },
-    "recordedDate": "2023-03-26",
+    "recordedDate": "2022-07-24",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Hives"
-            }
-          ],
-          "text": "Hives"
-        },
-        "severity": "moderate"
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Anaphylaxis"
+              }
+            ],
+            "text": "Anaphylaxis"
+          }
+        ],
+        "severity": "severe"
       }
     ]
   },
@@ -973,7 +830,7 @@
     "id": "allergy-013-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -1000,37 +857,39 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "36437",
-          "display": "Latex"
+          "code": "4582",
+          "display": "Erythromycin"
         }
       ],
-      "text": "Latex"
+      "text": "Erythromycin"
     },
     "patient": {
       "reference": "Patient/pat-013",
       "display": "Jennifer Clark"
     },
-    "recordedDate": "2022-07-02",
+    "recordedDate": "2025-04-09",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Contact dermatitis"
-            }
-          ],
-          "text": "Contact dermatitis"
-        },
-        "severity": "moderate"
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "GI upset"
+              }
+            ],
+            "text": "GI upset"
+          }
+        ],
+        "severity": "mild"
       }
     ]
   },
   {
     "resourceType": "AllergyIntolerance",
-    "id": "allergy-017-1",
+    "id": "allergy-014-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -1052,42 +911,44 @@
     "category": [
       "medication"
     ],
-    "criticality": "high",
+    "criticality": "low",
     "code": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1191",
-          "display": "Aspirin"
+          "code": "2670",
+          "display": "Codeine"
         }
       ],
-      "text": "Aspirin"
+      "text": "Codeine"
     },
     "patient": {
-      "reference": "Patient/pat-017",
-      "display": "Emily Hall"
+      "reference": "Patient/pat-014",
+      "display": "Thomas Lewis"
     },
-    "recordedDate": "2024-04-20",
+    "recordedDate": "2022-01-11",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Anaphylaxis"
-            }
-          ],
-          "text": "Anaphylaxis"
-        },
-        "severity": "severe"
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Nausea"
+              }
+            ],
+            "text": "Nausea"
+          }
+        ],
+        "severity": "mild"
       }
     ]
   },
   {
     "resourceType": "AllergyIntolerance",
-    "id": "allergy-017-2",
+    "id": "allergy-014-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -1121,30 +982,32 @@
       "text": "Latex"
     },
     "patient": {
-      "reference": "Patient/pat-017",
-      "display": "Emily Hall"
+      "reference": "Patient/pat-014",
+      "display": "Thomas Lewis"
     },
-    "recordedDate": "2023-11-13",
+    "recordedDate": "2020-09-26",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Contact dermatitis"
-            }
-          ],
-          "text": "Contact dermatitis"
-        },
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Contact dermatitis"
+              }
+            ],
+            "text": "Contact dermatitis"
+          }
+        ],
         "severity": "moderate"
       }
     ]
   },
   {
     "resourceType": "AllergyIntolerance",
-    "id": "allergy-018-1",
+    "id": "allergy-016-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -1166,33 +1029,94 @@
     "category": [
       "medication"
     ],
-    "criticality": "high",
+    "criticality": "low",
     "code": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1191",
-          "display": "Aspirin"
+          "code": "36437",
+          "display": "Latex"
         }
       ],
-      "text": "Aspirin"
+      "text": "Latex"
     },
     "patient": {
-      "reference": "Patient/pat-018",
-      "display": "George Allen"
+      "reference": "Patient/pat-016",
+      "display": "Richard Walker"
     },
-    "recordedDate": "2021-03-17",
+    "recordedDate": "2025-02-20",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Anaphylaxis"
-            }
-          ],
-          "text": "Anaphylaxis"
-        },
-        "severity": "severe"
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Contact dermatitis"
+              }
+            ],
+            "text": "Contact dermatitis"
+          }
+        ],
+        "severity": "moderate"
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-019-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed"
+        }
+      ]
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "low",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "7980",
+          "display": "Penicillin"
+        }
+      ],
+      "text": "Penicillin"
+    },
+    "patient": {
+      "reference": "Patient/pat-019",
+      "display": "Amanda Young"
+    },
+    "recordedDate": "2020-09-22",
+    "reaction": [
+      {
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Hives"
+              }
+            ],
+            "text": "Hives"
+          }
+        ],
+        "severity": "moderate"
       }
     ]
   },
@@ -1201,7 +1125,7 @@
     "id": "allergy-020-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -1238,27 +1162,29 @@
       "reference": "Patient/pat-020",
       "display": "Joseph King"
     },
-    "recordedDate": "2022-09-21",
+    "recordedDate": "2021-12-13",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "GI upset"
-            }
-          ],
-          "text": "GI upset"
-        },
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "GI upset"
+              }
+            ],
+            "text": "GI upset"
+          }
+        ],
         "severity": "mild"
       }
     ]
   },
   {
     "resourceType": "AllergyIntolerance",
-    "id": "allergy-023-1",
+    "id": "allergy-020-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -1285,28 +1211,148 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "4582",
-          "display": "Erythromycin"
+          "code": "70618",
+          "display": "Sulfamethoxazole"
         }
       ],
-      "text": "Erythromycin"
+      "text": "Sulfamethoxazole"
     },
     "patient": {
-      "reference": "Patient/pat-023",
-      "display": "Nancy Green"
+      "reference": "Patient/pat-020",
+      "display": "Joseph King"
     },
-    "recordedDate": "2023-10-24",
+    "recordedDate": "2022-07-14",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "GI upset"
-            }
-          ],
-          "text": "GI upset"
-        },
-        "severity": "mild"
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Rash"
+              }
+            ],
+            "text": "Rash"
+          }
+        ],
+        "severity": "moderate"
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-022-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed"
+        }
+      ]
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "low",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "70618",
+          "display": "Sulfamethoxazole"
+        }
+      ],
+      "text": "Sulfamethoxazole"
+    },
+    "patient": {
+      "reference": "Patient/pat-022",
+      "display": "Kevin Scott"
+    },
+    "recordedDate": "2020-06-19",
+    "reaction": [
+      {
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Rash"
+              }
+            ],
+            "text": "Rash"
+          }
+        ],
+        "severity": "moderate"
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-022-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed"
+        }
+      ]
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "low",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "36437",
+          "display": "Latex"
+        }
+      ],
+      "text": "Latex"
+    },
+    "patient": {
+      "reference": "Patient/pat-022",
+      "display": "Kevin Scott"
+    },
+    "recordedDate": "2024-03-22",
+    "reaction": [
+      {
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Contact dermatitis"
+              }
+            ],
+            "text": "Contact dermatitis"
+          }
+        ],
+        "severity": "moderate"
       }
     ]
   },
@@ -1315,7 +1361,7 @@
     "id": "allergy-024-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -1352,17 +1398,19 @@
       "reference": "Patient/pat-024",
       "display": "Anthony Baker"
     },
-    "recordedDate": "2022-08-29",
+    "recordedDate": "2024-02-22",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Hives"
-            }
-          ],
-          "text": "Hives"
-        },
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Hives"
+              }
+            ],
+            "text": "Hives"
+          }
+        ],
         "severity": "moderate"
       }
     ]
@@ -1372,7 +1420,7 @@
     "id": "allergy-024-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -1394,33 +1442,35 @@
     "category": [
       "medication"
     ],
-    "criticality": "low",
+    "criticality": "high",
     "code": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "70618",
-          "display": "Sulfamethoxazole"
+          "code": "1191",
+          "display": "Aspirin"
         }
       ],
-      "text": "Sulfamethoxazole"
+      "text": "Aspirin"
     },
     "patient": {
       "reference": "Patient/pat-024",
       "display": "Anthony Baker"
     },
-    "recordedDate": "2023-04-10",
+    "recordedDate": "2023-05-31",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Rash"
-            }
-          ],
-          "text": "Rash"
-        },
-        "severity": "moderate"
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Anaphylaxis"
+              }
+            ],
+            "text": "Anaphylaxis"
+          }
+        ],
+        "severity": "severe"
       }
     ]
   },
@@ -1429,7 +1479,7 @@
     "id": "allergy-025-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.909Z"
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
     },
     "clinicalStatus": {
       "coding": [
@@ -1466,17 +1516,78 @@
       "reference": "Patient/pat-025",
       "display": "Karen Adams"
     },
-    "recordedDate": "2020-12-30",
+    "recordedDate": "2023-06-20",
     "reaction": [
       {
-        "manifestation": {
-          "coding": [
-            {
-              "display": "Contact dermatitis"
-            }
-          ],
-          "text": "Contact dermatitis"
-        },
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Contact dermatitis"
+              }
+            ],
+            "text": "Contact dermatitis"
+          }
+        ],
+        "severity": "moderate"
+      }
+    ]
+  },
+  {
+    "resourceType": "AllergyIntolerance",
+    "id": "allergy-025-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.672Z"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+          "code": "confirmed"
+        }
+      ]
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "low",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "70618",
+          "display": "Sulfamethoxazole"
+        }
+      ],
+      "text": "Sulfamethoxazole"
+    },
+    "patient": {
+      "reference": "Patient/pat-025",
+      "display": "Karen Adams"
+    },
+    "recordedDate": "2023-11-09",
+    "reaction": [
+      {
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "display": "Rash"
+              }
+            ],
+            "text": "Rash"
+          }
+        ],
         "severity": "moderate"
       }
     ]

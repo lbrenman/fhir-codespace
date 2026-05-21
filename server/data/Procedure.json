@@ -4,7 +4,41 @@
     "id": "proc-001-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.911Z"
+      "lastUpdated": "2026-05-21T11:28:49.678Z"
+    },
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "27447",
+          "display": "Total knee replacement"
+        }
+      ],
+      "text": "Total knee replacement"
+    },
+    "subject": {
+      "reference": "Patient/pat-001",
+      "display": "Margaret Thompson"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-001-2"
+    },
+    "performedDateTime": "2024-07-09",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-chen"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Procedure",
+    "id": "proc-001-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.678Z"
     },
     "status": "completed",
     "code": {
@@ -22,43 +56,9 @@
       "display": "Margaret Thompson"
     },
     "encounter": {
-      "reference": "Encounter/enc-001-1"
+      "reference": "Encounter/enc-001-2"
     },
-    "performedDateTime": "2025-03-20",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-chen"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Procedure",
-    "id": "proc-001-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.911Z"
-    },
-    "status": "completed",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.ama-assn.org/go/cpt",
-          "code": "27447",
-          "display": "Total knee replacement"
-        }
-      ],
-      "text": "Total knee replacement"
-    },
-    "subject": {
-      "reference": "Patient/pat-001",
-      "display": "Margaret Thompson"
-    },
-    "encounter": {
-      "reference": "Encounter/enc-001-1"
-    },
-    "performedDateTime": "2024-07-04",
+    "performedDateTime": "2023-08-10",
     "performer": [
       {
         "actor": {
@@ -72,61 +72,24 @@
     "id": "proc-002-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.678Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "80048",
-          "display": "Basic metabolic panel"
+          "code": "93000",
+          "display": "Electrocardiogram, complete"
         }
       ],
-      "text": "Basic metabolic panel"
+      "text": "Electrocardiogram, complete"
     },
     "subject": {
       "reference": "Patient/pat-002",
       "display": "Robert Davis"
     },
-    "encounter": {
-      "reference": "Encounter/enc-002-1"
-    },
-    "performedDateTime": "2024-08-31",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-okonkwo"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Procedure",
-    "id": "proc-002-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
-    },
-    "status": "completed",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.ama-assn.org/go/cpt",
-          "code": "27447",
-          "display": "Total knee replacement"
-        }
-      ],
-      "text": "Total knee replacement"
-    },
-    "subject": {
-      "reference": "Patient/pat-002",
-      "display": "Robert Davis"
-    },
-    "encounter": {
-      "reference": "Encounter/enc-002-1"
-    },
-    "performedDateTime": "2024-01-05",
+    "performedDateTime": "2024-10-11",
     "performer": [
       {
         "actor": {
@@ -140,55 +103,27 @@
     "id": "proc-003-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.678Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "80048",
-          "display": "Basic metabolic panel"
+          "code": "71046",
+          "display": "Chest X-ray, 2 views"
         }
       ],
-      "text": "Basic metabolic panel"
+      "text": "Chest X-ray, 2 views"
     },
     "subject": {
       "reference": "Patient/pat-003",
       "display": "Isabella Martinez"
     },
-    "performedDateTime": "2024-05-01",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-rodriguez"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Procedure",
-    "id": "proc-003-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+    "encounter": {
+      "reference": "Encounter/enc-003-2"
     },
-    "status": "completed",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.ama-assn.org/go/cpt",
-          "code": "99214",
-          "display": "Office visit, established patient, moderate complexity"
-        }
-      ],
-      "text": "Office visit, established patient, moderate complexity"
-    },
-    "subject": {
-      "reference": "Patient/pat-003",
-      "display": "Isabella Martinez"
-    },
-    "performedDateTime": "2023-01-04",
+    "performedDateTime": "2024-07-07",
     "performer": [
       {
         "actor": {
@@ -202,41 +137,7 @@
     "id": "proc-004-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
-    },
-    "status": "completed",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.ama-assn.org/go/cpt",
-          "code": "80048",
-          "display": "Basic metabolic panel"
-        }
-      ],
-      "text": "Basic metabolic panel"
-    },
-    "subject": {
-      "reference": "Patient/pat-004",
-      "display": "James Williams"
-    },
-    "encounter": {
-      "reference": "Encounter/enc-004-1"
-    },
-    "performedDateTime": "2025-08-08",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-johnson"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Procedure",
-    "id": "proc-004-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.678Z"
     },
     "status": "completed",
     "code": {
@@ -256,7 +157,7 @@
     "encounter": {
       "reference": "Encounter/enc-004-1"
     },
-    "performedDateTime": "2025-09-23",
+    "performedDateTime": "2025-09-01",
     "performer": [
       {
         "actor": {
@@ -270,7 +171,7 @@
     "id": "proc-005-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.678Z"
     },
     "status": "completed",
     "code": {
@@ -288,43 +189,9 @@
       "display": "Yuki Nakamura"
     },
     "encounter": {
-      "reference": "Encounter/enc-005-1"
+      "reference": "Encounter/enc-005-2"
     },
-    "performedDateTime": "2023-07-21",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-patel"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Procedure",
-    "id": "proc-005-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
-    },
-    "status": "completed",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.ama-assn.org/go/cpt",
-          "code": "27447",
-          "display": "Total knee replacement"
-        }
-      ],
-      "text": "Total knee replacement"
-    },
-    "subject": {
-      "reference": "Patient/pat-005",
-      "display": "Yuki Nakamura"
-    },
-    "encounter": {
-      "reference": "Encounter/enc-005-1"
-    },
-    "performedDateTime": "2025-05-03",
+    "performedDateTime": "2023-01-28",
     "performer": [
       {
         "actor": {
@@ -338,27 +205,61 @@
     "id": "proc-006-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.678Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "99214",
-          "display": "Office visit, established patient, moderate complexity"
+          "code": "93000",
+          "display": "Electrocardiogram, complete"
         }
       ],
-      "text": "Office visit, established patient, moderate complexity"
+      "text": "Electrocardiogram, complete"
     },
     "subject": {
       "reference": "Patient/pat-006",
       "display": "Charles Brown"
     },
     "encounter": {
-      "reference": "Encounter/enc-006-2"
+      "reference": "Encounter/enc-006-1"
     },
-    "performedDateTime": "2024-04-30",
+    "performedDateTime": "2024-01-23",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-chen"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Procedure",
+    "id": "proc-006-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.678Z"
+    },
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "80048",
+          "display": "Basic metabolic panel"
+        }
+      ],
+      "text": "Basic metabolic panel"
+    },
+    "subject": {
+      "reference": "Patient/pat-006",
+      "display": "Charles Brown"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-006-1"
+    },
+    "performedDateTime": "2025-01-20",
     "performer": [
       {
         "actor": {
@@ -372,7 +273,7 @@
     "id": "proc-007-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.678Z"
     },
     "status": "completed",
     "code": {
@@ -390,9 +291,9 @@
       "display": "Sofia Garcia"
     },
     "encounter": {
-      "reference": "Encounter/enc-007-2"
+      "reference": "Encounter/enc-007-1"
     },
-    "performedDateTime": "2025-05-07",
+    "performedDateTime": "2023-07-30",
     "performer": [
       {
         "actor": {
@@ -406,7 +307,7 @@
     "id": "proc-007-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
@@ -424,9 +325,9 @@
       "display": "Sofia Garcia"
     },
     "encounter": {
-      "reference": "Encounter/enc-007-2"
+      "reference": "Encounter/enc-007-1"
     },
-    "performedDateTime": "2025-08-28",
+    "performedDateTime": "2025-05-13",
     "performer": [
       {
         "actor": {
@@ -440,27 +341,27 @@
     "id": "proc-008-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "43239",
-          "display": "Upper GI endoscopy with biopsy"
+          "code": "36415",
+          "display": "Collection of venous blood by venipuncture"
         }
       ],
-      "text": "Upper GI endoscopy with biopsy"
+      "text": "Collection of venous blood by venipuncture"
     },
     "subject": {
       "reference": "Patient/pat-008",
       "display": "Daniel Lee"
     },
     "encounter": {
-      "reference": "Encounter/enc-008-4"
+      "reference": "Encounter/enc-008-2"
     },
-    "performedDateTime": "2023-04-03",
+    "performedDateTime": "2025-01-05",
     "performer": [
       {
         "actor": {
@@ -474,18 +375,18 @@
     "id": "proc-009-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "27447",
-          "display": "Total knee replacement"
+          "code": "36415",
+          "display": "Collection of venous blood by venipuncture"
         }
       ],
-      "text": "Total knee replacement"
+      "text": "Collection of venous blood by venipuncture"
     },
     "subject": {
       "reference": "Patient/pat-009",
@@ -494,7 +395,7 @@
     "encounter": {
       "reference": "Encounter/enc-009-1"
     },
-    "performedDateTime": "2024-10-13",
+    "performedDateTime": "2023-02-12",
     "performer": [
       {
         "actor": {
@@ -508,27 +409,27 @@
     "id": "proc-010-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "43239",
-          "display": "Upper GI endoscopy with biopsy"
+          "code": "99214",
+          "display": "Office visit, established patient, moderate complexity"
         }
       ],
-      "text": "Upper GI endoscopy with biopsy"
+      "text": "Office visit, established patient, moderate complexity"
     },
     "subject": {
       "reference": "Patient/pat-010",
       "display": "Michael Taylor"
     },
     "encounter": {
-      "reference": "Encounter/enc-010-3"
+      "reference": "Encounter/enc-010-1"
     },
-    "performedDateTime": "2025-02-07",
+    "performedDateTime": "2023-04-03",
     "performer": [
       {
         "actor": {
@@ -542,27 +443,27 @@
     "id": "proc-010-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "27447",
-          "display": "Total knee replacement"
+          "code": "80048",
+          "display": "Basic metabolic panel"
         }
       ],
-      "text": "Total knee replacement"
+      "text": "Basic metabolic panel"
     },
     "subject": {
       "reference": "Patient/pat-010",
       "display": "Michael Taylor"
     },
     "encounter": {
-      "reference": "Encounter/enc-010-3"
+      "reference": "Encounter/enc-010-1"
     },
-    "performedDateTime": "2024-06-11",
+    "performedDateTime": "2023-12-10",
     "performer": [
       {
         "actor": {
@@ -576,7 +477,7 @@
     "id": "proc-011-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
@@ -594,9 +495,43 @@
       "display": "Elena Hernandez"
     },
     "encounter": {
-      "reference": "Encounter/enc-011-2"
+      "reference": "Encounter/enc-011-1"
     },
-    "performedDateTime": "2023-07-12",
+    "performedDateTime": "2025-10-16",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-patel"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Procedure",
+    "id": "proc-011-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
+    },
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "99214",
+          "display": "Office visit, established patient, moderate complexity"
+        }
+      ],
+      "text": "Office visit, established patient, moderate complexity"
+    },
+    "subject": {
+      "reference": "Patient/pat-011",
+      "display": "Elena Hernandez"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-011-1"
+    },
+    "performedDateTime": "2024-10-15",
     "performer": [
       {
         "actor": {
@@ -610,18 +545,18 @@
     "id": "proc-012-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "71046",
-          "display": "Chest X-ray, 2 views"
+          "code": "43239",
+          "display": "Upper GI endoscopy with biopsy"
         }
       ],
-      "text": "Chest X-ray, 2 views"
+      "text": "Upper GI endoscopy with biopsy"
     },
     "subject": {
       "reference": "Patient/pat-012",
@@ -630,7 +565,7 @@
     "encounter": {
       "reference": "Encounter/enc-012-1"
     },
-    "performedDateTime": "2023-02-01",
+    "performedDateTime": "2024-09-28",
     "performer": [
       {
         "actor": {
@@ -644,27 +579,27 @@
     "id": "proc-013-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "99213",
-          "display": "Office visit, established patient, low complexity"
+          "code": "27447",
+          "display": "Total knee replacement"
         }
       ],
-      "text": "Office visit, established patient, low complexity"
+      "text": "Total knee replacement"
     },
     "subject": {
       "reference": "Patient/pat-013",
       "display": "Jennifer Clark"
     },
     "encounter": {
-      "reference": "Encounter/enc-013-2"
+      "reference": "Encounter/enc-013-1"
     },
-    "performedDateTime": "2025-09-29",
+    "performedDateTime": "2023-07-22",
     "performer": [
       {
         "actor": {
@@ -678,27 +613,27 @@
     "id": "proc-013-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "71046",
-          "display": "Chest X-ray, 2 views"
+          "code": "80048",
+          "display": "Basic metabolic panel"
         }
       ],
-      "text": "Chest X-ray, 2 views"
+      "text": "Basic metabolic panel"
     },
     "subject": {
       "reference": "Patient/pat-013",
       "display": "Jennifer Clark"
     },
     "encounter": {
-      "reference": "Encounter/enc-013-2"
+      "reference": "Encounter/enc-013-1"
     },
-    "performedDateTime": "2025-02-18",
+    "performedDateTime": "2023-02-01",
     "performer": [
       {
         "actor": {
@@ -712,18 +647,18 @@
     "id": "proc-014-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "36415",
-          "display": "Collection of venous blood by venipuncture"
+          "code": "80048",
+          "display": "Basic metabolic panel"
         }
       ],
-      "text": "Collection of venous blood by venipuncture"
+      "text": "Basic metabolic panel"
     },
     "subject": {
       "reference": "Patient/pat-014",
@@ -732,7 +667,7 @@
     "encounter": {
       "reference": "Encounter/enc-014-1"
     },
-    "performedDateTime": "2023-01-12",
+    "performedDateTime": "2025-11-08",
     "performer": [
       {
         "actor": {
@@ -746,27 +681,27 @@
     "id": "proc-015-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "99213",
-          "display": "Office visit, established patient, low complexity"
+          "code": "36415",
+          "display": "Collection of venous blood by venipuncture"
         }
       ],
-      "text": "Office visit, established patient, low complexity"
+      "text": "Collection of venous blood by venipuncture"
     },
     "subject": {
       "reference": "Patient/pat-015",
       "display": "Sarah Robinson"
     },
     "encounter": {
-      "reference": "Encounter/enc-015-2"
+      "reference": "Encounter/enc-015-1"
     },
-    "performedDateTime": "2025-07-05",
+    "performedDateTime": "2023-03-04",
     "performer": [
       {
         "actor": {
@@ -780,18 +715,18 @@
     "id": "proc-016-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "71046",
-          "display": "Chest X-ray, 2 views"
+          "code": "43239",
+          "display": "Upper GI endoscopy with biopsy"
         }
       ],
-      "text": "Chest X-ray, 2 views"
+      "text": "Upper GI endoscopy with biopsy"
     },
     "subject": {
       "reference": "Patient/pat-016",
@@ -800,7 +735,41 @@
     "encounter": {
       "reference": "Encounter/enc-016-2"
     },
-    "performedDateTime": "2025-03-13",
+    "performedDateTime": "2024-01-31",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-johnson"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Procedure",
+    "id": "proc-016-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
+    },
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "27447",
+          "display": "Total knee replacement"
+        }
+      ],
+      "text": "Total knee replacement"
+    },
+    "subject": {
+      "reference": "Patient/pat-016",
+      "display": "Richard Walker"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-016-2"
+    },
+    "performedDateTime": "2025-04-24",
     "performer": [
       {
         "actor": {
@@ -814,18 +783,18 @@
     "id": "proc-017-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "99213",
-          "display": "Office visit, established patient, low complexity"
+          "code": "93000",
+          "display": "Electrocardiogram, complete"
         }
       ],
-      "text": "Office visit, established patient, low complexity"
+      "text": "Electrocardiogram, complete"
     },
     "subject": {
       "reference": "Patient/pat-017",
@@ -834,7 +803,7 @@
     "encounter": {
       "reference": "Encounter/enc-017-1"
     },
-    "performedDateTime": "2023-10-03",
+    "performedDateTime": "2024-07-04",
     "performer": [
       {
         "actor": {
@@ -848,18 +817,18 @@
     "id": "proc-017-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "71046",
-          "display": "Chest X-ray, 2 views"
+          "code": "27447",
+          "display": "Total knee replacement"
         }
       ],
-      "text": "Chest X-ray, 2 views"
+      "text": "Total knee replacement"
     },
     "subject": {
       "reference": "Patient/pat-017",
@@ -868,7 +837,7 @@
     "encounter": {
       "reference": "Encounter/enc-017-1"
     },
-    "performedDateTime": "2025-08-21",
+    "performedDateTime": "2024-01-11",
     "performer": [
       {
         "actor": {
@@ -882,61 +851,27 @@
     "id": "proc-018-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "93000",
-          "display": "Electrocardiogram, complete"
+          "code": "99213",
+          "display": "Office visit, established patient, low complexity"
         }
       ],
-      "text": "Electrocardiogram, complete"
+      "text": "Office visit, established patient, low complexity"
     },
     "subject": {
       "reference": "Patient/pat-018",
       "display": "George Allen"
     },
     "encounter": {
-      "reference": "Encounter/enc-018-1"
+      "reference": "Encounter/enc-018-3"
     },
-    "performedDateTime": "2025-02-03",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-okonkwo"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Procedure",
-    "id": "proc-018-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
-    },
-    "status": "completed",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.ama-assn.org/go/cpt",
-          "code": "99214",
-          "display": "Office visit, established patient, moderate complexity"
-        }
-      ],
-      "text": "Office visit, established patient, moderate complexity"
-    },
-    "subject": {
-      "reference": "Patient/pat-018",
-      "display": "George Allen"
-    },
-    "encounter": {
-      "reference": "Encounter/enc-018-1"
-    },
-    "performedDateTime": "2023-07-11",
+    "performedDateTime": "2025-11-29",
     "performer": [
       {
         "actor": {
@@ -950,18 +885,18 @@
     "id": "proc-019-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "80048",
-          "display": "Basic metabolic panel"
+          "code": "43239",
+          "display": "Upper GI endoscopy with biopsy"
         }
       ],
-      "text": "Basic metabolic panel"
+      "text": "Upper GI endoscopy with biopsy"
     },
     "subject": {
       "reference": "Patient/pat-019",
@@ -970,7 +905,7 @@
     "encounter": {
       "reference": "Encounter/enc-019-1"
     },
-    "performedDateTime": "2024-04-15",
+    "performedDateTime": "2024-05-04",
     "performer": [
       {
         "actor": {
@@ -984,18 +919,18 @@
     "id": "proc-019-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "43239",
-          "display": "Upper GI endoscopy with biopsy"
+          "code": "80048",
+          "display": "Basic metabolic panel"
         }
       ],
-      "text": "Upper GI endoscopy with biopsy"
+      "text": "Basic metabolic panel"
     },
     "subject": {
       "reference": "Patient/pat-019",
@@ -1004,7 +939,7 @@
     "encounter": {
       "reference": "Encounter/enc-019-1"
     },
-    "performedDateTime": "2024-01-28",
+    "performedDateTime": "2025-11-02",
     "performer": [
       {
         "actor": {
@@ -1018,27 +953,24 @@
     "id": "proc-020-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "93000",
-          "display": "Electrocardiogram, complete"
+          "code": "36415",
+          "display": "Collection of venous blood by venipuncture"
         }
       ],
-      "text": "Electrocardiogram, complete"
+      "text": "Collection of venous blood by venipuncture"
     },
     "subject": {
       "reference": "Patient/pat-020",
       "display": "Joseph King"
     },
-    "encounter": {
-      "reference": "Encounter/enc-020-1"
-    },
-    "performedDateTime": "2023-09-08",
+    "performedDateTime": "2024-10-27",
     "performer": [
       {
         "actor": {
@@ -1052,18 +984,18 @@
     "id": "proc-021-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "80048",
-          "display": "Basic metabolic panel"
+          "code": "36415",
+          "display": "Collection of venous blood by venipuncture"
         }
       ],
-      "text": "Basic metabolic panel"
+      "text": "Collection of venous blood by venipuncture"
     },
     "subject": {
       "reference": "Patient/pat-021",
@@ -1072,7 +1004,7 @@
     "encounter": {
       "reference": "Encounter/enc-021-1"
     },
-    "performedDateTime": "2023-01-11",
+    "performedDateTime": "2025-07-05",
     "performer": [
       {
         "actor": {
@@ -1086,109 +1018,7 @@
     "id": "proc-021-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
-    },
-    "status": "completed",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.ama-assn.org/go/cpt",
-          "code": "99214",
-          "display": "Office visit, established patient, moderate complexity"
-        }
-      ],
-      "text": "Office visit, established patient, moderate complexity"
-    },
-    "subject": {
-      "reference": "Patient/pat-021",
-      "display": "Lisa Wright"
-    },
-    "encounter": {
-      "reference": "Encounter/enc-021-1"
-    },
-    "performedDateTime": "2024-03-11",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-brown"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Procedure",
-    "id": "proc-022-1",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
-    },
-    "status": "completed",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.ama-assn.org/go/cpt",
-          "code": "36415",
-          "display": "Collection of venous blood by venipuncture"
-        }
-      ],
-      "text": "Collection of venous blood by venipuncture"
-    },
-    "subject": {
-      "reference": "Patient/pat-022",
-      "display": "Kevin Scott"
-    },
-    "encounter": {
-      "reference": "Encounter/enc-022-1"
-    },
-    "performedDateTime": "2025-03-24",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-johnson"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Procedure",
-    "id": "proc-023-1",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
-    },
-    "status": "completed",
-    "code": {
-      "coding": [
-        {
-          "system": "http://www.ama-assn.org/go/cpt",
-          "code": "43239",
-          "display": "Upper GI endoscopy with biopsy"
-        }
-      ],
-      "text": "Upper GI endoscopy with biopsy"
-    },
-    "subject": {
-      "reference": "Patient/pat-023",
-      "display": "Nancy Green"
-    },
-    "encounter": {
-      "reference": "Encounter/enc-023-2"
-    },
-    "performedDateTime": "2023-08-19",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-patel"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Procedure",
-    "id": "proc-024-1",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.916Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
@@ -1202,13 +1032,149 @@
       "text": "Basic metabolic panel"
     },
     "subject": {
+      "reference": "Patient/pat-021",
+      "display": "Lisa Wright"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-021-1"
+    },
+    "performedDateTime": "2024-04-21",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-brown"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Procedure",
+    "id": "proc-022-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
+    },
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "80048",
+          "display": "Basic metabolic panel"
+        }
+      ],
+      "text": "Basic metabolic panel"
+    },
+    "subject": {
+      "reference": "Patient/pat-022",
+      "display": "Kevin Scott"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-022-1"
+    },
+    "performedDateTime": "2025-11-08",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-johnson"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Procedure",
+    "id": "proc-022-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
+    },
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "27447",
+          "display": "Total knee replacement"
+        }
+      ],
+      "text": "Total knee replacement"
+    },
+    "subject": {
+      "reference": "Patient/pat-022",
+      "display": "Kevin Scott"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-022-1"
+    },
+    "performedDateTime": "2023-01-17",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-johnson"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Procedure",
+    "id": "proc-023-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
+    },
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "80048",
+          "display": "Basic metabolic panel"
+        }
+      ],
+      "text": "Basic metabolic panel"
+    },
+    "subject": {
+      "reference": "Patient/pat-023",
+      "display": "Nancy Green"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-023-2"
+    },
+    "performedDateTime": "2024-11-21",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-patel"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Procedure",
+    "id": "proc-024-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
+    },
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "43239",
+          "display": "Upper GI endoscopy with biopsy"
+        }
+      ],
+      "text": "Upper GI endoscopy with biopsy"
+    },
+    "subject": {
       "reference": "Patient/pat-024",
       "display": "Anthony Baker"
     },
     "encounter": {
       "reference": "Encounter/enc-024-1"
     },
-    "performedDateTime": "2025-07-05",
+    "performedDateTime": "2023-03-05",
     "performer": [
       {
         "actor": {
@@ -1222,27 +1188,61 @@
     "id": "proc-025-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "completed",
     "code": {
       "coding": [
         {
           "system": "http://www.ama-assn.org/go/cpt",
-          "code": "36415",
-          "display": "Collection of venous blood by venipuncture"
+          "code": "43239",
+          "display": "Upper GI endoscopy with biopsy"
         }
       ],
-      "text": "Collection of venous blood by venipuncture"
+      "text": "Upper GI endoscopy with biopsy"
     },
     "subject": {
       "reference": "Patient/pat-025",
       "display": "Karen Adams"
     },
     "encounter": {
-      "reference": "Encounter/enc-025-1"
+      "reference": "Encounter/enc-025-2"
     },
-    "performedDateTime": "2023-05-04",
+    "performedDateTime": "2023-04-24",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-rodriguez"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Procedure",
+    "id": "proc-025-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
+    },
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "80048",
+          "display": "Basic metabolic panel"
+        }
+      ],
+      "text": "Basic metabolic panel"
+    },
+    "subject": {
+      "reference": "Patient/pat-025",
+      "display": "Karen Adams"
+    },
+    "encounter": {
+      "reference": "Encounter/enc-025-2"
+    },
+    "performedDateTime": "2024-02-29",
     "performer": [
       {
         "actor": {

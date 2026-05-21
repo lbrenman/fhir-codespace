@@ -2,6 +2,15 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
+const dataDir = path.join(__dirname, '..', 'data');
+const force = process.argv.includes('--force');
+
+// Skip generation if data already exists (preserves across restarts)
+if (!force && fs.existsSync(dataDir) && fs.readdirSync(dataDir).some(f => f.endsWith('.json'))) {
+  console.log('✅ Sample data already exists. Use --force to regenerate.');
+  process.exit(0);
+}
+
 const uid = () => crypto.randomUUID().split('-')[0];
 
 // ── Organizations ──
@@ -15,14 +24,14 @@ const organizations = [
 
 // ── Practitioners ──
 const practitioners = [
-  { id: 'prac-chen', family: 'Chen', given: 'Wei', gender: 'female', specialty: 'Internal Medicine', org: 'org-mercy' },
-  { id: 'prac-okonkwo', family: 'Okonkwo', given: 'Emeka', gender: 'male', specialty: 'Cardiology', org: 'org-mercy' },
-  { id: 'prac-rodriguez', family: 'Rodriguez', given: 'Maria', gender: 'female', specialty: 'Pediatrics', org: 'org-cedar' },
-  { id: 'prac-johnson', family: 'Johnson', given: 'David', gender: 'male', specialty: 'Orthopedics', org: 'org-cedar' },
-  { id: 'prac-patel', family: 'Patel', given: 'Ananya', gender: 'female', specialty: 'Neurology', org: 'org-beacon' },
-  { id: 'prac-kim', family: 'Kim', given: 'Soo-Jin', gender: 'female', specialty: 'Oncology', org: 'org-beacon' },
-  { id: 'prac-brown', family: 'Brown', given: 'James', gender: 'male', specialty: 'Emergency Medicine', org: 'org-mercy' },
-  { id: 'prac-nguyen', family: 'Nguyen', given: 'Linh', gender: 'female', specialty: 'Dermatology', org: 'org-cedar' },
+  { id: 'prac-chen', family: 'Chen', given: 'Wei', gender: 'female', specialty: 'Internal Medicine', org: 'org-mercy', phone: '916-555-2001' },
+  { id: 'prac-okonkwo', family: 'Okonkwo', given: 'Emeka', gender: 'male', specialty: 'Cardiology', org: 'org-mercy', phone: '916-555-2002' },
+  { id: 'prac-rodriguez', family: 'Rodriguez', given: 'Maria', gender: 'female', specialty: 'Pediatrics', org: 'org-cedar', phone: '503-555-2003' },
+  { id: 'prac-johnson', family: 'Johnson', given: 'David', gender: 'male', specialty: 'Orthopedics', org: 'org-cedar', phone: '503-555-2004' },
+  { id: 'prac-patel', family: 'Patel', given: 'Ananya', gender: 'female', specialty: 'Neurology', org: 'org-beacon', phone: '617-555-2005' },
+  { id: 'prac-kim', family: 'Kim', given: 'Soo-Jin', gender: 'female', specialty: 'Oncology', org: 'org-beacon', phone: '617-555-2006' },
+  { id: 'prac-brown', family: 'Brown', given: 'James', gender: 'male', specialty: 'Emergency Medicine', org: 'org-mercy', phone: '916-555-2007' },
+  { id: 'prac-nguyen', family: 'Nguyen', given: 'Linh', gender: 'female', specialty: 'Dermatology', org: 'org-cedar', phone: '503-555-2008' },
 ];
 
 // ── Locations ──
@@ -140,7 +149,8 @@ function randomPick(arr) {
 }
 
 // ════════════════════════════════════════
-// BUILD FHIR RESOURCES
+// BUILD FHIR R4-COMPLIANT RESOURCES
+// All arrays where FHIR R4 expects arrays
 // ════════════════════════════════════════
 
 const db = {};
@@ -150,11 +160,11 @@ db.Organization = organizations.map(o => ({
   resourceType: 'Organization',
   id: o.id,
   meta: { versionId: '1', lastUpdated: new Date().toISOString() },
-  active: 'true',
-  type: { coding: [{ system: 'http://terminology.hl7.org/CodeSystem/organization-type', code: o.type, display: o.type === 'prov' ? 'Healthcare Provider' : 'Insurance Company' }] },
+  active: true,
+  type: [{ coding: [{ system: 'http://terminology.hl7.org/CodeSystem/organization-type', code: o.type, display: o.type === 'prov' ? 'Healthcare Provider' : 'Insurance Company' }] }],
   name: o.name,
   telecom: [{ system: 'phone', value: o.phone, use: 'work' }],
-  address: { city: o.city, state: o.state, country: 'US' },
+  address: [{ city: o.city, state: o.state, country: 'US' }],
 }));
 
 // Practitioners
@@ -162,10 +172,11 @@ db.Practitioner = practitioners.map(p => ({
   resourceType: 'Practitioner',
   id: p.id,
   meta: { versionId: '1', lastUpdated: new Date().toISOString() },
-  active: 'true',
-  name: { use: 'official', family: p.family, given: p.given },
+  active: true,
+  name: [{ use: 'official', family: p.family, given: [p.given] }],
   gender: p.gender,
-  qualification: { code: { coding: [{ system: 'http://terminology.hl7.org/CodeSystem/v2-0360', code: 'MD', display: 'Doctor of Medicine' }], text: p.specialty } },
+  telecom: [{ system: 'phone', value: p.phone, use: 'work' }],
+  qualification: [{ code: { coding: [{ system: 'http://terminology.hl7.org/CodeSystem/v2-0360', code: 'MD', display: 'Doctor of Medicine' }], text: p.specialty } }],
 }));
 
 // Locations
@@ -176,7 +187,7 @@ db.Location = locations.map(l => ({
   status: l.status,
   name: l.name,
   mode: l.mode,
-  type: { coding: [{ system: 'http://terminology.hl7.org/CodeSystem/v3-RoleCode', code: l.type }] },
+  type: [{ coding: [{ system: 'http://terminology.hl7.org/CodeSystem/v3-RoleCode', code: l.type }] }],
   managingOrganization: { reference: `Organization/${l.org}` },
 }));
 
@@ -185,15 +196,15 @@ db.Patient = patientData.map(p => ({
   resourceType: 'Patient',
   id: p.id,
   meta: { versionId: '1', lastUpdated: new Date().toISOString() },
-  active: 'true',
-  identifier: { system: 'http://hospital.example.org/mrn', value: `MRN-${p.id.split('-')[1]}` },
-  name: { use: 'official', family: p.family, given: p.given },
+  active: true,
+  identifier: [{ system: 'http://hospital.example.org/mrn', value: `MRN-${p.id.split('-')[1]}` }],
+  name: [{ use: 'official', family: p.family, given: [p.given] }],
   gender: p.gender,
   birthDate: p.birthDate,
   telecom: [{ system: 'phone', value: p.phone, use: 'home' }],
-  address: { use: 'home', city: p.city, state: p.state, country: 'US' },
+  address: [{ use: 'home', city: p.city, state: p.state, country: 'US' }],
   managingOrganization: { reference: `Organization/${p.org}` },
-  generalPractitioner: { reference: `Practitioner/${p.prac}` },
+  generalPractitioner: [{ reference: `Practitioner/${p.prac}` }],
 }));
 
 // Encounters (2-4 per patient)
@@ -221,6 +232,7 @@ patientData.forEach(p => {
       meta: { versionId: '1', lastUpdated: new Date().toISOString() },
       status,
       class: { system: 'http://terminology.hl7.org/CodeSystem/v3-ActCode', code: cls.code, display: cls.display },
+      type: [{ coding: [{ display: `${cls.display} visit` }], text: `${cls.display} visit` }],
       subject: { reference: `Patient/${p.id}`, display: `${p.given} ${p.family}` },
       participant: [{ individual: { reference: `Practitioner/${p.prac}` } }],
       period: { start, ...(end && { end }) },
@@ -243,7 +255,7 @@ patientData.forEach(p => {
       meta: { versionId: '1', lastUpdated: new Date().toISOString() },
       clinicalStatus: { coding: [{ system: 'http://terminology.hl7.org/CodeSystem/condition-clinical', code: 'active', display: 'Active' }] },
       verificationStatus: { coding: [{ system: 'http://terminology.hl7.org/CodeSystem/condition-ver-status', code: 'confirmed', display: 'Confirmed' }] },
-      category: { coding: [{ system: 'http://terminology.hl7.org/CodeSystem/condition-category', code: c.category, display: 'Encounter Diagnosis' }] },
+      category: [{ coding: [{ system: 'http://terminology.hl7.org/CodeSystem/condition-category', code: c.category, display: 'Encounter Diagnosis' }] }],
       code: { coding: [{ system: c.system, code: c.code, display: c.display }], text: c.display },
       subject: { reference: `Patient/${p.id}`, display: `${p.given} ${p.family}` },
       encounter: enc ? { reference: `Encounter/${enc.id}` } : undefined,
@@ -277,7 +289,7 @@ patientData.forEach(p => {
       id: `obs-${p.id.split('-')[1]}-${i + 1}`,
       meta: { versionId: '1', lastUpdated: new Date().toISOString() },
       status: 'final',
-      category: { coding: [{ system: 'http://terminology.hl7.org/CodeSystem/observation-category', code: 'vital-signs', display: 'Vital Signs' }] },
+      category: [{ coding: [{ system: 'http://terminology.hl7.org/CodeSystem/observation-category', code: 'vital-signs', display: 'Vital Signs' }] }],
       code: { coding: [{ system: 'http://loinc.org', code: v.code, display: v.display }], text: v.display },
       subject: { reference: `Patient/${p.id}`, display: `${p.given} ${p.family}` },
       effectiveDateTime: randomDate('2024-01-01', '2025-12-31'),
@@ -329,11 +341,11 @@ patientData.forEach(p => {
       verificationStatus: { coding: [{ system: 'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification', code: 'confirmed' }] },
       type: 'allergy',
       category: ['medication'],
-      criticality: a.severity === 'severe' ? 'high' : a.severity === 'moderate' ? 'low' : 'low',
+      criticality: a.severity === 'severe' ? 'high' : 'low',
       code: { coding: [{ system: 'http://www.nlm.nih.gov/research/umls/rxnorm', code: a.code, display: a.display }], text: a.display },
       patient: { reference: `Patient/${p.id}`, display: `${p.given} ${p.family}` },
       recordedDate: randomDate('2020-01-01', '2025-06-01'),
-      reaction: [{ manifestation: { coding: [{ display: a.reaction }], text: a.reaction }, severity: a.severity }],
+      reaction: [{ manifestation: [{ coding: [{ display: a.reaction }], text: a.reaction }], severity: a.severity }],
     });
   });
 });
@@ -408,7 +420,7 @@ patientData.slice(0, 12).forEach((p, idx) => {
     id: `diag-${p.id.split('-')[1]}`,
     meta: { versionId: '1', lastUpdated: new Date().toISOString() },
     status: randomPick(['final', 'final', 'preliminary']),
-    category: { coding: [{ system: 'http://terminology.hl7.org/CodeSystem/v2-0074', code: 'LAB', display: 'Laboratory' }] },
+    category: [{ coding: [{ system: 'http://terminology.hl7.org/CodeSystem/v2-0074', code: 'LAB', display: 'Laboratory' }] }],
     code: { coding: [{ system: 'http://loinc.org', code: '58410-2', display: 'Complete blood count (CBC) panel' }], text: 'Complete Blood Count' },
     subject: { reference: `Patient/${p.id}`, display: `${p.given} ${p.family}` },
     effectiveDateTime: randomDate('2024-01-01', '2025-12-01'),
@@ -432,12 +444,11 @@ patientData.slice(0, 10).forEach((p, idx) => {
     created: randomDate('2024-06-01', '2025-12-01'),
     provider: { reference: `Practitioner/${p.prac}` },
     priority: { coding: [{ code: 'normal' }] },
-    total: { value: (100 + Math.random() * 4900).toFixed(2), currency: 'USD' },
+    total: { value: parseFloat((100 + Math.random() * 4900).toFixed(2)), currency: 'USD' },
   });
 });
 
 // Write all data files
-const dataDir = path.join(__dirname, '..', 'data');
 if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
 
 Object.entries(db).forEach(([resourceType, resources]) => {

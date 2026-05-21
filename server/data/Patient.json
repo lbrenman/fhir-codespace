@@ -4,18 +4,24 @@
     "id": "pat-001",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.653Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-001"
-    },
-    "name": {
-      "use": "official",
-      "family": "Thompson",
-      "given": "Margaret"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-001"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Thompson",
+        "given": [
+          "Margaret"
+        ]
+      }
+    ],
     "gender": "female",
     "birthDate": "1955-03-12",
     "telecom": [
@@ -25,36 +31,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Sacramento",
-      "state": "CA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Sacramento",
+        "state": "CA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-mercy"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-chen"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-chen"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-002",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.653Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-002"
-    },
-    "name": {
-      "use": "official",
-      "family": "Davis",
-      "given": "Robert"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-002"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Davis",
+        "given": [
+          "Robert"
+        ]
+      }
+    ],
     "gender": "male",
     "birthDate": "1978-07-24",
     "telecom": [
@@ -64,36 +80,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Sacramento",
-      "state": "CA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Sacramento",
+        "state": "CA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-mercy"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-okonkwo"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-okonkwo"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-003",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.653Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-003"
-    },
-    "name": {
-      "use": "official",
-      "family": "Martinez",
-      "given": "Isabella"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-003"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Martinez",
+        "given": [
+          "Isabella"
+        ]
+      }
+    ],
     "gender": "female",
     "birthDate": "1990-11-08",
     "telecom": [
@@ -103,36 +129,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Portland",
-      "state": "OR",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Portland",
+        "state": "OR",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-cedar"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-rodriguez"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-rodriguez"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-004",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.653Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-004"
-    },
-    "name": {
-      "use": "official",
-      "family": "Williams",
-      "given": "James"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-004"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Williams",
+        "given": [
+          "James"
+        ]
+      }
+    ],
     "gender": "male",
     "birthDate": "1962-01-30",
     "telecom": [
@@ -142,36 +178,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Portland",
-      "state": "OR",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Portland",
+        "state": "OR",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-cedar"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-johnson"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-johnson"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-005",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.653Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-005"
-    },
-    "name": {
-      "use": "official",
-      "family": "Nakamura",
-      "given": "Yuki"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-005"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Nakamura",
+        "given": [
+          "Yuki"
+        ]
+      }
+    ],
     "gender": "female",
     "birthDate": "1985-05-17",
     "telecom": [
@@ -181,36 +227,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Boston",
-      "state": "MA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Boston",
+        "state": "MA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-beacon"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-patel"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-patel"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-006",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.653Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-006"
-    },
-    "name": {
-      "use": "official",
-      "family": "Brown",
-      "given": "Charles"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-006"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Brown",
+        "given": [
+          "Charles"
+        ]
+      }
+    ],
     "gender": "male",
     "birthDate": "1948-09-03",
     "telecom": [
@@ -220,36 +276,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Sacramento",
-      "state": "CA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Sacramento",
+        "state": "CA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-mercy"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-chen"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-chen"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-007",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-007"
-    },
-    "name": {
-      "use": "official",
-      "family": "Garcia",
-      "given": "Sofia"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-007"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Garcia",
+        "given": [
+          "Sofia"
+        ]
+      }
+    ],
     "gender": "female",
     "birthDate": "2001-12-20",
     "telecom": [
@@ -259,36 +325,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Portland",
-      "state": "OR",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Portland",
+        "state": "OR",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-cedar"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-rodriguez"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-rodriguez"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-008",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-008"
-    },
-    "name": {
-      "use": "official",
-      "family": "Lee",
-      "given": "Daniel"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-008"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Lee",
+        "given": [
+          "Daniel"
+        ]
+      }
+    ],
     "gender": "male",
     "birthDate": "1971-04-11",
     "telecom": [
@@ -298,36 +374,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Boston",
-      "state": "MA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Boston",
+        "state": "MA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-beacon"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-kim"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-kim"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-009",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-009"
-    },
-    "name": {
-      "use": "official",
-      "family": "Anderson",
-      "given": "Patricia"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-009"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Anderson",
+        "given": [
+          "Patricia"
+        ]
+      }
+    ],
     "gender": "female",
     "birthDate": "1958-08-29",
     "telecom": [
@@ -337,36 +423,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Sacramento",
-      "state": "CA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Sacramento",
+        "state": "CA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-mercy"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-okonkwo"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-okonkwo"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-010",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-010"
-    },
-    "name": {
-      "use": "official",
-      "family": "Taylor",
-      "given": "Michael"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-010"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Taylor",
+        "given": [
+          "Michael"
+        ]
+      }
+    ],
     "gender": "male",
     "birthDate": "1993-02-14",
     "telecom": [
@@ -376,36 +472,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Portland",
-      "state": "OR",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Portland",
+        "state": "OR",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-cedar"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-nguyen"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-nguyen"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-011",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-011"
-    },
-    "name": {
-      "use": "official",
-      "family": "Hernandez",
-      "given": "Elena"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-011"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Hernandez",
+        "given": [
+          "Elena"
+        ]
+      }
+    ],
     "gender": "female",
     "birthDate": "1980-06-05",
     "telecom": [
@@ -415,36 +521,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Boston",
-      "state": "MA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Boston",
+        "state": "MA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-beacon"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-patel"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-patel"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-012",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-012"
-    },
-    "name": {
-      "use": "official",
-      "family": "Moore",
-      "given": "William"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-012"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Moore",
+        "given": [
+          "William"
+        ]
+      }
+    ],
     "gender": "male",
     "birthDate": "1945-10-18",
     "telecom": [
@@ -454,36 +570,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Sacramento",
-      "state": "CA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Sacramento",
+        "state": "CA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-mercy"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-brown"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-brown"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-013",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-013"
-    },
-    "name": {
-      "use": "official",
-      "family": "Clark",
-      "given": "Jennifer"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-013"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Clark",
+        "given": [
+          "Jennifer"
+        ]
+      }
+    ],
     "gender": "female",
     "birthDate": "1997-03-22",
     "telecom": [
@@ -493,36 +619,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Portland",
-      "state": "OR",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Portland",
+        "state": "OR",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-cedar"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-rodriguez"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-rodriguez"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-014",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-014"
-    },
-    "name": {
-      "use": "official",
-      "family": "Lewis",
-      "given": "Thomas"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-014"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Lewis",
+        "given": [
+          "Thomas"
+        ]
+      }
+    ],
     "gender": "male",
     "birthDate": "1966-12-07",
     "telecom": [
@@ -532,36 +668,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Boston",
-      "state": "MA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Boston",
+        "state": "MA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-beacon"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-kim"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-kim"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-015",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-015"
-    },
-    "name": {
-      "use": "official",
-      "family": "Robinson",
-      "given": "Sarah"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-015"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Robinson",
+        "given": [
+          "Sarah"
+        ]
+      }
+    ],
     "gender": "female",
     "birthDate": "1973-09-15",
     "telecom": [
@@ -571,36 +717,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Sacramento",
-      "state": "CA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Sacramento",
+        "state": "CA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-mercy"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-chen"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-chen"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-016",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-016"
-    },
-    "name": {
-      "use": "official",
-      "family": "Walker",
-      "given": "Richard"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-016"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Walker",
+        "given": [
+          "Richard"
+        ]
+      }
+    ],
     "gender": "male",
     "birthDate": "1988-01-28",
     "telecom": [
@@ -610,36 +766,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Portland",
-      "state": "OR",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Portland",
+        "state": "OR",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-cedar"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-johnson"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-johnson"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-017",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-017"
-    },
-    "name": {
-      "use": "official",
-      "family": "Hall",
-      "given": "Emily"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-017"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Hall",
+        "given": [
+          "Emily"
+        ]
+      }
+    ],
     "gender": "female",
     "birthDate": "2005-07-09",
     "telecom": [
@@ -649,36 +815,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Boston",
-      "state": "MA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Boston",
+        "state": "MA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-beacon"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-patel"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-patel"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-018",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-018"
-    },
-    "name": {
-      "use": "official",
-      "family": "Allen",
-      "given": "George"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-018"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Allen",
+        "given": [
+          "George"
+        ]
+      }
+    ],
     "gender": "male",
     "birthDate": "1952-04-02",
     "telecom": [
@@ -688,36 +864,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Sacramento",
-      "state": "CA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Sacramento",
+        "state": "CA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-mercy"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-okonkwo"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-okonkwo"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-019",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-019"
-    },
-    "name": {
-      "use": "official",
-      "family": "Young",
-      "given": "Amanda"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-019"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Young",
+        "given": [
+          "Amanda"
+        ]
+      }
+    ],
     "gender": "female",
     "birthDate": "1995-11-11",
     "telecom": [
@@ -727,36 +913,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Portland",
-      "state": "OR",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Portland",
+        "state": "OR",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-cedar"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-nguyen"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-nguyen"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-020",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-020"
-    },
-    "name": {
-      "use": "official",
-      "family": "King",
-      "given": "Joseph"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-020"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "King",
+        "given": [
+          "Joseph"
+        ]
+      }
+    ],
     "gender": "male",
     "birthDate": "1960-08-20",
     "telecom": [
@@ -766,36 +962,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Boston",
-      "state": "MA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Boston",
+        "state": "MA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-beacon"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-kim"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-kim"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-021",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-021"
-    },
-    "name": {
-      "use": "official",
-      "family": "Wright",
-      "given": "Lisa"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-021"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Wright",
+        "given": [
+          "Lisa"
+        ]
+      }
+    ],
     "gender": "female",
     "birthDate": "1983-05-30",
     "telecom": [
@@ -805,36 +1011,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Sacramento",
-      "state": "CA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Sacramento",
+        "state": "CA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-mercy"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-brown"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-brown"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-022",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-022"
-    },
-    "name": {
-      "use": "official",
-      "family": "Scott",
-      "given": "Kevin"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-022"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Scott",
+        "given": [
+          "Kevin"
+        ]
+      }
+    ],
     "gender": "male",
     "birthDate": "1976-02-17",
     "telecom": [
@@ -844,36 +1060,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Portland",
-      "state": "OR",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Portland",
+        "state": "OR",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-cedar"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-johnson"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-johnson"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-023",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-023"
-    },
-    "name": {
-      "use": "official",
-      "family": "Green",
-      "given": "Nancy"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-023"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Green",
+        "given": [
+          "Nancy"
+        ]
+      }
+    ],
     "gender": "female",
     "birthDate": "1968-10-04",
     "telecom": [
@@ -883,36 +1109,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Boston",
-      "state": "MA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Boston",
+        "state": "MA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-beacon"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-patel"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-patel"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-024",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-024"
-    },
-    "name": {
-      "use": "official",
-      "family": "Baker",
-      "given": "Anthony"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-024"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Baker",
+        "given": [
+          "Anthony"
+        ]
+      }
+    ],
     "gender": "male",
     "birthDate": "2000-06-13",
     "telecom": [
@@ -922,36 +1158,46 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Sacramento",
-      "state": "CA",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Sacramento",
+        "state": "CA",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-mercy"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-chen"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-chen"
+      }
+    ]
   },
   {
     "resourceType": "Patient",
     "id": "pat-025",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.889Z"
+      "lastUpdated": "2026-05-21T11:28:49.654Z"
     },
-    "active": "true",
-    "identifier": {
-      "system": "http://hospital.example.org/mrn",
-      "value": "MRN-025"
-    },
-    "name": {
-      "use": "official",
-      "family": "Adams",
-      "given": "Karen"
-    },
+    "active": true,
+    "identifier": [
+      {
+        "system": "http://hospital.example.org/mrn",
+        "value": "MRN-025"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Adams",
+        "given": [
+          "Karen"
+        ]
+      }
+    ],
     "gender": "female",
     "birthDate": "1957-01-25",
     "telecom": [
@@ -961,17 +1207,21 @@
         "use": "home"
       }
     ],
-    "address": {
-      "use": "home",
-      "city": "Portland",
-      "state": "OR",
-      "country": "US"
-    },
+    "address": [
+      {
+        "use": "home",
+        "city": "Portland",
+        "state": "OR",
+        "country": "US"
+      }
+    ],
     "managingOrganization": {
       "reference": "Organization/org-cedar"
     },
-    "generalPractitioner": {
-      "reference": "Practitioner/prac-rodriguez"
-    }
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/prac-rodriguez"
+      }
+    ]
   }
 ]

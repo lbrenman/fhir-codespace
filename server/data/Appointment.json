@@ -4,9 +4,9 @@
     "id": "appt-001",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
-    "status": "cancelled",
+    "status": "fulfilled",
     "serviceType": [
       {
         "coding": [
@@ -16,8 +16,8 @@
         ]
       }
     ],
-    "start": "2026-04-17T09:00:00Z",
-    "end": "2026-04-17T09:30:00Z",
+    "start": "2026-05-12T09:00:00Z",
+    "end": "2026-05-12T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {
@@ -40,20 +40,20 @@
     "id": "appt-002",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "booked",
     "serviceType": [
       {
         "coding": [
           {
-            "display": "General checkup"
+            "display": "Lab work"
           }
         ]
       }
     ],
-    "start": "2025-12-10T09:00:00Z",
-    "end": "2025-12-10T09:30:00Z",
+    "start": "2026-01-04T09:00:00Z",
+    "end": "2026-01-04T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {
@@ -76,20 +76,20 @@
     "id": "appt-003",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "booked",
     "serviceType": [
       {
         "coding": [
           {
-            "display": "Lab work"
+            "display": "Specialist consultation"
           }
         ]
       }
     ],
-    "start": "2026-05-07T09:00:00Z",
-    "end": "2026-05-07T09:30:00Z",
+    "start": "2025-07-18T09:00:00Z",
+    "end": "2025-07-18T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {
@@ -112,7 +112,7 @@
     "id": "appt-004",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "booked",
     "serviceType": [
@@ -124,8 +124,8 @@
         ]
       }
     ],
-    "start": "2025-07-09T09:00:00Z",
-    "end": "2025-07-09T09:30:00Z",
+    "start": "2026-04-03T09:00:00Z",
+    "end": "2026-04-03T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {
@@ -148,20 +148,20 @@
     "id": "appt-005",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
-    "status": "cancelled",
+    "status": "fulfilled",
     "serviceType": [
       {
         "coding": [
           {
-            "display": "Follow-up"
+            "display": "Specialist consultation"
           }
         ]
       }
     ],
-    "start": "2025-11-28T09:00:00Z",
-    "end": "2025-11-28T09:30:00Z",
+    "start": "2026-04-13T09:00:00Z",
+    "end": "2026-04-13T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {
@@ -184,20 +184,20 @@
     "id": "appt-006",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
-    "status": "cancelled",
+    "status": "booked",
     "serviceType": [
       {
         "coding": [
           {
-            "display": "Specialist consultation"
+            "display": "Annual physical"
           }
         ]
       }
     ],
-    "start": "2025-07-10T09:00:00Z",
-    "end": "2025-07-10T09:30:00Z",
+    "start": "2025-07-23T09:00:00Z",
+    "end": "2025-07-23T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {
@@ -220,20 +220,20 @@
     "id": "appt-007",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "fulfilled",
     "serviceType": [
       {
         "coding": [
           {
-            "display": "General checkup"
+            "display": "Specialist consultation"
           }
         ]
       }
     ],
-    "start": "2026-02-17T09:00:00Z",
-    "end": "2026-02-17T09:30:00Z",
+    "start": "2026-04-13T09:00:00Z",
+    "end": "2026-04-13T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {
@@ -256,20 +256,20 @@
     "id": "appt-008",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
-    "status": "booked",
+    "status": "cancelled",
     "serviceType": [
       {
         "coding": [
           {
-            "display": "Lab work"
+            "display": "Follow-up"
           }
         ]
       }
     ],
-    "start": "2026-05-18T09:00:00Z",
-    "end": "2026-05-18T09:30:00Z",
+    "start": "2025-07-12T09:00:00Z",
+    "end": "2025-07-12T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {
@@ -292,20 +292,20 @@
     "id": "appt-009",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "arrived",
     "serviceType": [
       {
         "coding": [
           {
-            "display": "Follow-up"
+            "display": "Lab work"
           }
         ]
       }
     ],
-    "start": "2026-04-22T09:00:00Z",
-    "end": "2026-04-22T09:30:00Z",
+    "start": "2026-05-17T09:00:00Z",
+    "end": "2026-05-17T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {
@@ -328,20 +328,20 @@
     "id": "appt-010",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
-    "status": "arrived",
+    "status": "booked",
     "serviceType": [
       {
         "coding": [
           {
-            "display": "General checkup"
+            "display": "Annual physical"
           }
         ]
       }
     ],
-    "start": "2026-05-12T09:00:00Z",
-    "end": "2026-05-12T09:30:00Z",
+    "start": "2025-11-02T09:00:00Z",
+    "end": "2025-11-02T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {
@@ -364,20 +364,20 @@
     "id": "appt-011",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
-    "status": "arrived",
+    "status": "booked",
     "serviceType": [
       {
         "coding": [
           {
-            "display": "General checkup"
+            "display": "Lab work"
           }
         ]
       }
     ],
-    "start": "2026-04-11T09:00:00Z",
-    "end": "2026-04-11T09:30:00Z",
+    "start": "2025-06-27T09:00:00Z",
+    "end": "2025-06-27T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {
@@ -400,20 +400,20 @@
     "id": "appt-012",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
-    "status": "cancelled",
+    "status": "arrived",
     "serviceType": [
       {
         "coding": [
           {
-            "display": "Lab work"
+            "display": "Annual physical"
           }
         ]
       }
     ],
-    "start": "2025-08-09T09:00:00Z",
-    "end": "2025-08-09T09:30:00Z",
+    "start": "2025-08-31T09:00:00Z",
+    "end": "2025-08-31T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {
@@ -436,20 +436,20 @@
     "id": "appt-013",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "booked",
     "serviceType": [
       {
         "coding": [
           {
-            "display": "General checkup"
+            "display": "Lab work"
           }
         ]
       }
     ],
-    "start": "2026-01-13T09:00:00Z",
-    "end": "2026-01-13T09:30:00Z",
+    "start": "2025-12-26T09:00:00Z",
+    "end": "2025-12-26T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {
@@ -472,20 +472,20 @@
     "id": "appt-014",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
-    "status": "booked",
+    "status": "cancelled",
     "serviceType": [
       {
         "coding": [
           {
-            "display": "Follow-up"
+            "display": "Lab work"
           }
         ]
       }
     ],
-    "start": "2025-07-14T09:00:00Z",
-    "end": "2025-07-14T09:30:00Z",
+    "start": "2025-09-11T09:00:00Z",
+    "end": "2025-09-11T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {
@@ -508,20 +508,20 @@
     "id": "appt-015",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-20T18:02:45.917Z"
+      "lastUpdated": "2026-05-21T11:28:49.679Z"
     },
     "status": "booked",
     "serviceType": [
       {
         "coding": [
           {
-            "display": "Follow-up"
+            "display": "General checkup"
           }
         ]
       }
     ],
-    "start": "2025-11-27T09:00:00Z",
-    "end": "2025-11-27T09:30:00Z",
+    "start": "2025-12-26T09:00:00Z",
+    "end": "2025-12-26T09:30:00Z",
     "minutesDuration": 30,
     "participant": [
       {

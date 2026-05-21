@@ -2,8 +2,9 @@
 ### Use with VS Code REST Client extension
 
 @baseUrl = http://localhost:3000
+@apiKey = your-api-key-here
 
-### Health Check
+### Health Check (no auth required)
 GET {{baseUrl}}/health
 
 ### FHIR Capability Statement
@@ -11,49 +12,64 @@ GET {{baseUrl}}/fhir/r4/metadata
 
 ### List all Patients
 GET {{baseUrl}}/fhir/r4/Patient
+X-Api-Key: {{apiKey}}
 
 ### List Patients with pagination
 GET {{baseUrl}}/fhir/r4/Patient?_count=5&_offset=0
+X-Api-Key: {{apiKey}}
 
 ### List Encounters
 GET {{baseUrl}}/fhir/r4/Encounter
+X-Api-Key: {{apiKey}}
 
 ### List Observations
 GET {{baseUrl}}/fhir/r4/Observation?_count=10
+X-Api-Key: {{apiKey}}
 
 ### List Conditions
 GET {{baseUrl}}/fhir/r4/Condition
+X-Api-Key: {{apiKey}}
 
 ### List Medications
 GET {{baseUrl}}/fhir/r4/MedicationRequest
+X-Api-Key: {{apiKey}}
 
 ### List Allergies
 GET {{baseUrl}}/fhir/r4/AllergyIntolerance
+X-Api-Key: {{apiKey}}
 
 ### List Immunizations
 GET {{baseUrl}}/fhir/r4/Immunization
+X-Api-Key: {{apiKey}}
 
 ### List Procedures
 GET {{baseUrl}}/fhir/r4/Procedure
+X-Api-Key: {{apiKey}}
 
 ### List Appointments
 GET {{baseUrl}}/fhir/r4/Appointment
+X-Api-Key: {{apiKey}}
 
 ### List Claims
 GET {{baseUrl}}/fhir/r4/Claim
+X-Api-Key: {{apiKey}}
 
 ### List Organizations
 GET {{baseUrl}}/fhir/r4/Organization
+X-Api-Key: {{apiKey}}
 
 ### List Practitioners
 GET {{baseUrl}}/fhir/r4/Practitioner
+X-Api-Key: {{apiKey}}
 
 ### List Locations
 GET {{baseUrl}}/fhir/r4/Location
+X-Api-Key: {{apiKey}}
 
 ### Create a Patient
 POST {{baseUrl}}/fhir/r4/Patient
 Content-Type: application/fhir+json
+X-Api-Key: {{apiKey}}
 
 {
   "resourceType": "Patient",
@@ -69,5 +85,5 @@ Content-Type: application/fhir+json
   "active": true
 }
 
-### OpenAPI Spec
+### OpenAPI Spec (no auth required)
 GET {{baseUrl}}/openapi.json

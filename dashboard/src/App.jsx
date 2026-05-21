@@ -512,7 +512,10 @@ export default function App() {
           ))}
         </nav>
         <div style={{ padding: '12px 16px', borderTop: '1px solid var(--border)', fontSize: '0.7rem', color: 'var(--text-muted)' }}>
-          FHIR R4 Codespace
+          <a href="/swagger" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-blue)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6, marginBottom: 6 }}>
+            {Icons.fileText} Swagger UI ↗
+          </a>
+          <div>{fhir.isRemote() ? `Remote: ${fhir.getBaseUrl()}` : 'Local FHIR R4 Server'}</div>
         </div>
       </aside>
 
