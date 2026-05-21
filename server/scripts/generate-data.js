@@ -265,44 +265,65 @@ patientData.forEach(p => {
   });
 });
 
-// Observations (vitals: 3-6 per patient)
+// Observations (time-series vitals: multiple readings per patient for graphing)
 db.Observation = [];
 const vitalTemplates = [
-  { code: '85354-9', display: 'Blood pressure panel', unit: 'mmHg', genValue: () => ({ systolic: 110 + Math.floor(Math.random() * 50), diastolic: 60 + Math.floor(Math.random() * 30) }) },
-  { code: '8867-4', display: 'Heart rate', unit: '/min', genValue: () => 60 + Math.floor(Math.random() * 40) },
-  { code: '8310-5', display: 'Body temperature', unit: 'Cel', genValue: () => (36 + Math.random() * 2.5).toFixed(1) },
-  { code: '29463-7', display: 'Body weight', unit: 'kg', genValue: () => (55 + Math.random() * 50).toFixed(1) },
-  { code: '8302-2', display: 'Body height', unit: 'cm', genValue: () => (150 + Math.random() * 35).toFixed(0) },
-  { code: '2339-0', display: 'Glucose [Mass/volume] in Blood', unit: 'mg/dL', genValue: () => (70 + Math.random() * 130).toFixed(0) },
-  { code: '2093-3', display: 'Total Cholesterol', unit: 'mg/dL', genValue: () => (120 + Math.random() * 140).toFixed(0) },
-  { code: '4548-4', display: 'Hemoglobin A1c', unit: '%', genValue: () => (4.5 + Math.random() * 5).toFixed(1) },
-  { code: '2160-0', display: 'Creatinine [Mass/volume] in Serum', unit: 'mg/dL', genValue: () => (0.5 + Math.random() * 1.5).toFixed(2) },
+  { code: '85354-9', display: 'Blood pressure panel', unit: 'mmHg', genValue: (base) => ({ systolic: base.sys + Math.floor(Math.random() * 20 - 10), diastolic: base.dia + Math.floor(Math.random() * 14 - 7) }), baseGen: () => ({ sys: 110 + Math.floor(Math.random() * 40), dia: 65 + Math.floor(Math.random() * 20) }) },
+  { code: '8867-4', display: 'Heart rate', unit: '/min', genValue: (base) => base + Math.floor(Math.random() * 12 - 6), baseGen: () => 65 + Math.floor(Math.random() * 25) },
+  { code: '8310-5', display: 'Body temperature', unit: 'Cel', genValue: (base) => +(base + (Math.random() * 0.8 - 0.4)).toFixed(1), baseGen: () => 36.5 + Math.random() * 0.7 },
+  { code: '29463-7', display: 'Body weight', unit: 'kg', genValue: (base) => +(base + (Math.random() * 3 - 1.5)).toFixed(1), baseGen: () => 55 + Math.random() * 45 },
+  { code: '2339-0', display: 'Glucose [Mass/volume] in Blood', unit: 'mg/dL', genValue: (base) => Math.floor(base + Math.random() * 30 - 15), baseGen: () => 80 + Math.floor(Math.random() * 60) },
+  { code: '2093-3', display: 'Total Cholesterol', unit: 'mg/dL', genValue: (base) => Math.floor(base + Math.random() * 20 - 10), baseGen: () => 150 + Math.floor(Math.random() * 80) },
+  { code: '4548-4', display: 'Hemoglobin A1c', unit: '%', genValue: (base) => +(base + (Math.random() * 0.6 - 0.3)).toFixed(1), baseGen: () => 5.0 + Math.random() * 3.5 },
+  { code: '2160-0', display: 'Creatinine [Mass/volume] in Serum', unit: 'mg/dL', genValue: (base) => +(base + (Math.random() * 0.3 - 0.15)).toFixed(2), baseGen: () => 0.7 + Math.random() * 0.8 },
 ];
 
+// Generate sequential dates for time-series
+function sequentialDates(count, startYear = 2023) {
+  const dates = [];
+  const start = new Date(startYear, 0, 1).getTime();
+  const end = new Date(2025, 11, 31).getTime();
+  const step = (end - start) / (count + 1);
+  for (let i = 1; i <= count; i++) {
+    dates.push(new Date(start + step * i).toISOString().split('T')[0]);
+  }
+  return dates;
+}
+
+let obsCounter = 0;
 patientData.forEach(p => {
-  const numObs = 3 + Math.floor(Math.random() * 4);
-  const chosen = [...vitalTemplates].sort(() => Math.random() - 0.5).slice(0, numObs);
-  chosen.forEach((v, i) => {
-    const val = v.genValue();
-    const obs = {
-      resourceType: 'Observation',
-      id: `obs-${p.id.split('-')[1]}-${i + 1}`,
-      meta: { versionId: '1', lastUpdated: new Date().toISOString() },
-      status: 'final',
-      category: [{ coding: [{ system: 'http://terminology.hl7.org/CodeSystem/observation-category', code: 'vital-signs', display: 'Vital Signs' }] }],
-      code: { coding: [{ system: 'http://loinc.org', code: v.code, display: v.display }], text: v.display },
-      subject: { reference: `Patient/${p.id}`, display: `${p.given} ${p.family}` },
-      effectiveDateTime: randomDate('2024-01-01', '2025-12-31'),
-    };
-    if (typeof val === 'object') {
-      obs.component = [
-        { code: { coding: [{ system: 'http://loinc.org', code: '8480-6', display: 'Systolic blood pressure' }] }, valueQuantity: { value: val.systolic, unit: 'mmHg', system: 'http://unitsofmeasure.org', code: 'mm[Hg]' } },
-        { code: { coding: [{ system: 'http://loinc.org', code: '8462-4', display: 'Diastolic blood pressure' }] }, valueQuantity: { value: val.diastolic, unit: 'mmHg', system: 'http://unitsofmeasure.org', code: 'mm[Hg]' } },
-      ];
-    } else {
-      obs.valueQuantity = { value: parseFloat(val), unit: v.unit, system: 'http://unitsofmeasure.org', code: v.unit };
-    }
-    db.Observation.push(obs);
+  // Each patient gets 4-6 vital types, each with 4-8 readings over time
+  const numVitals = 4 + Math.floor(Math.random() * 3);
+  const chosen = [...vitalTemplates].sort(() => Math.random() - 0.5).slice(0, numVitals);
+
+  chosen.forEach(v => {
+    const numReadings = 4 + Math.floor(Math.random() * 5);
+    const dates = sequentialDates(numReadings);
+    const baseValue = v.baseGen();
+
+    dates.forEach((date, ri) => {
+      obsCounter++;
+      const val = v.genValue(baseValue);
+      const obs = {
+        resourceType: 'Observation',
+        id: `obs-${p.id.split('-')[1]}-${obsCounter}`,
+        meta: { versionId: '1', lastUpdated: new Date().toISOString() },
+        status: 'final',
+        category: [{ coding: [{ system: 'http://terminology.hl7.org/CodeSystem/observation-category', code: 'vital-signs', display: 'Vital Signs' }] }],
+        code: { coding: [{ system: 'http://loinc.org', code: v.code, display: v.display }], text: v.display },
+        subject: { reference: `Patient/${p.id}`, display: `${p.given} ${p.family}` },
+        effectiveDateTime: date,
+      };
+      if (typeof val === 'object') {
+        obs.component = [
+          { code: { coding: [{ system: 'http://loinc.org', code: '8480-6', display: 'Systolic blood pressure' }] }, valueQuantity: { value: val.systolic, unit: 'mmHg', system: 'http://unitsofmeasure.org', code: 'mm[Hg]' } },
+          { code: { coding: [{ system: 'http://loinc.org', code: '8462-4', display: 'Diastolic blood pressure' }] }, valueQuantity: { value: val.diastolic, unit: 'mmHg', system: 'http://unitsofmeasure.org', code: 'mm[Hg]' } },
+        ];
+      } else {
+        obs.valueQuantity = { value: parseFloat(val), unit: v.unit, system: 'http://unitsofmeasure.org', code: v.unit };
+      }
+      db.Observation.push(obs);
+    });
   });
 });
 

@@ -4,9 +4,59 @@
     "id": "enc-001-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.654Z"
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
     },
-    "status": "in-progress",
+    "status": "planned",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "IMP",
+      "display": "inpatient encounter"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "inpatient encounter visit"
+          }
+        ],
+        "text": "inpatient encounter visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-001",
+      "display": "Margaret Thompson"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-chen"
+        }
+      }
+    ],
+    "period": {
+      "start": "2024-06-30"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-mercy",
+      "display": "Mercy General Hospital"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-mercy-er",
+          "display": "Mercy General - Emergency Dept"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-001-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
+    },
+    "status": "planned",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "EMER",
@@ -34,7 +84,7 @@
       }
     ],
     "period": {
-      "start": "2025-08-16"
+      "start": "2023-05-31"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -43,59 +93,8 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-mercy-gen",
-          "display": "Mercy General - General Ward"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-001-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.654Z"
-    },
-    "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "AMB",
-      "display": "ambulatory"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "ambulatory visit"
-          }
-        ],
-        "text": "ambulatory visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-001",
-      "display": "Margaret Thompson"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-chen"
-        }
-      }
-    ],
-    "period": {
-      "start": "2025-12-30",
-      "end": "2026-01-10"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-mercy",
-      "display": "Mercy General Hospital"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-mercy-gen",
-          "display": "Mercy General - General Ward"
+          "reference": "Location/loc-mercy-icu",
+          "display": "Mercy General - ICU"
         }
       }
     ]
@@ -105,22 +104,22 @@
     "id": "enc-001-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.654Z"
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
     },
-    "status": "in-progress",
+    "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
+      "code": "EMER",
+      "display": "emergency"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "inpatient encounter visit"
+            "display": "emergency visit"
           }
         ],
-        "text": "inpatient encounter visit"
+        "text": "emergency visit"
       }
     ],
     "subject": {
@@ -135,7 +134,8 @@
       }
     ],
     "period": {
-      "start": "2023-10-10"
+      "start": "2024-09-11",
+      "end": "2025-07-01"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -144,8 +144,8 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-mercy-gen",
-          "display": "Mercy General - General Ward"
+          "reference": "Location/loc-mercy-icu",
+          "display": "Mercy General - ICU"
         }
       }
     ]
@@ -155,7 +155,7 @@
     "id": "enc-001-4",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.654Z"
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
     },
     "status": "finished",
     "class": {
@@ -185,8 +185,8 @@
       }
     ],
     "period": {
-      "start": "2023-07-05",
-      "end": "2023-11-14"
+      "start": "2025-12-04",
+      "end": "2025-12-19"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -195,8 +195,8 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-mercy-er",
-          "display": "Mercy General - Emergency Dept"
+          "reference": "Location/loc-mercy-icu",
+          "display": "Mercy General - ICU"
         }
       }
     ]
@@ -206,59 +206,9 @@
     "id": "enc-002-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
     },
-    "status": "in-progress",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "AMB",
-      "display": "ambulatory"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "ambulatory visit"
-          }
-        ],
-        "text": "ambulatory visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-002",
-      "display": "Robert Davis"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-okonkwo"
-        }
-      }
-    ],
-    "period": {
-      "start": "2024-02-06"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-mercy",
-      "display": "Mercy General Hospital"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-mercy-er",
-          "display": "Mercy General - Emergency Dept"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-002-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
-    },
-    "status": "in-progress",
+    "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "IMP",
@@ -286,7 +236,109 @@
       }
     ],
     "period": {
-      "start": "2023-07-27"
+      "start": "2024-05-03",
+      "end": "2024-09-04"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-mercy",
+      "display": "Mercy General Hospital"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-mercy-gen",
+          "display": "Mercy General - General Ward"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-002-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
+    },
+    "status": "planned",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "IMP",
+      "display": "inpatient encounter"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "inpatient encounter visit"
+          }
+        ],
+        "text": "inpatient encounter visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-002",
+      "display": "Robert Davis"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-okonkwo"
+        }
+      }
+    ],
+    "period": {
+      "start": "2025-10-03"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-mercy",
+      "display": "Mercy General Hospital"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-mercy-icu",
+          "display": "Mercy General - ICU"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-002-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
+    },
+    "status": "finished",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "EMER",
+      "display": "emergency"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "emergency visit"
+          }
+        ],
+        "text": "emergency visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-002",
+      "display": "Robert Davis"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-okonkwo"
+        }
+      }
+    ],
+    "period": {
+      "start": "2025-06-29",
+      "end": "2025-08-26"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -306,9 +358,9 @@
     "id": "enc-003-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
     },
-    "status": "in-progress",
+    "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "EMER",
@@ -336,7 +388,8 @@
       }
     ],
     "period": {
-      "start": "2025-08-12"
+      "start": "2024-10-18",
+      "end": "2025-10-08"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -356,9 +409,9 @@
     "id": "enc-003-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
     },
-    "status": "finished",
+    "status": "in-progress",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "IMP",
@@ -386,8 +439,7 @@
       }
     ],
     "period": {
-      "start": "2025-04-27",
-      "end": "2025-09-21"
+      "start": "2025-03-13"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -396,8 +448,8 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-cedar-out",
-          "display": "Cedar Valley - Outpatient Clinic"
+          "reference": "Location/loc-cedar-er",
+          "display": "Cedar Valley - Emergency Dept"
         }
       }
     ]
@@ -407,7 +459,7 @@
     "id": "enc-003-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
     },
     "status": "finished",
     "class": {
@@ -437,8 +489,8 @@
       }
     ],
     "period": {
-      "start": "2024-02-21",
-      "end": "2025-03-06"
+      "start": "2023-05-06",
+      "end": "2023-09-04"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -458,22 +510,22 @@
     "id": "enc-003-4",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
     },
     "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "EMER",
-      "display": "emergency"
+      "code": "AMB",
+      "display": "ambulatory"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "emergency visit"
+            "display": "ambulatory visit"
           }
         ],
-        "text": "emergency visit"
+        "text": "ambulatory visit"
       }
     ],
     "subject": {
@@ -488,8 +540,58 @@
       }
     ],
     "period": {
-      "start": "2023-11-12",
-      "end": "2025-12-15"
+      "start": "2023-07-28",
+      "end": "2023-11-10"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-cedar",
+      "display": "Cedar Valley Medical Center"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-cedar-er",
+          "display": "Cedar Valley - Emergency Dept"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-004-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
+    },
+    "status": "planned",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "IMP",
+      "display": "inpatient encounter"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "inpatient encounter visit"
+          }
+        ],
+        "text": "inpatient encounter visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-004",
+      "display": "James Williams"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-johnson"
+        }
+      }
+    ],
+    "period": {
+      "start": "2025-09-01"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -506,12 +608,62 @@
   },
   {
     "resourceType": "Encounter",
-    "id": "enc-004-1",
+    "id": "enc-004-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
     },
-    "status": "finished",
+    "status": "planned",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "IMP",
+      "display": "inpatient encounter"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "inpatient encounter visit"
+          }
+        ],
+        "text": "inpatient encounter visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-004",
+      "display": "James Williams"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-johnson"
+        }
+      }
+    ],
+    "period": {
+      "start": "2024-01-03"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-cedar",
+      "display": "Cedar Valley Medical Center"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-cedar-out",
+          "display": "Cedar Valley - Outpatient Clinic"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-004-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
+    },
+    "status": "in-progress",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "AMB",
@@ -539,8 +691,7 @@
       }
     ],
     "period": {
-      "start": "2023-07-13",
-      "end": "2024-07-21"
+      "start": "2025-06-27"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -549,69 +700,18 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-cedar-er",
-          "display": "Cedar Valley - Emergency Dept"
+          "reference": "Location/loc-cedar-out",
+          "display": "Cedar Valley - Outpatient Clinic"
         }
       }
     ]
   },
   {
     "resourceType": "Encounter",
-    "id": "enc-004-2",
+    "id": "enc-005-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
-    },
-    "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "inpatient encounter visit"
-          }
-        ],
-        "text": "inpatient encounter visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-004",
-      "display": "James Williams"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-johnson"
-        }
-      }
-    ],
-    "period": {
-      "start": "2023-06-05",
-      "end": "2024-01-25"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-cedar",
-      "display": "Cedar Valley Medical Center"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-cedar-er",
-          "display": "Cedar Valley - Emergency Dept"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-004-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
     },
     "status": "finished",
     "class": {
@@ -630,57 +730,6 @@
       }
     ],
     "subject": {
-      "reference": "Patient/pat-004",
-      "display": "James Williams"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-johnson"
-        }
-      }
-    ],
-    "period": {
-      "start": "2025-03-24",
-      "end": "2025-08-11"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-cedar",
-      "display": "Cedar Valley Medical Center"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-cedar-er",
-          "display": "Cedar Valley - Emergency Dept"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-005-1",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
-    },
-    "status": "in-progress",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "inpatient encounter visit"
-          }
-        ],
-        "text": "inpatient encounter visit"
-      }
-    ],
-    "subject": {
       "reference": "Patient/pat-005",
       "display": "Yuki Nakamura"
     },
@@ -692,7 +741,8 @@
       }
     ],
     "period": {
-      "start": "2023-11-25"
+      "start": "2024-02-25",
+      "end": "2025-01-25"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -712,7 +762,57 @@
     "id": "enc-005-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.192Z"
+    },
+    "status": "in-progress",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "EMER",
+      "display": "emergency"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "emergency visit"
+          }
+        ],
+        "text": "emergency visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-005",
+      "display": "Yuki Nakamura"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-patel"
+        }
+      }
+    ],
+    "period": {
+      "start": "2025-11-14"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-beacon",
+      "display": "Beacon Health Partners"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-beacon-neuro",
+          "display": "Beacon Health - Neurology Center"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-005-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -742,8 +842,59 @@
       }
     ],
     "period": {
-      "start": "2025-09-09",
-      "end": "2025-11-11"
+      "start": "2023-04-23",
+      "end": "2025-03-27"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-beacon",
+      "display": "Beacon Health Partners"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-beacon-neuro",
+          "display": "Beacon Health - Neurology Center"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-005-4",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
+    },
+    "status": "finished",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "ambulatory visit"
+          }
+        ],
+        "text": "ambulatory visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-005",
+      "display": "Yuki Nakamura"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-patel"
+        }
+      }
+    ],
+    "period": {
+      "start": "2025-04-30",
+      "end": "2025-07-22"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -763,22 +914,22 @@
     "id": "enc-006-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "finished",
+    "status": "planned",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "EMER",
-      "display": "emergency"
+      "code": "AMB",
+      "display": "ambulatory"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "emergency visit"
+            "display": "ambulatory visit"
           }
         ],
-        "text": "emergency visit"
+        "text": "ambulatory visit"
       }
     ],
     "subject": {
@@ -793,8 +944,7 @@
       }
     ],
     "period": {
-      "start": "2025-06-14",
-      "end": "2025-12-03"
+      "start": "2023-05-30"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -814,7 +964,7 @@
     "id": "enc-006-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -844,8 +994,8 @@
       }
     ],
     "period": {
-      "start": "2025-01-13",
-      "end": "2025-03-08"
+      "start": "2023-05-25",
+      "end": "2023-09-19"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -854,8 +1004,8 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-mercy-icu",
-          "display": "Mercy General - ICU"
+          "reference": "Location/loc-mercy-gen",
+          "display": "Mercy General - General Ward"
         }
       }
     ]
@@ -865,22 +1015,22 @@
     "id": "enc-006-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "finished",
+    "status": "planned",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
+      "code": "EMER",
+      "display": "emergency"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "inpatient encounter visit"
+            "display": "emergency visit"
           }
         ],
-        "text": "inpatient encounter visit"
+        "text": "emergency visit"
       }
     ],
     "subject": {
@@ -895,8 +1045,7 @@
       }
     ],
     "period": {
-      "start": "2023-04-06",
-      "end": "2023-08-15"
+      "start": "2025-12-18"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -916,9 +1065,9 @@
     "id": "enc-006-4",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "finished",
+    "status": "in-progress",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "IMP",
@@ -946,8 +1095,7 @@
       }
     ],
     "period": {
-      "start": "2023-01-07",
-      "end": "2023-03-09"
+      "start": "2024-03-13"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -956,8 +1104,8 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-mercy-icu",
-          "display": "Mercy General - ICU"
+          "reference": "Location/loc-mercy-er",
+          "display": "Mercy General - Emergency Dept"
         }
       }
     ]
@@ -967,7 +1115,7 @@
     "id": "enc-007-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -997,8 +1145,8 @@
       }
     ],
     "period": {
-      "start": "2025-05-29",
-      "end": "2025-09-18"
+      "start": "2024-09-17",
+      "end": "2025-06-22"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -1018,7 +1166,7 @@
     "id": "enc-007-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -1048,8 +1196,8 @@
       }
     ],
     "period": {
-      "start": "2023-10-04",
-      "end": "2024-10-06"
+      "start": "2024-05-20",
+      "end": "2024-06-23"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -1069,58 +1217,7 @@
     "id": "enc-007-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
-    },
-    "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "inpatient encounter visit"
-          }
-        ],
-        "text": "inpatient encounter visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-007",
-      "display": "Sofia Garcia"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-rodriguez"
-        }
-      }
-    ],
-    "period": {
-      "start": "2023-09-16",
-      "end": "2024-07-13"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-cedar",
-      "display": "Cedar Valley Medical Center"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-cedar-er",
-          "display": "Cedar Valley - Emergency Dept"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-007-4",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -1150,8 +1247,8 @@
       }
     ],
     "period": {
-      "start": "2023-01-18",
-      "end": "2025-03-12"
+      "start": "2024-01-30",
+      "end": "2025-01-07"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -1160,8 +1257,58 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-cedar-er",
-          "display": "Cedar Valley - Emergency Dept"
+          "reference": "Location/loc-cedar-out",
+          "display": "Cedar Valley - Outpatient Clinic"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-007-4",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
+    },
+    "status": "in-progress",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "ambulatory visit"
+          }
+        ],
+        "text": "ambulatory visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-007",
+      "display": "Sofia Garcia"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-rodriguez"
+        }
+      }
+    ],
+    "period": {
+      "start": "2024-11-24"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-cedar",
+      "display": "Cedar Valley Medical Center"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-cedar-out",
+          "display": "Cedar Valley - Outpatient Clinic"
         }
       }
     ]
@@ -1171,9 +1318,9 @@
     "id": "enc-008-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "in-progress",
+    "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "EMER",
@@ -1201,7 +1348,8 @@
       }
     ],
     "period": {
-      "start": "2025-10-04"
+      "start": "2023-07-19",
+      "end": "2024-03-12"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -1221,22 +1369,22 @@
     "id": "enc-008-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "AMB",
-      "display": "ambulatory"
+      "code": "EMER",
+      "display": "emergency"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "ambulatory visit"
+            "display": "emergency visit"
           }
         ],
-        "text": "ambulatory visit"
+        "text": "emergency visit"
       }
     ],
     "subject": {
@@ -1251,8 +1399,8 @@
       }
     ],
     "period": {
-      "start": "2023-04-29",
-      "end": "2024-01-16"
+      "start": "2024-07-10",
+      "end": "2025-02-09"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -1272,22 +1420,22 @@
     "id": "enc-009-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "finished",
+    "status": "in-progress",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
+      "code": "EMER",
+      "display": "emergency"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "inpatient encounter visit"
+            "display": "emergency visit"
           }
         ],
-        "text": "inpatient encounter visit"
+        "text": "emergency visit"
       }
     ],
     "subject": {
@@ -1302,110 +1450,7 @@
       }
     ],
     "period": {
-      "start": "2025-03-11",
-      "end": "2025-04-24"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-mercy",
-      "display": "Mercy General Hospital"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-mercy-icu",
-          "display": "Mercy General - ICU"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-009-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
-    },
-    "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "inpatient encounter visit"
-          }
-        ],
-        "text": "inpatient encounter visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-009",
-      "display": "Patricia Anderson"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-okonkwo"
-        }
-      }
-    ],
-    "period": {
-      "start": "2023-09-04",
-      "end": "2025-07-13"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-mercy",
-      "display": "Mercy General Hospital"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-mercy-gen",
-          "display": "Mercy General - General Ward"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-009-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
-    },
-    "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "AMB",
-      "display": "ambulatory"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "ambulatory visit"
-          }
-        ],
-        "text": "ambulatory visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-009",
-      "display": "Patricia Anderson"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-okonkwo"
-        }
-      }
-    ],
-    "period": {
-      "start": "2023-08-31",
-      "end": "2025-10-06"
+      "start": "2023-04-27"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -1422,10 +1467,10 @@
   },
   {
     "resourceType": "Encounter",
-    "id": "enc-009-4",
+    "id": "enc-009-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -1455,8 +1500,8 @@
       }
     ],
     "period": {
-      "start": "2024-12-22",
-      "end": "2025-05-06"
+      "start": "2023-02-12",
+      "end": "2025-09-14"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -1465,8 +1510,59 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-mercy-icu",
-          "display": "Mercy General - ICU"
+          "reference": "Location/loc-mercy-er",
+          "display": "Mercy General - Emergency Dept"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-009-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
+    },
+    "status": "finished",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "ambulatory visit"
+          }
+        ],
+        "text": "ambulatory visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-009",
+      "display": "Patricia Anderson"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-okonkwo"
+        }
+      }
+    ],
+    "period": {
+      "start": "2023-04-19",
+      "end": "2024-03-03"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-mercy",
+      "display": "Mercy General Hospital"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-mercy-er",
+          "display": "Mercy General - Emergency Dept"
         }
       }
     ]
@@ -1476,22 +1572,22 @@
     "id": "enc-010-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
+      "code": "AMB",
+      "display": "ambulatory"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "inpatient encounter visit"
+            "display": "ambulatory visit"
           }
         ],
-        "text": "inpatient encounter visit"
+        "text": "ambulatory visit"
       }
     ],
     "subject": {
@@ -1506,8 +1602,8 @@
       }
     ],
     "period": {
-      "start": "2025-12-23",
-      "end": "2026-01-07"
+      "start": "2023-11-19",
+      "end": "2025-01-25"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -1527,22 +1623,22 @@
     "id": "enc-010-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "planned",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
+      "code": "AMB",
+      "display": "ambulatory"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "inpatient encounter visit"
+            "display": "ambulatory visit"
           }
         ],
-        "text": "inpatient encounter visit"
+        "text": "ambulatory visit"
       }
     ],
     "subject": {
@@ -1557,7 +1653,7 @@
       }
     ],
     "period": {
-      "start": "2024-03-07"
+      "start": "2025-11-27"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -1577,22 +1673,22 @@
     "id": "enc-010-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "planned",
+    "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "AMB",
-      "display": "ambulatory"
+      "code": "EMER",
+      "display": "emergency"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "ambulatory visit"
+            "display": "emergency visit"
           }
         ],
-        "text": "ambulatory visit"
+        "text": "emergency visit"
       }
     ],
     "subject": {
@@ -1607,7 +1703,8 @@
       }
     ],
     "period": {
-      "start": "2025-08-28"
+      "start": "2023-04-02",
+      "end": "2025-03-31"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -1627,58 +1724,7 @@
     "id": "enc-010-4",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
-    },
-    "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "inpatient encounter visit"
-          }
-        ],
-        "text": "inpatient encounter visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-010",
-      "display": "Michael Taylor"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-nguyen"
-        }
-      }
-    ],
-    "period": {
-      "start": "2023-01-01",
-      "end": "2024-06-24"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-cedar",
-      "display": "Cedar Valley Medical Center"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-cedar-er",
-          "display": "Cedar Valley - Emergency Dept"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-011-1",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -1697,6 +1743,57 @@
       }
     ],
     "subject": {
+      "reference": "Patient/pat-010",
+      "display": "Michael Taylor"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-nguyen"
+        }
+      }
+    ],
+    "period": {
+      "start": "2024-03-03",
+      "end": "2025-10-01"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-cedar",
+      "display": "Cedar Valley Medical Center"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-cedar-out",
+          "display": "Cedar Valley - Outpatient Clinic"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-011-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
+    },
+    "status": "finished",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "IMP",
+      "display": "inpatient encounter"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "inpatient encounter visit"
+          }
+        ],
+        "text": "inpatient encounter visit"
+      }
+    ],
+    "subject": {
       "reference": "Patient/pat-011",
       "display": "Elena Hernandez"
     },
@@ -1708,8 +1805,8 @@
       }
     ],
     "period": {
-      "start": "2023-02-09",
-      "end": "2023-03-25"
+      "start": "2023-11-08",
+      "end": "2024-10-17"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -1729,22 +1826,22 @@
     "id": "enc-011-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "finished",
+    "status": "in-progress",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
+      "code": "AMB",
+      "display": "ambulatory"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "inpatient encounter visit"
+            "display": "ambulatory visit"
           }
         ],
-        "text": "inpatient encounter visit"
+        "text": "ambulatory visit"
       }
     ],
     "subject": {
@@ -1759,8 +1856,7 @@
       }
     ],
     "period": {
-      "start": "2025-11-23",
-      "end": "2026-01-06"
+      "start": "2025-12-30"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -1780,22 +1876,22 @@
     "id": "enc-011-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.655Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "in-progress",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
+      "code": "AMB",
+      "display": "ambulatory"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "inpatient encounter visit"
+            "display": "ambulatory visit"
           }
         ],
-        "text": "inpatient encounter visit"
+        "text": "ambulatory visit"
       }
     ],
     "subject": {
@@ -1810,58 +1906,7 @@
       }
     ],
     "period": {
-      "start": "2024-08-24"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-beacon",
-      "display": "Beacon Health Partners"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-beacon-neuro",
-          "display": "Beacon Health - Neurology Center"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-011-4",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
-    },
-    "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "EMER",
-      "display": "emergency"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "emergency visit"
-          }
-        ],
-        "text": "emergency visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-011",
-      "display": "Elena Hernandez"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-patel"
-        }
-      }
-    ],
-    "period": {
-      "start": "2023-10-23",
-      "end": "2025-08-13"
+      "start": "2025-06-07"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -1881,60 +1926,9 @@
     "id": "enc-012-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "inpatient encounter visit"
-          }
-        ],
-        "text": "inpatient encounter visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-012",
-      "display": "William Moore"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-brown"
-        }
-      }
-    ],
-    "period": {
-      "start": "2024-11-02",
-      "end": "2025-01-27"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-mercy",
-      "display": "Mercy General Hospital"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-mercy-gen",
-          "display": "Mercy General - General Ward"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-012-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
-    },
-    "status": "planned",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "EMER",
@@ -1962,7 +1956,8 @@
       }
     ],
     "period": {
-      "start": "2023-05-17"
+      "start": "2024-06-15",
+      "end": "2024-08-13"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -1971,69 +1966,18 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-mercy-icu",
-          "display": "Mercy General - ICU"
+          "reference": "Location/loc-mercy-er",
+          "display": "Mercy General - Emergency Dept"
         }
       }
     ]
   },
   {
     "resourceType": "Encounter",
-    "id": "enc-012-3",
+    "id": "enc-012-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
-    },
-    "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "inpatient encounter visit"
-          }
-        ],
-        "text": "inpatient encounter visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-012",
-      "display": "William Moore"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-brown"
-        }
-      }
-    ],
-    "period": {
-      "start": "2023-11-09",
-      "end": "2025-08-05"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-mercy",
-      "display": "Mercy General Hospital"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-mercy-icu",
-          "display": "Mercy General - ICU"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-012-4",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -2063,8 +2007,110 @@
       }
     ],
     "period": {
-      "start": "2024-11-10",
-      "end": "2025-11-10"
+      "start": "2025-08-23",
+      "end": "2025-12-04"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-mercy",
+      "display": "Mercy General Hospital"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-mercy-gen",
+          "display": "Mercy General - General Ward"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-012-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
+    },
+    "status": "finished",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "IMP",
+      "display": "inpatient encounter"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "inpatient encounter visit"
+          }
+        ],
+        "text": "inpatient encounter visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-012",
+      "display": "William Moore"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-brown"
+        }
+      }
+    ],
+    "period": {
+      "start": "2023-11-11",
+      "end": "2025-07-26"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-mercy",
+      "display": "Mercy General Hospital"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-mercy-er",
+          "display": "Mercy General - Emergency Dept"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-012-4",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
+    },
+    "status": "finished",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "IMP",
+      "display": "inpatient encounter"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "inpatient encounter visit"
+          }
+        ],
+        "text": "inpatient encounter visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-012",
+      "display": "William Moore"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-brown"
+        }
+      }
+    ],
+    "period": {
+      "start": "2024-01-10",
+      "end": "2025-06-11"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -2084,22 +2130,22 @@
     "id": "enc-013-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "finished",
+    "status": "in-progress",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "EMER",
-      "display": "emergency"
+      "code": "AMB",
+      "display": "ambulatory"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "emergency visit"
+            "display": "ambulatory visit"
           }
         ],
-        "text": "emergency visit"
+        "text": "ambulatory visit"
       }
     ],
     "subject": {
@@ -2114,8 +2160,7 @@
       }
     ],
     "period": {
-      "start": "2025-11-13",
-      "end": "2025-12-26"
+      "start": "2023-02-27"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -2135,22 +2180,22 @@
     "id": "enc-013-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "planned",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "AMB",
-      "display": "ambulatory"
+      "code": "EMER",
+      "display": "emergency"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "ambulatory visit"
+            "display": "emergency visit"
           }
         ],
-        "text": "ambulatory visit"
+        "text": "emergency visit"
       }
     ],
     "subject": {
@@ -2165,7 +2210,7 @@
       }
     ],
     "period": {
-      "start": "2025-05-12"
+      "start": "2023-07-29"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -2174,8 +2219,8 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-cedar-er",
-          "display": "Cedar Valley - Emergency Dept"
+          "reference": "Location/loc-cedar-out",
+          "display": "Cedar Valley - Outpatient Clinic"
         }
       }
     ]
@@ -2185,9 +2230,9 @@
     "id": "enc-013-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "in-progress",
+    "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "AMB",
@@ -2215,58 +2260,8 @@
       }
     ],
     "period": {
-      "start": "2023-10-04"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-cedar",
-      "display": "Cedar Valley Medical Center"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-cedar-er",
-          "display": "Cedar Valley - Emergency Dept"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-013-4",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
-    },
-    "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "inpatient encounter visit"
-          }
-        ],
-        "text": "inpatient encounter visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-013",
-      "display": "Jennifer Clark"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-rodriguez"
-        }
-      }
-    ],
-    "period": {
-      "start": "2024-11-23",
-      "end": "2024-12-19"
+      "start": "2023-07-09",
+      "end": "2024-07-30"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -2286,7 +2281,7 @@
     "id": "enc-014-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -2316,8 +2311,8 @@
       }
     ],
     "period": {
-      "start": "2023-05-30",
-      "end": "2025-08-07"
+      "start": "2023-12-29",
+      "end": "2024-06-05"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -2337,57 +2332,7 @@
     "id": "enc-014-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
-    },
-    "status": "in-progress",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "inpatient encounter visit"
-          }
-        ],
-        "text": "inpatient encounter visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-014",
-      "display": "Thomas Lewis"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-kim"
-        }
-      }
-    ],
-    "period": {
-      "start": "2023-10-31"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-beacon",
-      "display": "Beacon Health Partners"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-beacon-neuro",
-          "display": "Beacon Health - Neurology Center"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-014-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "in-progress",
     "class": {
@@ -2417,7 +2362,7 @@
       }
     ],
     "period": {
-      "start": "2025-02-28"
+      "start": "2024-04-27"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -2437,7 +2382,57 @@
     "id": "enc-015-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
+    },
+    "status": "planned",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "EMER",
+      "display": "emergency"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "emergency visit"
+          }
+        ],
+        "text": "emergency visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-015",
+      "display": "Sarah Robinson"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-chen"
+        }
+      }
+    ],
+    "period": {
+      "start": "2024-12-21"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-mercy",
+      "display": "Mercy General Hospital"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-mercy-icu",
+          "display": "Mercy General - ICU"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-015-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -2467,8 +2462,8 @@
       }
     ],
     "period": {
-      "start": "2023-11-25",
-      "end": "2025-03-16"
+      "start": "2023-09-11",
+      "end": "2026-01-11"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -2485,10 +2480,10 @@
   },
   {
     "resourceType": "Encounter",
-    "id": "enc-015-2",
+    "id": "enc-015-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -2518,8 +2513,8 @@
       }
     ],
     "period": {
-      "start": "2024-04-10",
-      "end": "2025-12-28"
+      "start": "2023-09-08",
+      "end": "2025-07-25"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -2536,10 +2531,10 @@
   },
   {
     "resourceType": "Encounter",
-    "id": "enc-015-3",
+    "id": "enc-015-4",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -2569,8 +2564,8 @@
       }
     ],
     "period": {
-      "start": "2023-10-11",
-      "end": "2025-03-22"
+      "start": "2025-10-24",
+      "end": "2026-01-06"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -2590,22 +2585,22 @@
     "id": "enc-016-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "in-progress",
+    "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "EMER",
-      "display": "emergency"
+      "code": "IMP",
+      "display": "inpatient encounter"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "emergency visit"
+            "display": "inpatient encounter visit"
           }
         ],
-        "text": "emergency visit"
+        "text": "inpatient encounter visit"
       }
     ],
     "subject": {
@@ -2620,7 +2615,8 @@
       }
     ],
     "period": {
-      "start": "2025-02-02"
+      "start": "2025-09-17",
+      "end": "2025-11-27"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -2640,22 +2636,22 @@
     "id": "enc-016-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "finished",
+    "status": "planned",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "AMB",
-      "display": "ambulatory"
+      "code": "IMP",
+      "display": "inpatient encounter"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "ambulatory visit"
+            "display": "inpatient encounter visit"
           }
         ],
-        "text": "ambulatory visit"
+        "text": "inpatient encounter visit"
       }
     ],
     "subject": {
@@ -2670,8 +2666,7 @@
       }
     ],
     "period": {
-      "start": "2023-01-12",
-      "end": "2024-06-09"
+      "start": "2025-11-17"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -2688,12 +2683,62 @@
   },
   {
     "resourceType": "Encounter",
+    "id": "enc-016-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
+    },
+    "status": "in-progress",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "EMER",
+      "display": "emergency"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "emergency visit"
+          }
+        ],
+        "text": "emergency visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-016",
+      "display": "Richard Walker"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-johnson"
+        }
+      }
+    ],
+    "period": {
+      "start": "2023-02-05"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-cedar",
+      "display": "Cedar Valley Medical Center"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-cedar-out",
+          "display": "Cedar Valley - Outpatient Clinic"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
     "id": "enc-017-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "finished",
+    "status": "in-progress",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "EMER",
@@ -2721,8 +2766,7 @@
       }
     ],
     "period": {
-      "start": "2025-05-12",
-      "end": "2025-07-07"
+      "start": "2024-03-28"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -2742,22 +2786,22 @@
     "id": "enc-017-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "EMER",
-      "display": "emergency"
+      "code": "IMP",
+      "display": "inpatient encounter"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "emergency visit"
+            "display": "inpatient encounter visit"
           }
         ],
-        "text": "emergency visit"
+        "text": "inpatient encounter visit"
       }
     ],
     "subject": {
@@ -2772,8 +2816,8 @@
       }
     ],
     "period": {
-      "start": "2024-02-22",
-      "end": "2024-03-11"
+      "start": "2023-03-19",
+      "end": "2024-09-24"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -2793,22 +2837,22 @@
     "id": "enc-017-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "EMER",
-      "display": "emergency"
+      "code": "IMP",
+      "display": "inpatient encounter"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "emergency visit"
+            "display": "inpatient encounter visit"
           }
         ],
-        "text": "emergency visit"
+        "text": "inpatient encounter visit"
       }
     ],
     "subject": {
@@ -2823,8 +2867,8 @@
       }
     ],
     "period": {
-      "start": "2023-01-09",
-      "end": "2023-08-12"
+      "start": "2025-04-04",
+      "end": "2025-06-26"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -2844,9 +2888,9 @@
     "id": "enc-017-4",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "finished",
+    "status": "in-progress",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "IMP",
@@ -2874,8 +2918,7 @@
       }
     ],
     "period": {
-      "start": "2025-05-09",
-      "end": "2025-11-03"
+      "start": "2024-11-22"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -2895,57 +2938,7 @@
     "id": "enc-018-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
-    },
-    "status": "in-progress",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "EMER",
-      "display": "emergency"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "emergency visit"
-          }
-        ],
-        "text": "emergency visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-018",
-      "display": "George Allen"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-okonkwo"
-        }
-      }
-    ],
-    "period": {
-      "start": "2025-10-06"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-mercy",
-      "display": "Mercy General Hospital"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-mercy-gen",
-          "display": "Mercy General - General Ward"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-018-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "planned",
     "class": {
@@ -2975,58 +2968,7 @@
       }
     ],
     "period": {
-      "start": "2024-03-28"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-mercy",
-      "display": "Mercy General Hospital"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-mercy-er",
-          "display": "Mercy General - Emergency Dept"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-018-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
-    },
-    "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "EMER",
-      "display": "emergency"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "emergency visit"
-          }
-        ],
-        "text": "emergency visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-018",
-      "display": "George Allen"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-okonkwo"
-        }
-      }
-    ],
-    "period": {
-      "start": "2024-04-11",
-      "end": "2025-02-16"
+      "start": "2025-08-22"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -3043,12 +2985,12 @@
   },
   {
     "resourceType": "Encounter",
-    "id": "enc-018-4",
+    "id": "enc-018-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "in-progress",
+    "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "AMB",
@@ -3076,7 +3018,8 @@
       }
     ],
     "period": {
-      "start": "2025-02-16"
+      "start": "2024-08-15",
+      "end": "2025-03-29"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -3085,8 +3028,8 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-mercy-er",
-          "display": "Mercy General - Emergency Dept"
+          "reference": "Location/loc-mercy-icu",
+          "display": "Mercy General - ICU"
         }
       }
     ]
@@ -3096,7 +3039,7 @@
     "id": "enc-019-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -3126,8 +3069,8 @@
       }
     ],
     "period": {
-      "start": "2024-08-27",
-      "end": "2025-10-10"
+      "start": "2025-11-07",
+      "end": "2025-11-16"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -3136,8 +3079,8 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-cedar-er",
-          "display": "Cedar Valley - Emergency Dept"
+          "reference": "Location/loc-cedar-out",
+          "display": "Cedar Valley - Outpatient Clinic"
         }
       }
     ]
@@ -3147,9 +3090,9 @@
     "id": "enc-019-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "finished",
+    "status": "planned",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "AMB",
@@ -3177,8 +3120,7 @@
       }
     ],
     "period": {
-      "start": "2024-09-07",
-      "end": "2025-11-26"
+      "start": "2024-07-28"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -3195,12 +3137,63 @@
   },
   {
     "resourceType": "Encounter",
+    "id": "enc-019-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
+    },
+    "status": "finished",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "IMP",
+      "display": "inpatient encounter"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "inpatient encounter visit"
+          }
+        ],
+        "text": "inpatient encounter visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-019",
+      "display": "Amanda Young"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-nguyen"
+        }
+      }
+    ],
+    "period": {
+      "start": "2023-11-13",
+      "end": "2024-11-22"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-cedar",
+      "display": "Cedar Valley Medical Center"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-cedar-out",
+          "display": "Cedar Valley - Outpatient Clinic"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
     "id": "enc-020-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "in-progress",
+    "status": "planned",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "AMB",
@@ -3228,7 +3221,7 @@
       }
     ],
     "period": {
-      "start": "2024-08-03"
+      "start": "2025-05-10"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -3248,72 +3241,22 @@
     "id": "enc-020-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
-    },
-    "status": "in-progress",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "EMER",
-      "display": "emergency"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "emergency visit"
-          }
-        ],
-        "text": "emergency visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-020",
-      "display": "Joseph King"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-kim"
-        }
-      }
-    ],
-    "period": {
-      "start": "2025-08-28"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-beacon",
-      "display": "Beacon Health Partners"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-beacon-neuro",
-          "display": "Beacon Health - Neurology Center"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-020-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "planned",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
+      "code": "AMB",
+      "display": "ambulatory"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "inpatient encounter visit"
+            "display": "ambulatory visit"
           }
         ],
-        "text": "inpatient encounter visit"
+        "text": "ambulatory visit"
       }
     ],
     "subject": {
@@ -3328,57 +3271,7 @@
       }
     ],
     "period": {
-      "start": "2023-07-07"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-beacon",
-      "display": "Beacon Health Partners"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-beacon-neuro",
-          "display": "Beacon Health - Neurology Center"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-020-4",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
-    },
-    "status": "in-progress",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "EMER",
-      "display": "emergency"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "emergency visit"
-          }
-        ],
-        "text": "emergency visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-020",
-      "display": "Joseph King"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-kim"
-        }
-      }
-    ],
-    "period": {
-      "start": "2025-08-28"
+      "start": "2023-10-27"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -3398,7 +3291,7 @@
     "id": "enc-021-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -3428,8 +3321,8 @@
       }
     ],
     "period": {
-      "start": "2024-12-23",
-      "end": "2025-12-31"
+      "start": "2025-06-01",
+      "end": "2025-12-28"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -3449,58 +3342,7 @@
     "id": "enc-021-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
-    },
-    "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "inpatient encounter visit"
-          }
-        ],
-        "text": "inpatient encounter visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-021",
-      "display": "Lisa Wright"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-brown"
-        }
-      }
-    ],
-    "period": {
-      "start": "2023-01-16",
-      "end": "2025-03-17"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-mercy",
-      "display": "Mercy General Hospital"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-mercy-gen",
-          "display": "Mercy General - General Ward"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-021-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
@@ -3530,8 +3372,8 @@
       }
     ],
     "period": {
-      "start": "2025-09-25",
-      "end": "2025-12-28"
+      "start": "2023-11-30",
+      "end": "2024-04-18"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -3548,25 +3390,25 @@
   },
   {
     "resourceType": "Encounter",
-    "id": "enc-021-4",
+    "id": "enc-021-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "finished",
+    "status": "planned",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
+      "code": "EMER",
+      "display": "emergency"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "inpatient encounter visit"
+            "display": "emergency visit"
           }
         ],
-        "text": "inpatient encounter visit"
+        "text": "emergency visit"
       }
     ],
     "subject": {
@@ -3581,8 +3423,7 @@
       }
     ],
     "period": {
-      "start": "2025-10-22",
-      "end": "2025-12-26"
+      "start": "2025-02-03"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -3591,8 +3432,8 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-mercy-er",
-          "display": "Mercy General - Emergency Dept"
+          "reference": "Location/loc-mercy-gen",
+          "display": "Mercy General - General Ward"
         }
       }
     ]
@@ -3602,22 +3443,22 @@
     "id": "enc-022-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
+      "code": "EMER",
+      "display": "emergency"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "inpatient encounter visit"
+            "display": "emergency visit"
           }
         ],
-        "text": "inpatient encounter visit"
+        "text": "emergency visit"
       }
     ],
     "subject": {
@@ -3632,59 +3473,8 @@
       }
     ],
     "period": {
-      "start": "2024-09-21",
-      "end": "2024-10-13"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-cedar",
-      "display": "Cedar Valley Medical Center"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-cedar-er",
-          "display": "Cedar Valley - Emergency Dept"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-022-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
-    },
-    "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "inpatient encounter visit"
-          }
-        ],
-        "text": "inpatient encounter visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-022",
-      "display": "Kevin Scott"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-johnson"
-        }
-      }
-    ],
-    "period": {
-      "start": "2023-11-26",
-      "end": "2024-03-03"
+      "start": "2023-10-21",
+      "end": "2025-09-10"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -3701,10 +3491,264 @@
   },
   {
     "resourceType": "Encounter",
+    "id": "enc-022-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
+    },
+    "status": "finished",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "EMER",
+      "display": "emergency"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "emergency visit"
+          }
+        ],
+        "text": "emergency visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-022",
+      "display": "Kevin Scott"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-johnson"
+        }
+      }
+    ],
+    "period": {
+      "start": "2023-08-06",
+      "end": "2024-03-18"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-cedar",
+      "display": "Cedar Valley Medical Center"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-cedar-out",
+          "display": "Cedar Valley - Outpatient Clinic"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-022-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
+    },
+    "status": "finished",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "IMP",
+      "display": "inpatient encounter"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "inpatient encounter visit"
+          }
+        ],
+        "text": "inpatient encounter visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-022",
+      "display": "Kevin Scott"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-johnson"
+        }
+      }
+    ],
+    "period": {
+      "start": "2023-02-18",
+      "end": "2023-11-08"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-cedar",
+      "display": "Cedar Valley Medical Center"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-cedar-er",
+          "display": "Cedar Valley - Emergency Dept"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
     "id": "enc-023-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.656Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
+    },
+    "status": "finished",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "EMER",
+      "display": "emergency"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "emergency visit"
+          }
+        ],
+        "text": "emergency visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-023",
+      "display": "Nancy Green"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-patel"
+        }
+      }
+    ],
+    "period": {
+      "start": "2023-11-19",
+      "end": "2024-05-28"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-beacon",
+      "display": "Beacon Health Partners"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-beacon-neuro",
+          "display": "Beacon Health - Neurology Center"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-023-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
+    },
+    "status": "in-progress",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "EMER",
+      "display": "emergency"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "emergency visit"
+          }
+        ],
+        "text": "emergency visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-023",
+      "display": "Nancy Green"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-patel"
+        }
+      }
+    ],
+    "period": {
+      "start": "2024-09-22"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-beacon",
+      "display": "Beacon Health Partners"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-beacon-neuro",
+          "display": "Beacon Health - Neurology Center"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-023-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
+    },
+    "status": "finished",
+    "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "display": "ambulatory visit"
+          }
+        ],
+        "text": "ambulatory visit"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/pat-023",
+      "display": "Nancy Green"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/prac-patel"
+        }
+      }
+    ],
+    "period": {
+      "start": "2025-08-11",
+      "end": "2025-09-14"
+    },
+    "serviceProvider": {
+      "reference": "Organization/org-beacon",
+      "display": "Beacon Health Partners"
+    },
+    "location": [
+      {
+        "location": {
+          "reference": "Location/loc-beacon-neuro",
+          "display": "Beacon Health - Neurology Center"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Encounter",
+    "id": "enc-023-4",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "planned",
     "class": {
@@ -3734,58 +3778,7 @@
       }
     ],
     "period": {
-      "start": "2024-03-13"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-beacon",
-      "display": "Beacon Health Partners"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-beacon-neuro",
-          "display": "Beacon Health - Neurology Center"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
-    "id": "enc-023-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.657Z"
-    },
-    "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "IMP",
-      "display": "inpatient encounter"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "inpatient encounter visit"
-          }
-        ],
-        "text": "inpatient encounter visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-023",
-      "display": "Nancy Green"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-patel"
-        }
-      }
-    ],
-    "period": {
-      "start": "2023-08-31",
-      "end": "2023-11-15"
+      "start": "2023-01-05"
     },
     "serviceProvider": {
       "reference": "Organization/org-beacon",
@@ -3805,9 +3798,9 @@
     "id": "enc-024-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.657Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "finished",
+    "status": "in-progress",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "EMER",
@@ -3835,8 +3828,7 @@
       }
     ],
     "period": {
-      "start": "2024-02-15",
-      "end": "2025-01-22"
+      "start": "2023-06-15"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -3845,8 +3837,8 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-mercy-gen",
-          "display": "Mercy General - General Ward"
+          "reference": "Location/loc-mercy-icu",
+          "display": "Mercy General - ICU"
         }
       }
     ]
@@ -3856,22 +3848,22 @@
     "id": "enc-024-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.657Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
     "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "EMER",
-      "display": "emergency"
+      "code": "IMP",
+      "display": "inpatient encounter"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "emergency visit"
+            "display": "inpatient encounter visit"
           }
         ],
-        "text": "emergency visit"
+        "text": "inpatient encounter visit"
       }
     ],
     "subject": {
@@ -3886,8 +3878,8 @@
       }
     ],
     "period": {
-      "start": "2025-01-06",
-      "end": "2025-10-01"
+      "start": "2023-02-09",
+      "end": "2023-05-30"
     },
     "serviceProvider": {
       "reference": "Organization/org-mercy",
@@ -3904,63 +3896,12 @@
   },
   {
     "resourceType": "Encounter",
-    "id": "enc-024-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.657Z"
-    },
-    "status": "finished",
-    "class": {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "EMER",
-      "display": "emergency"
-    },
-    "type": [
-      {
-        "coding": [
-          {
-            "display": "emergency visit"
-          }
-        ],
-        "text": "emergency visit"
-      }
-    ],
-    "subject": {
-      "reference": "Patient/pat-024",
-      "display": "Anthony Baker"
-    },
-    "participant": [
-      {
-        "individual": {
-          "reference": "Practitioner/prac-chen"
-        }
-      }
-    ],
-    "period": {
-      "start": "2025-11-18",
-      "end": "2025-12-31"
-    },
-    "serviceProvider": {
-      "reference": "Organization/org-mercy",
-      "display": "Mercy General Hospital"
-    },
-    "location": [
-      {
-        "location": {
-          "reference": "Location/loc-mercy-er",
-          "display": "Mercy General - Emergency Dept"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Encounter",
     "id": "enc-025-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.657Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "in-progress",
+    "status": "finished",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
       "code": "EMER",
@@ -3988,7 +3929,8 @@
       }
     ],
     "period": {
-      "start": "2025-05-27"
+      "start": "2025-12-14",
+      "end": "2025-12-19"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -4008,22 +3950,22 @@
     "id": "enc-025-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.657Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "finished",
+    "status": "planned",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "AMB",
-      "display": "ambulatory"
+      "code": "EMER",
+      "display": "emergency"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "ambulatory visit"
+            "display": "emergency visit"
           }
         ],
-        "text": "ambulatory visit"
+        "text": "emergency visit"
       }
     ],
     "subject": {
@@ -4038,8 +3980,7 @@
       }
     ],
     "period": {
-      "start": "2024-04-11",
-      "end": "2025-07-23"
+      "start": "2025-05-31"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -4059,22 +4000,22 @@
     "id": "enc-025-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.657Z"
+      "lastUpdated": "2026-05-21T16:44:27.193Z"
     },
-    "status": "finished",
+    "status": "planned",
     "class": {
       "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "code": "AMB",
-      "display": "ambulatory"
+      "code": "EMER",
+      "display": "emergency"
     },
     "type": [
       {
         "coding": [
           {
-            "display": "ambulatory visit"
+            "display": "emergency visit"
           }
         ],
-        "text": "ambulatory visit"
+        "text": "emergency visit"
       }
     ],
     "subject": {
@@ -4089,8 +4030,7 @@
       }
     ],
     "period": {
-      "start": "2025-03-28",
-      "end": "2025-10-18"
+      "start": "2024-02-02"
     },
     "serviceProvider": {
       "reference": "Organization/org-cedar",
@@ -4099,8 +4039,8 @@
     "location": [
       {
         "location": {
-          "reference": "Location/loc-cedar-out",
-          "display": "Cedar Valley - Outpatient Clinic"
+          "reference": "Location/loc-cedar-er",
+          "display": "Cedar Valley - Emergency Dept"
         }
       }
     ]

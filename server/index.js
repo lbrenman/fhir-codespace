@@ -19,12 +19,16 @@ app.use(express.json({ type: ['application/json', 'application/fhir+json'], limi
 // ── Swagger UI ──
 const specPath = path.join(__dirname, '..', 'openapi.json');
 try {
-  const spec = require(specPath);
+  const spec = JSON.parse(JSON.stringify(require(specPath)));
+  // CRITICAL: Override servers to use relative path so Try It Out works
+  // The spec ships with https://api.example.com which causes CORS failures
+  spec.servers = [{ url: '/fhir/r4', description: 'Local FHIR R4 Server' }];
   // Inject security scheme if API key is configured
   if (API_KEY) {
     spec.components = spec.components || {};
     spec.components.securitySchemes = {
-      ApiKeyAuth: { type: 'apiKey', in: 'header', name: 'X-Api-Key' }
+      ...spec.components.securitySchemes,
+      ApiKeyAuth: { type: 'apiKey', in: 'header', name: 'X-Api-Key' },
     };
     spec.security = [{ ApiKeyAuth: [] }];
   }
@@ -38,12 +42,14 @@ try {
   }));
   console.log('  Swagger UI loaded');
 } catch (e) {
-  console.log('  ⚠ Swagger UI: openapi.json not found, skipping');
+  console.log('  ⚠ Swagger UI: openapi.json not found, skipping —', e.message);
 }
 
-// ── API Key auth middleware (only for /fhir/r4 routes) ──
+// ── API Key auth middleware (only for /fhir/r4 routes, skip /metadata) ──
 if (API_KEY) {
   app.use('/fhir/r4', (req, res, next) => {
+    // Allow unauthenticated access to metadata
+    if (req.path === '/metadata') return next();
     const key = req.headers['x-api-key'];
     if (key !== API_KEY) {
       return res.status(401).json({
@@ -62,7 +68,7 @@ if (API_KEY) {
   console.log('  API Key auth disabled (set FHIR_API_KEY in .env to enable)');
 }
 
-// ── FHIR metadata (CapabilityStatement) ──
+// ── FHIR metadata (CapabilityStatement — no auth) ──
 app.get('/fhir/r4/metadata', (req, res) => {
   res.set('Content-Type', 'application/fhir+json');
   res.json({
@@ -111,11 +117,7 @@ app.get('/health', (req, res) => {
 
 // ── Serve OpenAPI spec (no auth required) ──
 app.get('/openapi.json', (req, res) => {
-  try {
-    res.sendFile(specPath);
-  } catch (e) {
-    res.status(404).json({ error: 'OpenAPI spec not found' });
-  }
+  try { res.sendFile(specPath); } catch (e) { res.status(404).json({ error: 'OpenAPI spec not found' }); }
 });
 
 // ── Start ──
@@ -127,7 +129,6 @@ app.listen(PORT, '0.0.0.0', () => {
   console.log(`   Swagger:   http://localhost:${PORT}/swagger`);
   console.log(`   Metadata:  http://localhost:${PORT}/fhir/r4/metadata`);
   console.log(`   Health:    http://localhost:${PORT}/health`);
-  console.log(`   Spec:      http://localhost:${PORT}/openapi.json`);
   console.log(`   Resources: ${total} loaded\n`);
 });
 

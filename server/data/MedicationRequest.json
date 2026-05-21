@@ -4,7 +4,7 @@
     "id": "medreq-001-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -12,17 +12,17 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "314076",
-          "display": "Lisinopril 10 MG Oral Tablet"
+          "code": "372614",
+          "display": "Sertraline 50 MG Oral Tablet"
         }
       ],
-      "text": "Lisinopril 10 MG Oral Tablet"
+      "text": "Sertraline 50 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-001",
       "display": "Margaret Thompson"
     },
-    "authoredOn": "2023-07-07",
+    "authoredOn": "2025-06-30",
     "requester": {
       "reference": "Practitioner/prac-chen"
     },
@@ -44,25 +44,25 @@
     "id": "medreq-002-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "stopped",
+    "status": "active",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "314076",
-          "display": "Lisinopril 10 MG Oral Tablet"
+          "code": "197591",
+          "display": "Ibuprofen 400 MG Oral Tablet"
         }
       ],
-      "text": "Lisinopril 10 MG Oral Tablet"
+      "text": "Ibuprofen 400 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-002",
       "display": "Robert Davis"
     },
-    "authoredOn": "2025-01-08",
+    "authoredOn": "2025-05-07",
     "requester": {
       "reference": "Practitioner/prac-okonkwo"
     },
@@ -84,25 +84,25 @@
     "id": "medreq-002-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "completed",
+    "status": "active",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "860975",
-          "display": "Metformin 500 MG Oral Tablet"
+          "code": "314200",
+          "display": "Atorvastatin 10 MG Oral Tablet"
         }
       ],
-      "text": "Metformin 500 MG Oral Tablet"
+      "text": "Atorvastatin 10 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-002",
       "display": "Robert Davis"
     },
-    "authoredOn": "2025-10-26",
+    "authoredOn": "2025-11-21",
     "requester": {
       "reference": "Practitioner/prac-okonkwo"
     },
@@ -124,7 +124,7 @@
     "id": "medreq-002-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -132,17 +132,17 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "314200",
-          "display": "Atorvastatin 10 MG Oral Tablet"
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
         }
       ],
-      "text": "Atorvastatin 10 MG Oral Tablet"
+      "text": "Simvastatin 20 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-002",
       "display": "Robert Davis"
     },
-    "authoredOn": "2025-04-07",
+    "authoredOn": "2024-07-23",
     "requester": {
       "reference": "Practitioner/prac-okonkwo"
     },
@@ -164,25 +164,25 @@
     "id": "medreq-003-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "stopped",
+    "status": "completed",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197591",
-          "display": "Ibuprofen 400 MG Oral Tablet"
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
         }
       ],
-      "text": "Ibuprofen 400 MG Oral Tablet"
+      "text": "Simvastatin 20 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-003",
       "display": "Isabella Martinez"
     },
-    "authoredOn": "2023-09-08",
+    "authoredOn": "2023-09-16",
     "requester": {
       "reference": "Practitioner/prac-rodriguez"
     },
@@ -204,7 +204,7 @@
     "id": "medreq-003-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -212,17 +212,57 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "198211",
-          "display": "Omeprazole 20 MG Delayed Release Oral Capsule"
+          "code": "197361",
+          "display": "Amlodipine 5 MG Oral Tablet"
         }
       ],
-      "text": "Omeprazole 20 MG Delayed Release Oral Capsule"
+      "text": "Amlodipine 5 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-003",
       "display": "Isabella Martinez"
     },
-    "authoredOn": "2023-10-23",
+    "authoredOn": "2024-11-15",
+    "requester": {
+      "reference": "Practitioner/prac-rodriguez"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-003-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "860975",
+          "display": "Metformin 500 MG Oral Tablet"
+        }
+      ],
+      "text": "Metformin 500 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-003",
+      "display": "Isabella Martinez"
+    },
+    "authoredOn": "2023-12-26",
     "requester": {
       "reference": "Practitioner/prac-rodriguez"
     },
@@ -244,7 +284,7 @@
     "id": "medreq-004-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -252,17 +292,17 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197591",
-          "display": "Ibuprofen 400 MG Oral Tablet"
+          "code": "197361",
+          "display": "Amlodipine 5 MG Oral Tablet"
         }
       ],
-      "text": "Ibuprofen 400 MG Oral Tablet"
+      "text": "Amlodipine 5 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-004",
       "display": "James Williams"
     },
-    "authoredOn": "2025-02-19",
+    "authoredOn": "2024-11-17",
     "requester": {
       "reference": "Practitioner/prac-johnson"
     },
@@ -284,7 +324,7 @@
     "id": "medreq-004-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -292,57 +332,17 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "312961",
-          "display": "Simvastatin 20 MG Oral Tablet"
+          "code": "860975",
+          "display": "Metformin 500 MG Oral Tablet"
         }
       ],
-      "text": "Simvastatin 20 MG Oral Tablet"
+      "text": "Metformin 500 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-004",
       "display": "James Williams"
     },
-    "authoredOn": "2025-02-20",
-    "requester": {
-      "reference": "Practitioner/prac-johnson"
-    },
-    "dosageInstruction": [
-      {
-        "text": "Take as directed",
-        "timing": {
-          "repeat": {
-            "frequency": 1,
-            "period": 1,
-            "periodUnit": "d"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "MedicationRequest",
-    "id": "medreq-004-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
-    },
-    "status": "active",
-    "intent": "order",
-    "medicationCodeableConcept": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "314200",
-          "display": "Atorvastatin 10 MG Oral Tablet"
-        }
-      ],
-      "text": "Atorvastatin 10 MG Oral Tablet"
-    },
-    "subject": {
-      "reference": "Patient/pat-004",
-      "display": "James Williams"
-    },
-    "authoredOn": "2025-09-16",
+    "authoredOn": "2023-10-14",
     "requester": {
       "reference": "Practitioner/prac-johnson"
     },
@@ -364,7 +364,7 @@
     "id": "medreq-005-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -372,17 +372,17 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "314200",
-          "display": "Atorvastatin 10 MG Oral Tablet"
+          "code": "197361",
+          "display": "Amlodipine 5 MG Oral Tablet"
         }
       ],
-      "text": "Atorvastatin 10 MG Oral Tablet"
+      "text": "Amlodipine 5 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-005",
       "display": "Yuki Nakamura"
     },
-    "authoredOn": "2024-06-21",
+    "authoredOn": "2023-11-19",
     "requester": {
       "reference": "Practitioner/prac-patel"
     },
@@ -404,25 +404,65 @@
     "id": "medreq-005-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "stopped",
+    "status": "active",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197591",
-          "display": "Ibuprofen 400 MG Oral Tablet"
+          "code": "860975",
+          "display": "Metformin 500 MG Oral Tablet"
         }
       ],
-      "text": "Ibuprofen 400 MG Oral Tablet"
+      "text": "Metformin 500 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-005",
       "display": "Yuki Nakamura"
     },
-    "authoredOn": "2023-09-16",
+    "authoredOn": "2025-04-01",
+    "requester": {
+      "reference": "Practitioner/prac-patel"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-005-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
+        }
+      ],
+      "text": "Simvastatin 20 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-005",
+      "display": "Yuki Nakamura"
+    },
+    "authoredOn": "2025-09-02",
     "requester": {
       "reference": "Practitioner/prac-patel"
     },
@@ -444,7 +484,7 @@
     "id": "medreq-006-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -452,17 +492,57 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "205532",
-          "display": "Amoxicillin 500 MG Oral Capsule"
+          "code": "310798",
+          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
         }
       ],
-      "text": "Amoxicillin 500 MG Oral Capsule"
+      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
     },
     "subject": {
       "reference": "Patient/pat-006",
       "display": "Charles Brown"
     },
-    "authoredOn": "2023-06-07",
+    "authoredOn": "2025-09-25",
+    "requester": {
+      "reference": "Practitioner/prac-chen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-006-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }
+      ],
+      "text": "Lisinopril 10 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-006",
+      "display": "Charles Brown"
+    },
+    "authoredOn": "2024-06-15",
     "requester": {
       "reference": "Practitioner/prac-chen"
     },
@@ -484,25 +564,65 @@
     "id": "medreq-007-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "completed",
+    "status": "active",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "310798",
-          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
+          "code": "860975",
+          "display": "Metformin 500 MG Oral Tablet"
         }
       ],
-      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
+      "text": "Metformin 500 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-007",
       "display": "Sofia Garcia"
     },
-    "authoredOn": "2024-08-19",
+    "authoredOn": "2025-03-20",
+    "requester": {
+      "reference": "Practitioner/prac-rodriguez"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-007-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "198211",
+          "display": "Omeprazole 20 MG Delayed Release Oral Capsule"
+        }
+      ],
+      "text": "Omeprazole 20 MG Delayed Release Oral Capsule"
+    },
+    "subject": {
+      "reference": "Patient/pat-007",
+      "display": "Sofia Garcia"
+    },
+    "authoredOn": "2024-08-01",
     "requester": {
       "reference": "Practitioner/prac-rodriguez"
     },
@@ -524,9 +644,49 @@
     "id": "medreq-008-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "completed",
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "372614",
+          "display": "Sertraline 50 MG Oral Tablet"
+        }
+      ],
+      "text": "Sertraline 50 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-008",
+      "display": "Daniel Lee"
+    },
+    "authoredOn": "2024-10-30",
+    "requester": {
+      "reference": "Practitioner/prac-kim"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-008-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
+    },
+    "status": "active",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
@@ -542,7 +702,7 @@
       "reference": "Patient/pat-008",
       "display": "Daniel Lee"
     },
-    "authoredOn": "2024-05-30",
+    "authoredOn": "2025-08-16",
     "requester": {
       "reference": "Practitioner/prac-kim"
     },
@@ -564,25 +724,25 @@
     "id": "medreq-009-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "active",
+    "status": "stopped",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "314076",
-          "display": "Lisinopril 10 MG Oral Tablet"
+          "code": "197591",
+          "display": "Ibuprofen 400 MG Oral Tablet"
         }
       ],
-      "text": "Lisinopril 10 MG Oral Tablet"
+      "text": "Ibuprofen 400 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-009",
       "display": "Patricia Anderson"
     },
-    "authoredOn": "2024-05-21",
+    "authoredOn": "2024-12-03",
     "requester": {
       "reference": "Practitioner/prac-okonkwo"
     },
@@ -604,7 +764,7 @@
     "id": "medreq-009-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -612,57 +772,17 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "860975",
-          "display": "Metformin 500 MG Oral Tablet"
+          "code": "372614",
+          "display": "Sertraline 50 MG Oral Tablet"
         }
       ],
-      "text": "Metformin 500 MG Oral Tablet"
+      "text": "Sertraline 50 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-009",
       "display": "Patricia Anderson"
     },
-    "authoredOn": "2024-05-08",
-    "requester": {
-      "reference": "Practitioner/prac-okonkwo"
-    },
-    "dosageInstruction": [
-      {
-        "text": "Take as directed",
-        "timing": {
-          "repeat": {
-            "frequency": 1,
-            "period": 1,
-            "periodUnit": "d"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "MedicationRequest",
-    "id": "medreq-009-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
-    },
-    "status": "stopped",
-    "intent": "order",
-    "medicationCodeableConcept": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "310798",
-          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
-        }
-      ],
-      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
-    },
-    "subject": {
-      "reference": "Patient/pat-009",
-      "display": "Patricia Anderson"
-    },
-    "authoredOn": "2024-11-03",
+    "authoredOn": "2023-09-09",
     "requester": {
       "reference": "Practitioner/prac-okonkwo"
     },
@@ -684,7 +804,47 @@
     "id": "medreq-010-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
+    },
+    "status": "completed",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314200",
+          "display": "Atorvastatin 10 MG Oral Tablet"
+        }
+      ],
+      "text": "Atorvastatin 10 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-010",
+      "display": "Michael Taylor"
+    },
+    "authoredOn": "2025-06-01",
+    "requester": {
+      "reference": "Practitioner/prac-nguyen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-010-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -692,17 +852,57 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "312961",
-          "display": "Simvastatin 20 MG Oral Tablet"
+          "code": "860975",
+          "display": "Metformin 500 MG Oral Tablet"
         }
       ],
-      "text": "Simvastatin 20 MG Oral Tablet"
+      "text": "Metformin 500 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-010",
       "display": "Michael Taylor"
     },
-    "authoredOn": "2024-07-31",
+    "authoredOn": "2024-03-06",
+    "requester": {
+      "reference": "Practitioner/prac-nguyen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-010-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "310798",
+          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
+        }
+      ],
+      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
+    },
+    "subject": {
+      "reference": "Patient/pat-010",
+      "display": "Michael Taylor"
+    },
+    "authoredOn": "2023-06-16",
     "requester": {
       "reference": "Practitioner/prac-nguyen"
     },
@@ -724,7 +924,7 @@
     "id": "medreq-011-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.669Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -742,7 +942,7 @@
       "reference": "Patient/pat-011",
       "display": "Elena Hernandez"
     },
-    "authoredOn": "2025-08-13",
+    "authoredOn": "2023-11-23",
     "requester": {
       "reference": "Practitioner/prac-patel"
     },
@@ -764,25 +964,25 @@
     "id": "medreq-011-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.670Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "active",
+    "status": "completed",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "314076",
-          "display": "Lisinopril 10 MG Oral Tablet"
+          "code": "860975",
+          "display": "Metformin 500 MG Oral Tablet"
         }
       ],
-      "text": "Lisinopril 10 MG Oral Tablet"
+      "text": "Metformin 500 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-011",
       "display": "Elena Hernandez"
     },
-    "authoredOn": "2025-04-11",
+    "authoredOn": "2024-02-09",
     "requester": {
       "reference": "Practitioner/prac-patel"
     },
@@ -804,25 +1004,25 @@
     "id": "medreq-012-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.670Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "active",
+    "status": "stopped",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "314200",
-          "display": "Atorvastatin 10 MG Oral Tablet"
+          "code": "372614",
+          "display": "Sertraline 50 MG Oral Tablet"
         }
       ],
-      "text": "Atorvastatin 10 MG Oral Tablet"
+      "text": "Sertraline 50 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-012",
       "display": "William Moore"
     },
-    "authoredOn": "2025-08-11",
+    "authoredOn": "2025-07-31",
     "requester": {
       "reference": "Practitioner/prac-brown"
     },
@@ -844,7 +1044,7 @@
     "id": "medreq-012-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.670Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -852,17 +1052,17 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "312961",
-          "display": "Simvastatin 20 MG Oral Tablet"
+          "code": "310798",
+          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
         }
       ],
-      "text": "Simvastatin 20 MG Oral Tablet"
+      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
     },
     "subject": {
       "reference": "Patient/pat-012",
       "display": "William Moore"
     },
-    "authoredOn": "2024-12-04",
+    "authoredOn": "2023-06-17",
     "requester": {
       "reference": "Practitioner/prac-brown"
     },
@@ -884,25 +1084,25 @@
     "id": "medreq-012-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.670Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "active",
+    "status": "stopped",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "198211",
-          "display": "Omeprazole 20 MG Delayed Release Oral Capsule"
+          "code": "205532",
+          "display": "Amoxicillin 500 MG Oral Capsule"
         }
       ],
-      "text": "Omeprazole 20 MG Delayed Release Oral Capsule"
+      "text": "Amoxicillin 500 MG Oral Capsule"
     },
     "subject": {
       "reference": "Patient/pat-012",
       "display": "William Moore"
     },
-    "authoredOn": "2025-02-03",
+    "authoredOn": "2025-06-30",
     "requester": {
       "reference": "Practitioner/prac-brown"
     },
@@ -924,7 +1124,7 @@
     "id": "medreq-013-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.670Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -932,17 +1132,97 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "372614",
-          "display": "Sertraline 50 MG Oral Tablet"
+          "code": "860975",
+          "display": "Metformin 500 MG Oral Tablet"
         }
       ],
-      "text": "Sertraline 50 MG Oral Tablet"
+      "text": "Metformin 500 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-013",
       "display": "Jennifer Clark"
     },
-    "authoredOn": "2023-08-02",
+    "authoredOn": "2023-07-10",
+    "requester": {
+      "reference": "Practitioner/prac-rodriguez"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-013-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197591",
+          "display": "Ibuprofen 400 MG Oral Tablet"
+        }
+      ],
+      "text": "Ibuprofen 400 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-013",
+      "display": "Jennifer Clark"
+    },
+    "authoredOn": "2024-11-06",
+    "requester": {
+      "reference": "Practitioner/prac-rodriguez"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-013-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197361",
+          "display": "Amlodipine 5 MG Oral Tablet"
+        }
+      ],
+      "text": "Amlodipine 5 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-013",
+      "display": "Jennifer Clark"
+    },
+    "authoredOn": "2025-10-25",
     "requester": {
       "reference": "Practitioner/prac-rodriguez"
     },
@@ -964,65 +1244,25 @@
     "id": "medreq-014-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.670Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "active",
+    "status": "completed",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197361",
-          "display": "Amlodipine 5 MG Oral Tablet"
+          "code": "198211",
+          "display": "Omeprazole 20 MG Delayed Release Oral Capsule"
         }
       ],
-      "text": "Amlodipine 5 MG Oral Tablet"
+      "text": "Omeprazole 20 MG Delayed Release Oral Capsule"
     },
     "subject": {
       "reference": "Patient/pat-014",
       "display": "Thomas Lewis"
     },
-    "authoredOn": "2023-10-20",
-    "requester": {
-      "reference": "Practitioner/prac-kim"
-    },
-    "dosageInstruction": [
-      {
-        "text": "Take as directed",
-        "timing": {
-          "repeat": {
-            "frequency": 1,
-            "period": 1,
-            "periodUnit": "d"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "MedicationRequest",
-    "id": "medreq-014-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.670Z"
-    },
-    "status": "active",
-    "intent": "order",
-    "medicationCodeableConcept": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "205532",
-          "display": "Amoxicillin 500 MG Oral Capsule"
-        }
-      ],
-      "text": "Amoxicillin 500 MG Oral Capsule"
-    },
-    "subject": {
-      "reference": "Patient/pat-014",
-      "display": "Thomas Lewis"
-    },
-    "authoredOn": "2025-08-13",
+    "authoredOn": "2023-10-30",
     "requester": {
       "reference": "Practitioner/prac-kim"
     },
@@ -1044,7 +1284,7 @@
     "id": "medreq-015-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.670Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -1052,17 +1292,57 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "314076",
-          "display": "Lisinopril 10 MG Oral Tablet"
+          "code": "198211",
+          "display": "Omeprazole 20 MG Delayed Release Oral Capsule"
         }
       ],
-      "text": "Lisinopril 10 MG Oral Tablet"
+      "text": "Omeprazole 20 MG Delayed Release Oral Capsule"
     },
     "subject": {
       "reference": "Patient/pat-015",
       "display": "Sarah Robinson"
     },
-    "authoredOn": "2025-01-10",
+    "authoredOn": "2025-08-11",
+    "requester": {
+      "reference": "Practitioner/prac-chen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-015-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "197591",
+          "display": "Ibuprofen 400 MG Oral Tablet"
+        }
+      ],
+      "text": "Ibuprofen 400 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-015",
+      "display": "Sarah Robinson"
+    },
+    "authoredOn": "2024-11-09",
     "requester": {
       "reference": "Practitioner/prac-chen"
     },
@@ -1084,25 +1364,25 @@
     "id": "medreq-016-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.670Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "completed",
+    "status": "stopped",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197361",
-          "display": "Amlodipine 5 MG Oral Tablet"
+          "code": "198211",
+          "display": "Omeprazole 20 MG Delayed Release Oral Capsule"
         }
       ],
-      "text": "Amlodipine 5 MG Oral Tablet"
+      "text": "Omeprazole 20 MG Delayed Release Oral Capsule"
     },
     "subject": {
       "reference": "Patient/pat-016",
       "display": "Richard Walker"
     },
-    "authoredOn": "2024-12-12",
+    "authoredOn": "2024-09-23",
     "requester": {
       "reference": "Practitioner/prac-johnson"
     },
@@ -1124,7 +1404,7 @@
     "id": "medreq-017-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -1132,17 +1412,57 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "860975",
-          "display": "Metformin 500 MG Oral Tablet"
+          "code": "197591",
+          "display": "Ibuprofen 400 MG Oral Tablet"
         }
       ],
-      "text": "Metformin 500 MG Oral Tablet"
+      "text": "Ibuprofen 400 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-017",
       "display": "Emily Hall"
     },
-    "authoredOn": "2025-01-24",
+    "authoredOn": "2023-09-21",
+    "requester": {
+      "reference": "Practitioner/prac-patel"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-017-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
+        }
+      ],
+      "text": "Lisinopril 10 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-017",
+      "display": "Emily Hall"
+    },
+    "authoredOn": "2025-01-27",
     "requester": {
       "reference": "Practitioner/prac-patel"
     },
@@ -1164,7 +1484,7 @@
     "id": "medreq-018-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -1172,17 +1492,17 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "312961",
-          "display": "Simvastatin 20 MG Oral Tablet"
+          "code": "197361",
+          "display": "Amlodipine 5 MG Oral Tablet"
         }
       ],
-      "text": "Simvastatin 20 MG Oral Tablet"
+      "text": "Amlodipine 5 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-018",
       "display": "George Allen"
     },
-    "authoredOn": "2025-03-21",
+    "authoredOn": "2024-06-23",
     "requester": {
       "reference": "Practitioner/prac-okonkwo"
     },
@@ -1204,25 +1524,25 @@
     "id": "medreq-018-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "stopped",
+    "status": "completed",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197361",
-          "display": "Amlodipine 5 MG Oral Tablet"
+          "code": "197591",
+          "display": "Ibuprofen 400 MG Oral Tablet"
         }
       ],
-      "text": "Amlodipine 5 MG Oral Tablet"
+      "text": "Ibuprofen 400 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-018",
       "display": "George Allen"
     },
-    "authoredOn": "2025-01-27",
+    "authoredOn": "2024-01-11",
     "requester": {
       "reference": "Practitioner/prac-okonkwo"
     },
@@ -1244,7 +1564,7 @@
     "id": "medreq-019-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "stopped",
     "intent": "order",
@@ -1252,17 +1572,97 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "314076",
-          "display": "Lisinopril 10 MG Oral Tablet"
+          "code": "197361",
+          "display": "Amlodipine 5 MG Oral Tablet"
         }
       ],
-      "text": "Lisinopril 10 MG Oral Tablet"
+      "text": "Amlodipine 5 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-019",
       "display": "Amanda Young"
     },
-    "authoredOn": "2024-11-30",
+    "authoredOn": "2023-06-26",
+    "requester": {
+      "reference": "Practitioner/prac-nguyen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-019-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "310798",
+          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
+        }
+      ],
+      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
+    },
+    "subject": {
+      "reference": "Patient/pat-019",
+      "display": "Amanda Young"
+    },
+    "authoredOn": "2023-08-09",
+    "requester": {
+      "reference": "Practitioner/prac-nguyen"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-019-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "314200",
+          "display": "Atorvastatin 10 MG Oral Tablet"
+        }
+      ],
+      "text": "Atorvastatin 10 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-019",
+      "display": "Amanda Young"
+    },
+    "authoredOn": "2023-10-23",
     "requester": {
       "reference": "Practitioner/prac-nguyen"
     },
@@ -1284,25 +1684,25 @@
     "id": "medreq-020-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "completed",
+    "status": "active",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197361",
-          "display": "Amlodipine 5 MG Oral Tablet"
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
         }
       ],
-      "text": "Amlodipine 5 MG Oral Tablet"
+      "text": "Lisinopril 10 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-020",
       "display": "Joseph King"
     },
-    "authoredOn": "2023-12-14",
+    "authoredOn": "2023-11-27",
     "requester": {
       "reference": "Practitioner/prac-kim"
     },
@@ -1324,65 +1724,25 @@
     "id": "medreq-020-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "stopped",
+    "status": "completed",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "860975",
-          "display": "Metformin 500 MG Oral Tablet"
+          "code": "197591",
+          "display": "Ibuprofen 400 MG Oral Tablet"
         }
       ],
-      "text": "Metformin 500 MG Oral Tablet"
+      "text": "Ibuprofen 400 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-020",
       "display": "Joseph King"
     },
-    "authoredOn": "2023-09-15",
-    "requester": {
-      "reference": "Practitioner/prac-kim"
-    },
-    "dosageInstruction": [
-      {
-        "text": "Take as directed",
-        "timing": {
-          "repeat": {
-            "frequency": 1,
-            "period": 1,
-            "periodUnit": "d"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "MedicationRequest",
-    "id": "medreq-020-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
-    },
-    "status": "stopped",
-    "intent": "order",
-    "medicationCodeableConcept": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "310798",
-          "display": "Albuterol 0.83 MG/ML Inhalation Solution"
-        }
-      ],
-      "text": "Albuterol 0.83 MG/ML Inhalation Solution"
-    },
-    "subject": {
-      "reference": "Patient/pat-020",
-      "display": "Joseph King"
-    },
-    "authoredOn": "2024-06-19",
+    "authoredOn": "2025-09-16",
     "requester": {
       "reference": "Practitioner/prac-kim"
     },
@@ -1404,7 +1764,7 @@
     "id": "medreq-021-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -1412,17 +1772,17 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197591",
-          "display": "Ibuprofen 400 MG Oral Tablet"
+          "code": "314200",
+          "display": "Atorvastatin 10 MG Oral Tablet"
         }
       ],
-      "text": "Ibuprofen 400 MG Oral Tablet"
+      "text": "Atorvastatin 10 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-021",
       "display": "Lisa Wright"
     },
-    "authoredOn": "2024-09-27",
+    "authoredOn": "2025-11-24",
     "requester": {
       "reference": "Practitioner/prac-brown"
     },
@@ -1444,25 +1804,25 @@
     "id": "medreq-022-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "completed",
+    "status": "stopped",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "314076",
-          "display": "Lisinopril 10 MG Oral Tablet"
+          "code": "372614",
+          "display": "Sertraline 50 MG Oral Tablet"
         }
       ],
-      "text": "Lisinopril 10 MG Oral Tablet"
+      "text": "Sertraline 50 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-022",
       "display": "Kevin Scott"
     },
-    "authoredOn": "2024-10-15",
+    "authoredOn": "2025-05-03",
     "requester": {
       "reference": "Practitioner/prac-johnson"
     },
@@ -1484,9 +1844,9 @@
     "id": "medreq-022-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "stopped",
+    "status": "active",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
@@ -1502,7 +1862,47 @@
       "reference": "Patient/pat-022",
       "display": "Kevin Scott"
     },
-    "authoredOn": "2025-04-14",
+    "authoredOn": "2025-04-22",
+    "requester": {
+      "reference": "Practitioner/prac-johnson"
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take as directed",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "MedicationRequest",
+    "id": "medreq-022-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
+        }
+      ],
+      "text": "Simvastatin 20 MG Oral Tablet"
+    },
+    "subject": {
+      "reference": "Patient/pat-022",
+      "display": "Kevin Scott"
+    },
+    "authoredOn": "2024-02-29",
     "requester": {
       "reference": "Practitioner/prac-johnson"
     },
@@ -1524,7 +1924,7 @@
     "id": "medreq-023-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "active",
     "intent": "order",
@@ -1532,17 +1932,17 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "314076",
-          "display": "Lisinopril 10 MG Oral Tablet"
+          "code": "314200",
+          "display": "Atorvastatin 10 MG Oral Tablet"
         }
       ],
-      "text": "Lisinopril 10 MG Oral Tablet"
+      "text": "Atorvastatin 10 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-023",
       "display": "Nancy Green"
     },
-    "authoredOn": "2024-06-30",
+    "authoredOn": "2024-10-24",
     "requester": {
       "reference": "Practitioner/prac-patel"
     },
@@ -1564,25 +1964,25 @@
     "id": "medreq-023-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "active",
+    "status": "stopped",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "860975",
-          "display": "Metformin 500 MG Oral Tablet"
+          "code": "314076",
+          "display": "Lisinopril 10 MG Oral Tablet"
         }
       ],
-      "text": "Metformin 500 MG Oral Tablet"
+      "text": "Lisinopril 10 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-023",
       "display": "Nancy Green"
     },
-    "authoredOn": "2024-04-20",
+    "authoredOn": "2023-09-17",
     "requester": {
       "reference": "Practitioner/prac-patel"
     },
@@ -1604,25 +2004,25 @@
     "id": "medreq-023-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "active",
+    "status": "stopped",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "372614",
-          "display": "Sertraline 50 MG Oral Tablet"
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
         }
       ],
-      "text": "Sertraline 50 MG Oral Tablet"
+      "text": "Simvastatin 20 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-023",
       "display": "Nancy Green"
     },
-    "authoredOn": "2023-10-27",
+    "authoredOn": "2024-11-29",
     "requester": {
       "reference": "Practitioner/prac-patel"
     },
@@ -1644,25 +2044,25 @@
     "id": "medreq-024-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "active",
+    "status": "stopped",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197591",
-          "display": "Ibuprofen 400 MG Oral Tablet"
+          "code": "197361",
+          "display": "Amlodipine 5 MG Oral Tablet"
         }
       ],
-      "text": "Ibuprofen 400 MG Oral Tablet"
+      "text": "Amlodipine 5 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-024",
       "display": "Anthony Baker"
     },
-    "authoredOn": "2024-12-11",
+    "authoredOn": "2025-05-18",
     "requester": {
       "reference": "Practitioner/prac-chen"
     },
@@ -1684,7 +2084,7 @@
     "id": "medreq-024-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
     "status": "completed",
     "intent": "order",
@@ -1692,17 +2092,17 @@
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "312961",
-          "display": "Simvastatin 20 MG Oral Tablet"
+          "code": "205532",
+          "display": "Amoxicillin 500 MG Oral Capsule"
         }
       ],
-      "text": "Simvastatin 20 MG Oral Tablet"
+      "text": "Amoxicillin 500 MG Oral Capsule"
     },
     "subject": {
       "reference": "Patient/pat-024",
       "display": "Anthony Baker"
     },
-    "authoredOn": "2024-02-26",
+    "authoredOn": "2024-07-25",
     "requester": {
       "reference": "Practitioner/prac-chen"
     },
@@ -1724,25 +2124,25 @@
     "id": "medreq-025-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "stopped",
+    "status": "active",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "314200",
-          "display": "Atorvastatin 10 MG Oral Tablet"
+          "code": "372614",
+          "display": "Sertraline 50 MG Oral Tablet"
         }
       ],
-      "text": "Atorvastatin 10 MG Oral Tablet"
+      "text": "Sertraline 50 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-025",
       "display": "Karen Adams"
     },
-    "authoredOn": "2024-10-06",
+    "authoredOn": "2025-11-29",
     "requester": {
       "reference": "Practitioner/prac-rodriguez"
     },
@@ -1764,65 +2164,25 @@
     "id": "medreq-025-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
+      "lastUpdated": "2026-05-21T16:44:27.200Z"
     },
-    "status": "active",
+    "status": "stopped",
     "intent": "order",
     "medicationCodeableConcept": {
       "coding": [
         {
           "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197591",
-          "display": "Ibuprofen 400 MG Oral Tablet"
+          "code": "312961",
+          "display": "Simvastatin 20 MG Oral Tablet"
         }
       ],
-      "text": "Ibuprofen 400 MG Oral Tablet"
+      "text": "Simvastatin 20 MG Oral Tablet"
     },
     "subject": {
       "reference": "Patient/pat-025",
       "display": "Karen Adams"
     },
-    "authoredOn": "2023-12-05",
-    "requester": {
-      "reference": "Practitioner/prac-rodriguez"
-    },
-    "dosageInstruction": [
-      {
-        "text": "Take as directed",
-        "timing": {
-          "repeat": {
-            "frequency": 1,
-            "period": 1,
-            "periodUnit": "d"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "MedicationRequest",
-    "id": "medreq-025-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.671Z"
-    },
-    "status": "active",
-    "intent": "order",
-    "medicationCodeableConcept": {
-      "coding": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "314076",
-          "display": "Lisinopril 10 MG Oral Tablet"
-        }
-      ],
-      "text": "Lisinopril 10 MG Oral Tablet"
-    },
-    "subject": {
-      "reference": "Patient/pat-025",
-      "display": "Karen Adams"
-    },
-    "authoredOn": "2024-12-23",
+    "authoredOn": "2025-05-20",
     "requester": {
       "reference": "Practitioner/prac-rodriguez"
     },

@@ -4,7 +4,7 @@
     "id": "diag-001",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.679Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "final",
     "category": [
@@ -32,21 +32,21 @@
       "reference": "Patient/pat-001",
       "display": "Margaret Thompson"
     },
-    "effectiveDateTime": "2025-04-14",
-    "issued": "2026-05-21T11:28:49.679Z",
+    "effectiveDateTime": "2025-09-10",
+    "issued": "2026-05-21T16:44:27.202Z",
     "performer": [
       {
         "reference": "Practitioner/prac-chen"
       }
     ],
-    "conclusion": "Mild anemia noted"
+    "conclusion": "Results normal, no action needed"
   },
   {
     "resourceType": "DiagnosticReport",
     "id": "diag-002",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.679Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "final",
     "category": [
@@ -74,8 +74,8 @@
       "reference": "Patient/pat-002",
       "display": "Robert Davis"
     },
-    "effectiveDateTime": "2025-03-16",
-    "issued": "2026-05-21T11:28:49.679Z",
+    "effectiveDateTime": "2024-09-01",
+    "issued": "2026-05-21T16:44:27.202Z",
     "performer": [
       {
         "reference": "Practitioner/prac-okonkwo"
@@ -88,9 +88,9 @@
     "id": "diag-003",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.679Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
-    "status": "preliminary",
+    "status": "final",
     "category": [
       {
         "coding": [
@@ -116,8 +116,8 @@
       "reference": "Patient/pat-003",
       "display": "Isabella Martinez"
     },
-    "effectiveDateTime": "2024-04-01",
-    "issued": "2026-05-21T11:28:49.679Z",
+    "effectiveDateTime": "2024-03-21",
+    "issued": "2026-05-21T16:44:27.202Z",
     "performer": [
       {
         "reference": "Practitioner/prac-rodriguez"
@@ -130,7 +130,7 @@
     "id": "diag-004",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.679Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "final",
     "category": [
@@ -158,23 +158,23 @@
       "reference": "Patient/pat-004",
       "display": "James Williams"
     },
-    "effectiveDateTime": "2024-10-14",
-    "issued": "2026-05-21T11:28:49.679Z",
+    "effectiveDateTime": "2025-05-15",
+    "issued": "2026-05-21T16:44:27.202Z",
     "performer": [
       {
         "reference": "Practitioner/prac-johnson"
       }
     ],
-    "conclusion": "Slightly elevated WBC"
+    "conclusion": "Results normal, no action needed"
   },
   {
     "resourceType": "DiagnosticReport",
     "id": "diag-005",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.679Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
-    "status": "preliminary",
+    "status": "final",
     "category": [
       {
         "coding": [
@@ -200,21 +200,21 @@
       "reference": "Patient/pat-005",
       "display": "Yuki Nakamura"
     },
-    "effectiveDateTime": "2025-07-24",
-    "issued": "2026-05-21T11:28:49.679Z",
+    "effectiveDateTime": "2024-08-02",
+    "issued": "2026-05-21T16:44:27.202Z",
     "performer": [
       {
         "reference": "Practitioner/prac-patel"
       }
     ],
-    "conclusion": "Mild anemia noted"
+    "conclusion": "All values within normal range"
   },
   {
     "resourceType": "DiagnosticReport",
     "id": "diag-006",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.679Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "final",
     "category": [
@@ -242,21 +242,21 @@
       "reference": "Patient/pat-006",
       "display": "Charles Brown"
     },
-    "effectiveDateTime": "2024-08-30",
-    "issued": "2026-05-21T11:28:49.679Z",
+    "effectiveDateTime": "2025-10-06",
+    "issued": "2026-05-21T16:44:27.202Z",
     "performer": [
       {
         "reference": "Practitioner/prac-chen"
       }
     ],
-    "conclusion": "Slightly elevated WBC"
+    "conclusion": "Results normal, no action needed"
   },
   {
     "resourceType": "DiagnosticReport",
     "id": "diag-007",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.679Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "final",
     "category": [
@@ -284,8 +284,8 @@
       "reference": "Patient/pat-007",
       "display": "Sofia Garcia"
     },
-    "effectiveDateTime": "2025-01-20",
-    "issued": "2026-05-21T11:28:49.679Z",
+    "effectiveDateTime": "2024-02-16",
+    "issued": "2026-05-21T16:44:27.202Z",
     "performer": [
       {
         "reference": "Practitioner/prac-rodriguez"
@@ -298,9 +298,9 @@
     "id": "diag-008",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.679Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
-    "status": "preliminary",
+    "status": "final",
     "category": [
       {
         "coding": [
@@ -326,8 +326,8 @@
       "reference": "Patient/pat-008",
       "display": "Daniel Lee"
     },
-    "effectiveDateTime": "2025-08-28",
-    "issued": "2026-05-21T11:28:49.679Z",
+    "effectiveDateTime": "2025-01-27",
+    "issued": "2026-05-21T16:44:27.202Z",
     "performer": [
       {
         "reference": "Practitioner/prac-kim"
@@ -340,7 +340,7 @@
     "id": "diag-009",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.679Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "final",
     "category": [
@@ -368,21 +368,21 @@
       "reference": "Patient/pat-009",
       "display": "Patricia Anderson"
     },
-    "effectiveDateTime": "2025-02-05",
-    "issued": "2026-05-21T11:28:49.679Z",
+    "effectiveDateTime": "2025-06-04",
+    "issued": "2026-05-21T16:44:27.202Z",
     "performer": [
       {
         "reference": "Practitioner/prac-okonkwo"
       }
     ],
-    "conclusion": "Results normal, no action needed"
+    "conclusion": "All values within normal range"
   },
   {
     "resourceType": "DiagnosticReport",
     "id": "diag-010",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.679Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "preliminary",
     "category": [
@@ -410,21 +410,21 @@
       "reference": "Patient/pat-010",
       "display": "Michael Taylor"
     },
-    "effectiveDateTime": "2024-04-18",
-    "issued": "2026-05-21T11:28:49.679Z",
+    "effectiveDateTime": "2025-06-13",
+    "issued": "2026-05-21T16:44:27.202Z",
     "performer": [
       {
         "reference": "Practitioner/prac-nguyen"
       }
     ],
-    "conclusion": "Results normal, no action needed"
+    "conclusion": "Mild anemia noted"
   },
   {
     "resourceType": "DiagnosticReport",
     "id": "diag-011",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.679Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "final",
     "category": [
@@ -452,21 +452,21 @@
       "reference": "Patient/pat-011",
       "display": "Elena Hernandez"
     },
-    "effectiveDateTime": "2024-12-10",
-    "issued": "2026-05-21T11:28:49.679Z",
+    "effectiveDateTime": "2024-12-31",
+    "issued": "2026-05-21T16:44:27.202Z",
     "performer": [
       {
         "reference": "Practitioner/prac-patel"
       }
     ],
-    "conclusion": "Slightly elevated WBC"
+    "conclusion": "Results normal, no action needed"
   },
   {
     "resourceType": "DiagnosticReport",
     "id": "diag-012",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.679Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "preliminary",
     "category": [
@@ -494,13 +494,13 @@
       "reference": "Patient/pat-012",
       "display": "William Moore"
     },
-    "effectiveDateTime": "2025-09-25",
-    "issued": "2026-05-21T11:28:49.679Z",
+    "effectiveDateTime": "2024-06-10",
+    "issued": "2026-05-21T16:44:27.202Z",
     "performer": [
       {
         "reference": "Practitioner/prac-brown"
       }
     ],
-    "conclusion": "Mild anemia noted"
+    "conclusion": "Results normal, no action needed"
   }
 ]

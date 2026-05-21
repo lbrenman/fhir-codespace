@@ -4,7 +4,7 @@
     "id": "claim-001",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.680Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "active",
     "type": {
@@ -21,7 +21,7 @@
       "reference": "Patient/pat-001",
       "display": "Margaret Thompson"
     },
-    "created": "2024-11-23",
+    "created": "2025-01-19",
     "provider": {
       "reference": "Practitioner/prac-chen"
     },
@@ -33,7 +33,7 @@
       ]
     },
     "total": {
-      "value": 1617.18,
+      "value": 2809.63,
       "currency": "USD"
     }
   },
@@ -42,7 +42,7 @@
     "id": "claim-002",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.680Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "active",
     "type": {
@@ -59,7 +59,7 @@
       "reference": "Patient/pat-002",
       "display": "Robert Davis"
     },
-    "created": "2025-01-16",
+    "created": "2024-12-30",
     "provider": {
       "reference": "Practitioner/prac-okonkwo"
     },
@@ -71,7 +71,7 @@
       ]
     },
     "total": {
-      "value": 1954.11,
+      "value": 4396.93,
       "currency": "USD"
     }
   },
@@ -80,9 +80,9 @@
     "id": "claim-003",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.680Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
-    "status": "active",
+    "status": "draft",
     "type": {
       "coding": [
         {
@@ -97,7 +97,7 @@
       "reference": "Patient/pat-003",
       "display": "Isabella Martinez"
     },
-    "created": "2025-03-23",
+    "created": "2024-11-18",
     "provider": {
       "reference": "Practitioner/prac-rodriguez"
     },
@@ -109,7 +109,7 @@
       ]
     },
     "total": {
-      "value": 324.45,
+      "value": 440.7,
       "currency": "USD"
     }
   },
@@ -118,7 +118,7 @@
     "id": "claim-004",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.680Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "active",
     "type": {
@@ -135,7 +135,7 @@
       "reference": "Patient/pat-004",
       "display": "James Williams"
     },
-    "created": "2024-07-02",
+    "created": "2024-12-17",
     "provider": {
       "reference": "Practitioner/prac-johnson"
     },
@@ -147,7 +147,7 @@
       ]
     },
     "total": {
-      "value": 277.54,
+      "value": 4804.12,
       "currency": "USD"
     }
   },
@@ -156,7 +156,7 @@
     "id": "claim-005",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.680Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "active",
     "type": {
@@ -173,7 +173,7 @@
       "reference": "Patient/pat-005",
       "display": "Yuki Nakamura"
     },
-    "created": "2025-08-14",
+    "created": "2025-05-09",
     "provider": {
       "reference": "Practitioner/prac-patel"
     },
@@ -185,7 +185,7 @@
       ]
     },
     "total": {
-      "value": 153.49,
+      "value": 1652.94,
       "currency": "USD"
     }
   },
@@ -194,9 +194,9 @@
     "id": "claim-006",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.680Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
-    "status": "active",
+    "status": "draft",
     "type": {
       "coding": [
         {
@@ -211,7 +211,7 @@
       "reference": "Patient/pat-006",
       "display": "Charles Brown"
     },
-    "created": "2024-10-28",
+    "created": "2025-08-21",
     "provider": {
       "reference": "Practitioner/prac-chen"
     },
@@ -223,7 +223,7 @@
       ]
     },
     "total": {
-      "value": 2288.84,
+      "value": 973.24,
       "currency": "USD"
     }
   },
@@ -232,7 +232,7 @@
     "id": "claim-007",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.680Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "draft",
     "type": {
@@ -249,7 +249,7 @@
       "reference": "Patient/pat-007",
       "display": "Sofia Garcia"
     },
-    "created": "2025-10-11",
+    "created": "2025-06-16",
     "provider": {
       "reference": "Practitioner/prac-rodriguez"
     },
@@ -261,7 +261,7 @@
       ]
     },
     "total": {
-      "value": 4553.89,
+      "value": 4602.05,
       "currency": "USD"
     }
   },
@@ -270,9 +270,9 @@
     "id": "claim-008",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.680Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
-    "status": "active",
+    "status": "draft",
     "type": {
       "coding": [
         {
@@ -287,7 +287,7 @@
       "reference": "Patient/pat-008",
       "display": "Daniel Lee"
     },
-    "created": "2025-11-29",
+    "created": "2025-05-24",
     "provider": {
       "reference": "Practitioner/prac-kim"
     },
@@ -299,7 +299,7 @@
       ]
     },
     "total": {
-      "value": 2874.09,
+      "value": 508.44,
       "currency": "USD"
     }
   },
@@ -308,7 +308,7 @@
     "id": "claim-009",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.680Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "active",
     "type": {
@@ -325,7 +325,7 @@
       "reference": "Patient/pat-009",
       "display": "Patricia Anderson"
     },
-    "created": "2024-12-08",
+    "created": "2025-08-04",
     "provider": {
       "reference": "Practitioner/prac-okonkwo"
     },
@@ -337,7 +337,7 @@
       ]
     },
     "total": {
-      "value": 3815.87,
+      "value": 3094.6,
       "currency": "USD"
     }
   },
@@ -346,7 +346,7 @@
     "id": "claim-010",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.680Z"
+      "lastUpdated": "2026-05-21T16:44:27.202Z"
     },
     "status": "active",
     "type": {
@@ -363,7 +363,7 @@
       "reference": "Patient/pat-010",
       "display": "Michael Taylor"
     },
-    "created": "2025-01-22",
+    "created": "2025-10-02",
     "provider": {
       "reference": "Practitioner/prac-nguyen"
     },
@@ -375,7 +375,7 @@
       ]
     },
     "total": {
-      "value": 4628.09,
+      "value": 3759.52,
       "currency": "USD"
     }
   }

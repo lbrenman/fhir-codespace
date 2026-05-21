@@ -4,24 +4,24 @@
     "id": "imm-001-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.672Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "21",
-          "display": "Varicella vaccine"
+          "code": "207",
+          "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
         }
       ],
-      "text": "Varicella vaccine"
+      "text": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
     },
     "patient": {
       "reference": "Patient/pat-001",
       "display": "Margaret Thompson"
     },
-    "occurrenceDateTime": "2024-05-18",
+    "occurrenceDateTime": "2024-07-01",
     "performer": [
       {
         "actor": {
@@ -35,24 +35,24 @@
     "id": "imm-001-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.672Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "208",
-          "display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
+          "code": "141",
+          "display": "Influenza, seasonal, injectable"
         }
       ],
-      "text": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
+      "text": "Influenza, seasonal, injectable"
     },
     "patient": {
       "reference": "Patient/pat-001",
       "display": "Margaret Thompson"
     },
-    "occurrenceDateTime": "2024-01-25",
+    "occurrenceDateTime": "2025-10-21",
     "performer": [
       {
         "actor": {
@@ -66,24 +66,24 @@
     "id": "imm-001-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.672Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "08",
-          "display": "Hepatitis B vaccine"
+          "code": "33",
+          "display": "Pneumococcal polysaccharide vaccine, 23 valent"
         }
       ],
-      "text": "Hepatitis B vaccine"
+      "text": "Pneumococcal polysaccharide vaccine, 23 valent"
     },
     "patient": {
       "reference": "Patient/pat-001",
       "display": "Margaret Thompson"
     },
-    "occurrenceDateTime": "2021-06-23",
+    "occurrenceDateTime": "2025-05-04",
     "performer": [
       {
         "actor": {
@@ -97,24 +97,24 @@
     "id": "imm-002-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.672Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "33",
-          "display": "Pneumococcal polysaccharide vaccine, 23 valent"
+          "code": "207",
+          "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
         }
       ],
-      "text": "Pneumococcal polysaccharide vaccine, 23 valent"
+      "text": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
     },
     "patient": {
       "reference": "Patient/pat-002",
       "display": "Robert Davis"
     },
-    "occurrenceDateTime": "2024-06-03",
+    "occurrenceDateTime": "2022-09-02",
     "performer": [
       {
         "actor": {
@@ -128,24 +128,24 @@
     "id": "imm-002-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.672Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "140",
-          "display": "Influenza, seasonal, injectable, preservative free"
+          "code": "08",
+          "display": "Hepatitis B vaccine"
         }
       ],
-      "text": "Influenza, seasonal, injectable, preservative free"
+      "text": "Hepatitis B vaccine"
     },
     "patient": {
       "reference": "Patient/pat-002",
       "display": "Robert Davis"
     },
-    "occurrenceDateTime": "2025-01-08",
+    "occurrenceDateTime": "2025-04-11",
     "performer": [
       {
         "actor": {
@@ -159,24 +159,24 @@
     "id": "imm-003-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.672Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "33",
-          "display": "Pneumococcal polysaccharide vaccine, 23 valent"
+          "code": "140",
+          "display": "Influenza, seasonal, injectable, preservative free"
         }
       ],
-      "text": "Pneumococcal polysaccharide vaccine, 23 valent"
+      "text": "Influenza, seasonal, injectable, preservative free"
     },
     "patient": {
       "reference": "Patient/pat-003",
       "display": "Isabella Martinez"
     },
-    "occurrenceDateTime": "2021-04-30",
+    "occurrenceDateTime": "2021-08-10",
     "performer": [
       {
         "actor": {
@@ -190,24 +190,24 @@
     "id": "imm-003-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.672Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "21",
-          "display": "Varicella vaccine"
+          "code": "08",
+          "display": "Hepatitis B vaccine"
         }
       ],
-      "text": "Varicella vaccine"
+      "text": "Hepatitis B vaccine"
     },
     "patient": {
       "reference": "Patient/pat-003",
       "display": "Isabella Martinez"
     },
-    "occurrenceDateTime": "2025-03-20",
+    "occurrenceDateTime": "2022-10-01",
     "performer": [
       {
         "actor": {
@@ -221,24 +221,24 @@
     "id": "imm-003-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.672Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "207",
-          "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
+          "code": "141",
+          "display": "Influenza, seasonal, injectable"
         }
       ],
-      "text": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
+      "text": "Influenza, seasonal, injectable"
     },
     "patient": {
       "reference": "Patient/pat-003",
       "display": "Isabella Martinez"
     },
-    "occurrenceDateTime": "2021-09-23",
+    "occurrenceDateTime": "2024-07-28",
     "performer": [
       {
         "actor": {
@@ -252,24 +252,55 @@
     "id": "imm-004-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.672Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "208",
-          "display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
+          "code": "33",
+          "display": "Pneumococcal polysaccharide vaccine, 23 valent"
         }
       ],
-      "text": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
+      "text": "Pneumococcal polysaccharide vaccine, 23 valent"
     },
     "patient": {
       "reference": "Patient/pat-004",
       "display": "James Williams"
     },
-    "occurrenceDateTime": "2025-08-29",
+    "occurrenceDateTime": "2023-07-03",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-johnson"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-004-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "113",
+          "display": "Td (adult) preservative free"
+        }
+      ],
+      "text": "Td (adult) preservative free"
+    },
+    "patient": {
+      "reference": "Patient/pat-004",
+      "display": "James Williams"
+    },
+    "occurrenceDateTime": "2025-03-10",
     "performer": [
       {
         "actor": {
@@ -283,55 +314,24 @@
     "id": "imm-005-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.673Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "208",
-          "display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
+          "code": "141",
+          "display": "Influenza, seasonal, injectable"
         }
       ],
-      "text": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
+      "text": "Influenza, seasonal, injectable"
     },
     "patient": {
       "reference": "Patient/pat-005",
       "display": "Yuki Nakamura"
     },
-    "occurrenceDateTime": "2024-01-05",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-patel"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Immunization",
-    "id": "imm-005-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.673Z"
-    },
-    "status": "completed",
-    "vaccineCode": {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "207",
-          "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
-        }
-      ],
-      "text": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
-    },
-    "patient": {
-      "reference": "Patient/pat-005",
-      "display": "Yuki Nakamura"
-    },
-    "occurrenceDateTime": "2024-03-02",
+    "occurrenceDateTime": "2023-06-10",
     "performer": [
       {
         "actor": {
@@ -345,7 +345,7 @@
     "id": "imm-006-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.673Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
@@ -362,7 +362,7 @@
       "reference": "Patient/pat-006",
       "display": "Charles Brown"
     },
-    "occurrenceDateTime": "2024-06-23",
+    "occurrenceDateTime": "2024-10-20",
     "performer": [
       {
         "actor": {
@@ -376,24 +376,24 @@
     "id": "imm-006-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.673Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "33",
-          "display": "Pneumococcal polysaccharide vaccine, 23 valent"
+          "code": "08",
+          "display": "Hepatitis B vaccine"
         }
       ],
-      "text": "Pneumococcal polysaccharide vaccine, 23 valent"
+      "text": "Hepatitis B vaccine"
     },
     "patient": {
       "reference": "Patient/pat-006",
       "display": "Charles Brown"
     },
-    "occurrenceDateTime": "2023-02-24",
+    "occurrenceDateTime": "2021-08-21",
     "performer": [
       {
         "actor": {
@@ -407,24 +407,24 @@
     "id": "imm-007-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.673Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "140",
-          "display": "Influenza, seasonal, injectable, preservative free"
+          "code": "141",
+          "display": "Influenza, seasonal, injectable"
         }
       ],
-      "text": "Influenza, seasonal, injectable, preservative free"
+      "text": "Influenza, seasonal, injectable"
     },
     "patient": {
       "reference": "Patient/pat-007",
       "display": "Sofia Garcia"
     },
-    "occurrenceDateTime": "2024-04-22",
+    "occurrenceDateTime": "2021-09-13",
     "performer": [
       {
         "actor": {
@@ -438,38 +438,7 @@
     "id": "imm-007-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.673Z"
-    },
-    "status": "completed",
-    "vaccineCode": {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "141",
-          "display": "Influenza, seasonal, injectable"
-        }
-      ],
-      "text": "Influenza, seasonal, injectable"
-    },
-    "patient": {
-      "reference": "Patient/pat-007",
-      "display": "Sofia Garcia"
-    },
-    "occurrenceDateTime": "2025-09-27",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-rodriguez"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Immunization",
-    "id": "imm-007-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.673Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
@@ -486,7 +455,7 @@
       "reference": "Patient/pat-007",
       "display": "Sofia Garcia"
     },
-    "occurrenceDateTime": "2025-09-24",
+    "occurrenceDateTime": "2023-07-26",
     "performer": [
       {
         "actor": {
@@ -500,7 +469,69 @@
     "id": "imm-008-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.673Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "21",
+          "display": "Varicella vaccine"
+        }
+      ],
+      "text": "Varicella vaccine"
+    },
+    "patient": {
+      "reference": "Patient/pat-008",
+      "display": "Daniel Lee"
+    },
+    "occurrenceDateTime": "2021-12-31",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-kim"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-008-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "33",
+          "display": "Pneumococcal polysaccharide vaccine, 23 valent"
+        }
+      ],
+      "text": "Pneumococcal polysaccharide vaccine, 23 valent"
+    },
+    "patient": {
+      "reference": "Patient/pat-008",
+      "display": "Daniel Lee"
+    },
+    "occurrenceDateTime": "2023-03-20",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-kim"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-008-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
@@ -517,69 +548,7 @@
       "reference": "Patient/pat-008",
       "display": "Daniel Lee"
     },
-    "occurrenceDateTime": "2025-09-12",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-kim"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Immunization",
-    "id": "imm-008-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.673Z"
-    },
-    "status": "completed",
-    "vaccineCode": {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "08",
-          "display": "Hepatitis B vaccine"
-        }
-      ],
-      "text": "Hepatitis B vaccine"
-    },
-    "patient": {
-      "reference": "Patient/pat-008",
-      "display": "Daniel Lee"
-    },
-    "occurrenceDateTime": "2021-04-07",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-kim"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Immunization",
-    "id": "imm-008-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
-    },
-    "status": "completed",
-    "vaccineCode": {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "140",
-          "display": "Influenza, seasonal, injectable, preservative free"
-        }
-      ],
-      "text": "Influenza, seasonal, injectable, preservative free"
-    },
-    "patient": {
-      "reference": "Patient/pat-008",
-      "display": "Daniel Lee"
-    },
-    "occurrenceDateTime": "2023-12-28",
+    "occurrenceDateTime": "2023-12-27",
     "performer": [
       {
         "actor": {
@@ -593,7 +562,7 @@
     "id": "imm-009-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
@@ -610,7 +579,7 @@
       "reference": "Patient/pat-009",
       "display": "Patricia Anderson"
     },
-    "occurrenceDateTime": "2023-01-31",
+    "occurrenceDateTime": "2024-08-26",
     "performer": [
       {
         "actor": {
@@ -624,24 +593,24 @@
     "id": "imm-010-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "208",
-          "display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
+          "code": "21",
+          "display": "Varicella vaccine"
         }
       ],
-      "text": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
+      "text": "Varicella vaccine"
     },
     "patient": {
       "reference": "Patient/pat-010",
       "display": "Michael Taylor"
     },
-    "occurrenceDateTime": "2022-05-23",
+    "occurrenceDateTime": "2023-10-17",
     "performer": [
       {
         "actor": {
@@ -655,100 +624,7 @@
     "id": "imm-010-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
-    },
-    "status": "completed",
-    "vaccineCode": {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "113",
-          "display": "Td (adult) preservative free"
-        }
-      ],
-      "text": "Td (adult) preservative free"
-    },
-    "patient": {
-      "reference": "Patient/pat-010",
-      "display": "Michael Taylor"
-    },
-    "occurrenceDateTime": "2021-07-23",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-nguyen"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Immunization",
-    "id": "imm-010-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
-    },
-    "status": "completed",
-    "vaccineCode": {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "140",
-          "display": "Influenza, seasonal, injectable, preservative free"
-        }
-      ],
-      "text": "Influenza, seasonal, injectable, preservative free"
-    },
-    "patient": {
-      "reference": "Patient/pat-010",
-      "display": "Michael Taylor"
-    },
-    "occurrenceDateTime": "2022-04-16",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-nguyen"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Immunization",
-    "id": "imm-011-1",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
-    },
-    "status": "completed",
-    "vaccineCode": {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "08",
-          "display": "Hepatitis B vaccine"
-        }
-      ],
-      "text": "Hepatitis B vaccine"
-    },
-    "patient": {
-      "reference": "Patient/pat-011",
-      "display": "Elena Hernandez"
-    },
-    "occurrenceDateTime": "2023-07-16",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-patel"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Immunization",
-    "id": "imm-011-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
@@ -762,10 +638,72 @@
       "text": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
     },
     "patient": {
+      "reference": "Patient/pat-010",
+      "display": "Michael Taylor"
+    },
+    "occurrenceDateTime": "2024-12-23",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-nguyen"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-010-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "141",
+          "display": "Influenza, seasonal, injectable"
+        }
+      ],
+      "text": "Influenza, seasonal, injectable"
+    },
+    "patient": {
+      "reference": "Patient/pat-010",
+      "display": "Michael Taylor"
+    },
+    "occurrenceDateTime": "2024-02-26",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-nguyen"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-011-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "141",
+          "display": "Influenza, seasonal, injectable"
+        }
+      ],
+      "text": "Influenza, seasonal, injectable"
+    },
+    "patient": {
       "reference": "Patient/pat-011",
       "display": "Elena Hernandez"
     },
-    "occurrenceDateTime": "2025-07-30",
+    "occurrenceDateTime": "2024-08-24",
     "performer": [
       {
         "actor": {
@@ -779,24 +717,55 @@
     "id": "imm-012-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "113",
-          "display": "Td (adult) preservative free"
+          "code": "207",
+          "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
         }
       ],
-      "text": "Td (adult) preservative free"
+      "text": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
     },
     "patient": {
       "reference": "Patient/pat-012",
       "display": "William Moore"
     },
-    "occurrenceDateTime": "2023-02-18",
+    "occurrenceDateTime": "2024-06-04",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-brown"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-012-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "141",
+          "display": "Influenza, seasonal, injectable"
+        }
+      ],
+      "text": "Influenza, seasonal, injectable"
+    },
+    "patient": {
+      "reference": "Patient/pat-012",
+      "display": "William Moore"
+    },
+    "occurrenceDateTime": "2021-04-21",
     "performer": [
       {
         "actor": {
@@ -810,7 +779,7 @@
     "id": "imm-013-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
@@ -827,7 +796,7 @@
       "reference": "Patient/pat-013",
       "display": "Jennifer Clark"
     },
-    "occurrenceDateTime": "2025-04-10",
+    "occurrenceDateTime": "2021-03-10",
     "performer": [
       {
         "actor": {
@@ -841,7 +810,7 @@
     "id": "imm-014-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
@@ -858,7 +827,7 @@
       "reference": "Patient/pat-014",
       "display": "Thomas Lewis"
     },
-    "occurrenceDateTime": "2022-09-20",
+    "occurrenceDateTime": "2024-11-04",
     "performer": [
       {
         "actor": {
@@ -872,24 +841,24 @@
     "id": "imm-014-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "141",
-          "display": "Influenza, seasonal, injectable"
+          "code": "33",
+          "display": "Pneumococcal polysaccharide vaccine, 23 valent"
         }
       ],
-      "text": "Influenza, seasonal, injectable"
+      "text": "Pneumococcal polysaccharide vaccine, 23 valent"
     },
     "patient": {
       "reference": "Patient/pat-014",
       "display": "Thomas Lewis"
     },
-    "occurrenceDateTime": "2021-11-05",
+    "occurrenceDateTime": "2024-06-26",
     "performer": [
       {
         "actor": {
@@ -903,24 +872,24 @@
     "id": "imm-014-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "33",
-          "display": "Pneumococcal polysaccharide vaccine, 23 valent"
+          "code": "207",
+          "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
         }
       ],
-      "text": "Pneumococcal polysaccharide vaccine, 23 valent"
+      "text": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
     },
     "patient": {
       "reference": "Patient/pat-014",
       "display": "Thomas Lewis"
     },
-    "occurrenceDateTime": "2023-02-08",
+    "occurrenceDateTime": "2023-02-26",
     "performer": [
       {
         "actor": {
@@ -934,24 +903,24 @@
     "id": "imm-015-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "113",
-          "display": "Td (adult) preservative free"
+          "code": "08",
+          "display": "Hepatitis B vaccine"
         }
       ],
-      "text": "Td (adult) preservative free"
+      "text": "Hepatitis B vaccine"
     },
     "patient": {
       "reference": "Patient/pat-015",
       "display": "Sarah Robinson"
     },
-    "occurrenceDateTime": "2024-04-08",
+    "occurrenceDateTime": "2025-01-13",
     "performer": [
       {
         "actor": {
@@ -965,24 +934,24 @@
     "id": "imm-015-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "33",
-          "display": "Pneumococcal polysaccharide vaccine, 23 valent"
+          "code": "21",
+          "display": "Varicella vaccine"
         }
       ],
-      "text": "Pneumococcal polysaccharide vaccine, 23 valent"
+      "text": "Varicella vaccine"
     },
     "patient": {
       "reference": "Patient/pat-015",
       "display": "Sarah Robinson"
     },
-    "occurrenceDateTime": "2023-02-22",
+    "occurrenceDateTime": "2024-09-06",
     "performer": [
       {
         "actor": {
@@ -996,7 +965,38 @@
     "id": "imm-016-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "207",
+          "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
+        }
+      ],
+      "text": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
+    },
+    "patient": {
+      "reference": "Patient/pat-016",
+      "display": "Richard Walker"
+    },
+    "occurrenceDateTime": "2024-08-25",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-johnson"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-016-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
@@ -1013,7 +1013,38 @@
       "reference": "Patient/pat-016",
       "display": "Richard Walker"
     },
-    "occurrenceDateTime": "2022-08-10",
+    "occurrenceDateTime": "2025-10-03",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-johnson"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-016-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "113",
+          "display": "Td (adult) preservative free"
+        }
+      ],
+      "text": "Td (adult) preservative free"
+    },
+    "patient": {
+      "reference": "Patient/pat-016",
+      "display": "Richard Walker"
+    },
+    "occurrenceDateTime": "2023-06-10",
     "performer": [
       {
         "actor": {
@@ -1027,38 +1058,7 @@
     "id": "imm-017-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
-    },
-    "status": "completed",
-    "vaccineCode": {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "208",
-          "display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
-        }
-      ],
-      "text": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
-    },
-    "patient": {
-      "reference": "Patient/pat-017",
-      "display": "Emily Hall"
-    },
-    "occurrenceDateTime": "2021-03-08",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-patel"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Immunization",
-    "id": "imm-017-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
@@ -1075,7 +1075,38 @@
       "reference": "Patient/pat-017",
       "display": "Emily Hall"
     },
-    "occurrenceDateTime": "2023-03-31",
+    "occurrenceDateTime": "2024-05-08",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-patel"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-017-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "08",
+          "display": "Hepatitis B vaccine"
+        }
+      ],
+      "text": "Hepatitis B vaccine"
+    },
+    "patient": {
+      "reference": "Patient/pat-017",
+      "display": "Emily Hall"
+    },
+    "occurrenceDateTime": "2024-06-17",
     "performer": [
       {
         "actor": {
@@ -1089,24 +1120,24 @@
     "id": "imm-017-3",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "140",
-          "display": "Influenza, seasonal, injectable, preservative free"
+          "code": "141",
+          "display": "Influenza, seasonal, injectable"
         }
       ],
-      "text": "Influenza, seasonal, injectable, preservative free"
+      "text": "Influenza, seasonal, injectable"
     },
     "patient": {
       "reference": "Patient/pat-017",
       "display": "Emily Hall"
     },
-    "occurrenceDateTime": "2024-08-19",
+    "occurrenceDateTime": "2024-09-02",
     "performer": [
       {
         "actor": {
@@ -1120,7 +1151,7 @@
     "id": "imm-018-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
@@ -1137,7 +1168,38 @@
       "reference": "Patient/pat-018",
       "display": "George Allen"
     },
-    "occurrenceDateTime": "2021-09-30",
+    "occurrenceDateTime": "2024-10-27",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-okonkwo"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-018-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "21",
+          "display": "Varicella vaccine"
+        }
+      ],
+      "text": "Varicella vaccine"
+    },
+    "patient": {
+      "reference": "Patient/pat-018",
+      "display": "George Allen"
+    },
+    "occurrenceDateTime": "2025-09-18",
     "performer": [
       {
         "actor": {
@@ -1151,38 +1213,7 @@
     "id": "imm-019-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
-    },
-    "status": "completed",
-    "vaccineCode": {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "140",
-          "display": "Influenza, seasonal, injectable, preservative free"
-        }
-      ],
-      "text": "Influenza, seasonal, injectable, preservative free"
-    },
-    "patient": {
-      "reference": "Patient/pat-019",
-      "display": "Amanda Young"
-    },
-    "occurrenceDateTime": "2022-03-26",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-nguyen"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Immunization",
-    "id": "imm-019-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
@@ -1199,7 +1230,69 @@
       "reference": "Patient/pat-019",
       "display": "Amanda Young"
     },
-    "occurrenceDateTime": "2024-09-27",
+    "occurrenceDateTime": "2023-09-03",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-nguyen"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-019-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "113",
+          "display": "Td (adult) preservative free"
+        }
+      ],
+      "text": "Td (adult) preservative free"
+    },
+    "patient": {
+      "reference": "Patient/pat-019",
+      "display": "Amanda Young"
+    },
+    "occurrenceDateTime": "2021-04-23",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-nguyen"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-019-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "208",
+          "display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
+        }
+      ],
+      "text": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
+    },
+    "patient": {
+      "reference": "Patient/pat-019",
+      "display": "Amanda Young"
+    },
+    "occurrenceDateTime": "2025-10-28",
     "performer": [
       {
         "actor": {
@@ -1213,24 +1306,86 @@
     "id": "imm-020-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "207",
-          "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
+          "code": "141",
+          "display": "Influenza, seasonal, injectable"
         }
       ],
-      "text": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
+      "text": "Influenza, seasonal, injectable"
     },
     "patient": {
       "reference": "Patient/pat-020",
       "display": "Joseph King"
     },
-    "occurrenceDateTime": "2024-07-23",
+    "occurrenceDateTime": "2024-12-31",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-kim"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-020-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "208",
+          "display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
+        }
+      ],
+      "text": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
+    },
+    "patient": {
+      "reference": "Patient/pat-020",
+      "display": "Joseph King"
+    },
+    "occurrenceDateTime": "2022-10-18",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-kim"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-020-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "08",
+          "display": "Hepatitis B vaccine"
+        }
+      ],
+      "text": "Hepatitis B vaccine"
+    },
+    "patient": {
+      "reference": "Patient/pat-020",
+      "display": "Joseph King"
+    },
+    "occurrenceDateTime": "2021-12-24",
     "performer": [
       {
         "actor": {
@@ -1244,7 +1399,38 @@
     "id": "imm-021-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "113",
+          "display": "Td (adult) preservative free"
+        }
+      ],
+      "text": "Td (adult) preservative free"
+    },
+    "patient": {
+      "reference": "Patient/pat-021",
+      "display": "Lisa Wright"
+    },
+    "occurrenceDateTime": "2022-06-20",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-brown"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-021-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
@@ -1261,38 +1447,7 @@
       "reference": "Patient/pat-021",
       "display": "Lisa Wright"
     },
-    "occurrenceDateTime": "2023-08-31",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-brown"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Immunization",
-    "id": "imm-021-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
-    },
-    "status": "completed",
-    "vaccineCode": {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "08",
-          "display": "Hepatitis B vaccine"
-        }
-      ],
-      "text": "Hepatitis B vaccine"
-    },
-    "patient": {
-      "reference": "Patient/pat-021",
-      "display": "Lisa Wright"
-    },
-    "occurrenceDateTime": "2024-06-01",
+    "occurrenceDateTime": "2022-08-13",
     "performer": [
       {
         "actor": {
@@ -1306,100 +1461,7 @@
     "id": "imm-022-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
-    },
-    "status": "completed",
-    "vaccineCode": {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "140",
-          "display": "Influenza, seasonal, injectable, preservative free"
-        }
-      ],
-      "text": "Influenza, seasonal, injectable, preservative free"
-    },
-    "patient": {
-      "reference": "Patient/pat-022",
-      "display": "Kevin Scott"
-    },
-    "occurrenceDateTime": "2021-04-03",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-johnson"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Immunization",
-    "id": "imm-023-1",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
-    },
-    "status": "completed",
-    "vaccineCode": {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "113",
-          "display": "Td (adult) preservative free"
-        }
-      ],
-      "text": "Td (adult) preservative free"
-    },
-    "patient": {
-      "reference": "Patient/pat-023",
-      "display": "Nancy Green"
-    },
-    "occurrenceDateTime": "2025-09-26",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-patel"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Immunization",
-    "id": "imm-023-2",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
-    },
-    "status": "completed",
-    "vaccineCode": {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "141",
-          "display": "Influenza, seasonal, injectable"
-        }
-      ],
-      "text": "Influenza, seasonal, injectable"
-    },
-    "patient": {
-      "reference": "Patient/pat-023",
-      "display": "Nancy Green"
-    },
-    "occurrenceDateTime": "2022-05-18",
-    "performer": [
-      {
-        "actor": {
-          "reference": "Practitioner/prac-patel"
-        }
-      }
-    ]
-  },
-  {
-    "resourceType": "Immunization",
-    "id": "imm-023-3",
-    "meta": {
-      "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
@@ -1413,10 +1475,72 @@
       "text": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose"
     },
     "patient": {
+      "reference": "Patient/pat-022",
+      "display": "Kevin Scott"
+    },
+    "occurrenceDateTime": "2023-09-29",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-johnson"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-023-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "140",
+          "display": "Influenza, seasonal, injectable, preservative free"
+        }
+      ],
+      "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
       "reference": "Patient/pat-023",
       "display": "Nancy Green"
     },
-    "occurrenceDateTime": "2024-01-23",
+    "occurrenceDateTime": "2025-02-27",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-patel"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-023-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "208",
+          "display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
+        }
+      ],
+      "text": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
+    },
+    "patient": {
+      "reference": "Patient/pat-023",
+      "display": "Nancy Green"
+    },
+    "occurrenceDateTime": "2022-04-10",
     "performer": [
       {
         "actor": {
@@ -1430,24 +1554,24 @@
     "id": "imm-024-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "21",
-          "display": "Varicella vaccine"
+          "code": "208",
+          "display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
         }
       ],
-      "text": "Varicella vaccine"
+      "text": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3mL dose"
     },
     "patient": {
       "reference": "Patient/pat-024",
       "display": "Anthony Baker"
     },
-    "occurrenceDateTime": "2024-08-05",
+    "occurrenceDateTime": "2024-01-11",
     "performer": [
       {
         "actor": {
@@ -1461,24 +1585,55 @@
     "id": "imm-024-2",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "08",
-          "display": "Hepatitis B vaccine"
+          "code": "113",
+          "display": "Td (adult) preservative free"
         }
       ],
-      "text": "Hepatitis B vaccine"
+      "text": "Td (adult) preservative free"
     },
     "patient": {
       "reference": "Patient/pat-024",
       "display": "Anthony Baker"
     },
-    "occurrenceDateTime": "2024-08-12",
+    "occurrenceDateTime": "2025-07-23",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-chen"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-024-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "33",
+          "display": "Pneumococcal polysaccharide vaccine, 23 valent"
+        }
+      ],
+      "text": "Pneumococcal polysaccharide vaccine, 23 valent"
+    },
+    "patient": {
+      "reference": "Patient/pat-024",
+      "display": "Anthony Baker"
+    },
+    "occurrenceDateTime": "2024-06-15",
     "performer": [
       {
         "actor": {
@@ -1492,24 +1647,86 @@
     "id": "imm-025-1",
     "meta": {
       "versionId": "1",
-      "lastUpdated": "2026-05-21T11:28:49.678Z"
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
     },
     "status": "completed",
     "vaccineCode": {
       "coding": [
         {
           "system": "http://hl7.org/fhir/sid/cvx",
-          "code": "141",
-          "display": "Influenza, seasonal, injectable"
+          "code": "33",
+          "display": "Pneumococcal polysaccharide vaccine, 23 valent"
         }
       ],
-      "text": "Influenza, seasonal, injectable"
+      "text": "Pneumococcal polysaccharide vaccine, 23 valent"
     },
     "patient": {
       "reference": "Patient/pat-025",
       "display": "Karen Adams"
     },
-    "occurrenceDateTime": "2023-12-26",
+    "occurrenceDateTime": "2022-05-18",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-rodriguez"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-025-2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "08",
+          "display": "Hepatitis B vaccine"
+        }
+      ],
+      "text": "Hepatitis B vaccine"
+    },
+    "patient": {
+      "reference": "Patient/pat-025",
+      "display": "Karen Adams"
+    },
+    "occurrenceDateTime": "2024-08-07",
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/prac-rodriguez"
+        }
+      }
+    ]
+  },
+  {
+    "resourceType": "Immunization",
+    "id": "imm-025-3",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-05-21T16:44:27.201Z"
+    },
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "140",
+          "display": "Influenza, seasonal, injectable, preservative free"
+        }
+      ],
+      "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
+      "reference": "Patient/pat-025",
+      "display": "Karen Adams"
+    },
+    "occurrenceDateTime": "2022-03-12",
     "performer": [
       {
         "actor": {

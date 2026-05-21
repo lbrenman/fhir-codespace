@@ -6,8 +6,8 @@
     "3000": { "label": "FHIR API Server", "onAutoForward": "notify" },
     "5173": { "label": "FHIR Dashboard", "onAutoForward": "openBrowser" }
   },
-  "postCreateCommand": "cd server && npm install && npm run seed && cd ../dashboard && npm install",
-  "postStartCommand": "cd server && npm start & cd ../dashboard && npm run dev &",
+  "postCreateCommand": "bash setup.sh",
+  "postStartCommand": "cd server && npm start & cd dashboard && npm run dev &",
   "customizations": {
     "vscode": {
       "extensions": [
