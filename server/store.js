@@ -83,7 +83,7 @@ class FhirStore {
     if (!this.resources[resourceType]) {
       this.resources[resourceType] = {};
     }
-    const id = resource.id || crypto.randomUUID().split('-').slice(0, 2).join('-');
+    const id = resource.id || crypto.randomUUID().replace(/-/g, '').slice(0, 12);
     resource.id = id;
     resource.resourceType = resourceType;
     resource.meta = {

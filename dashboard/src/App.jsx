@@ -102,7 +102,7 @@ const TABLE_CONFIGS = {
   AllergyIntolerance: { cols: ['Patient','Substance','Category','Criticality','Status'], row: safeRow(r => [refDisplay(r.patient), getDisplayText(r.code), safeArr(r.category).join(', ')||'—', r.criticality||'—', badge(r.clinicalStatus?.coding?.[0]?.code)]) },
   Immunization: { cols: ['Patient','Vaccine','Status','Date','Dose'], row: safeRow(r => [refDisplay(r.patient), getDisplayText(r.vaccineCode), badge(r.status), fmtDate(r.occurrenceDateTime), r.protocolApplied?.[0]?.doseNumberPositiveInt||'—']) },
   Procedure: { cols: ['Patient','Procedure','Status','Date','Performer'], row: safeRow(r => [refDisplay(r.subject), getDisplayText(r.code), badge(r.status), fmtDate(r.performedDateTime||r.performedPeriod?.start), r.performer?.[0]?.actor?.display||'—']) },
-  Appointment: { cols: ['Description','Status','Start','End','Participant'], row: safeRow(r => [r.description||dtArr(r.serviceType)||'—', badge(r.status), fmtDate(r.start), fmtDate(r.end), safeArr(r.participant)[0]?.actor?.display||'—']) },
+  Appointment: { cols: ['Service Type','Status','Start','End','Participant'], row: safeRow(r => [dtArr(r.serviceType)||r.description||'—', badge(r.status), fmtDate(r.start), fmtDate(r.end), safeArr(r.participant)[0]?.actor?.display||'—']) },
   Claim: { cols: ['Patient','Type','Status','Total','Created'], row: safeRow(r => [refDisplay(r.patient), getDisplayText(r.type), badge(r.status), r.total?.value!=null?`$${r.total.value.toFixed(2)}`:'—', fmtDate(r.created)]) },
   DiagnosticReport: { cols: ['Patient','Report','Status','Category','Date'], row: safeRow(r => [refDisplay(r.subject), getDisplayText(r.code), badge(r.status), dtArr(r.category), fmtDate(r.effectiveDateTime)]) },
   Organization: { cols: ['Name','Type','Phone','City','Status'], row: safeRow(r => [r.name||'—', dtArr(r.type), getPhone(r), getAddr(r), badge(r.active!==false?'active':'cancelled')]) },
@@ -187,7 +187,7 @@ const DETAIL_FIELDS = {
     { label: 'Encounter', value: refDisplay(r.encounter) },
   ],
   Appointment: r => [
-    { label: 'Description', value: r.description || dtArr(r.serviceType) },
+    { label: 'Service Type', value: dtArr(r.serviceType) || r.description },
     { label: 'Status', value: r.status },
     { label: 'Start', value: fmtDate(r.start) },
     { label: 'End', value: fmtDate(r.end) },
@@ -364,12 +364,12 @@ function getFormConfig(type, refs) {
       fields: [
         { key:'patient', label:'Patient', type:'select', options:patientOptions, required:true },
         { key:'practitioner', label:'Practitioner', type:'select', options:pracOptions },
-        { key:'description', label:'Description' },
+        { key:'serviceType', label:'Service Type', type:'select', options:[{value:'Annual physical',label:'Annual physical'},{value:'Follow-up',label:'Follow-up'},{value:'Specialist consultation',label:'Specialist consultation'},{value:'Lab work',label:'Lab work'},{value:'General checkup',label:'General checkup'}] },
         { key:'status', label:'Status', type:'select', options:[{value:'booked',label:'Booked'},{value:'arrived',label:'Arrived'},{value:'fulfilled',label:'Fulfilled'},{value:'cancelled',label:'Cancelled'}] },
         { key:'date', label:'Date', type:'date', required:true },
       ],
-      toResource: d => ({ resourceType:'Appointment', status:d.status||'booked', description:d.description, start:`${d.date}T09:00:00Z`, end:`${d.date}T09:30:00Z`, minutesDuration:30, participant:[d.patient?{actor:{reference:`Patient/${d.patient}`,display:patientOptions.find(p=>p.value===d.patient)?.label},status:'accepted'}:null, d.practitioner?{actor:{reference:`Practitioner/${d.practitioner}`,display:pracOptions.find(p=>p.value===d.practitioner)?.label},status:'accepted'}:null].filter(Boolean) }),
-      fromResource: r => ({ patient:safeArr(r.participant).find(p=>p.actor?.reference?.startsWith('Patient'))?.actor?.reference?.split('/')?.[1]||'', practitioner:safeArr(r.participant).find(p=>p.actor?.reference?.startsWith('Practitioner'))?.actor?.reference?.split('/')?.[1]||'', description:r.description||'', status:r.status||'booked', date:r.start?.split('T')?.[0]||'' }),
+      toResource: d => ({ resourceType:'Appointment', status:d.status||'booked', serviceType:d.serviceType?[{coding:[{display:d.serviceType}]}]:undefined, start:`${d.date}T09:00:00Z`, end:`${d.date}T09:30:00Z`, minutesDuration:30, participant:[d.patient?{actor:{reference:`Patient/${d.patient}`,display:patientOptions.find(p=>p.value===d.patient)?.label},status:'accepted'}:null, d.practitioner?{actor:{reference:`Practitioner/${d.practitioner}`,display:pracOptions.find(p=>p.value===d.practitioner)?.label},status:'accepted'}:null].filter(Boolean) }),
+      fromResource: r => ({ patient:safeArr(r.participant).find(p=>p.actor?.reference?.startsWith('Patient'))?.actor?.reference?.split('/')?.[1]||'', practitioner:safeArr(r.participant).find(p=>p.actor?.reference?.startsWith('Practitioner'))?.actor?.reference?.split('/')?.[1]||'', serviceType:r.serviceType?.[0]?.coding?.[0]?.display||r.description||'', status:r.status||'booked', date:r.start?.split('T')?.[0]||'' }),
     },
     Claim: {
       fields: [

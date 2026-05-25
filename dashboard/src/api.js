@@ -34,6 +34,8 @@ async function request(url, opts = {}) {
     const msg = body?.issue?.[0]?.diagnostics || body?.error || `HTTP ${res.status}`;
     throw new Error(msg);
   }
+  // 204 No Content (e.g. DELETE) — no body to parse
+  if (res.status === 204) return {};
   return res.json();
 }
 
