@@ -85,7 +85,7 @@ const dtArr = cc => {
 };
 const badge = s => s ? <span className={`badge badge-${({active:'green',completed:'blue','in-progress':'amber',cancelled:'red',draft:'amber',finished:'green',arrived:'blue',triaged:'amber',planned:'blue',booked:'blue',pending:'amber',fulfilled:'green',confirmed:'green',final:'green',preliminary:'amber'})[s]||'blue'}`}>{s}</span> : null;
 const fmtDate = d => { try { if(!d) return '—'; return new Date(d).toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'}); } catch{ return d||'—'; }};
-const fmtDateTime = d => { try { if(!d) return '—'; const dt = new Date(d); return dt.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'}) + ' ' + dt.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}); } catch{ return d||'—'; }};
+const fmtDateTime = d => { try { if(!d) return '—'; const dt = new Date(d); return dt.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric',timeZone:'UTC'}) + ' ' + dt.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'UTC'}); } catch{ return d||'—'; }};
 const refDisplay = r => { try { return r?.display || r?.reference?.split('/')?.[1] || '—'; } catch { return '—'; } };
 const safeArr = v => Array.isArray(v) ? v : (v ? [v] : []);
 const getAddr = r => { try { const a = safeArr(r.address)[0]; return a?.city ? `${a.city}${a.state?', '+a.state:''}` : '—'; } catch { return '—'; } };
