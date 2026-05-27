@@ -127,14 +127,31 @@ class FhirStore {
         const field = PATIENT_FIELDS[resourceType];
         if (field) {
           for (const val of values) {
-            const ref = val.startsWith('Patient/') ? val : `Patient/${val}`;
-            results = results.filter(r => {
-              if (field === '_participant') {
-                // Appointment uses participant array
-                return (r.participant || []).some(p => p.actor?.reference === ref);
-              }
-              return r[field]?.reference === ref;
-            });
+            // Try as reference first (Patient/pat-001 or just pat-001)
+            const refStr = val.startsWith('Patient/') ? val : `Patient/${val}`;
+            const patientBucket = this.resources['Patient'] || {};
+            const patId = refStr.replace('Patient/', '');
+            const isExactRef = !!patientBucket[patId];
+
+            if (isExactRef) {
+              results = results.filter(r => {
+                if (field === '_participant') {
+                  return (r.participant || []).some(p => p.actor?.reference === refStr);
+                }
+                return r[field]?.reference === refStr;
+              });
+            } else {
+              // Treat as name search — match against display text
+              const lower = val.toLowerCase();
+              results = results.filter(r => {
+                if (field === '_participant') {
+                  return (r.participant || []).some(p =>
+                    p.actor?.display?.toLowerCase().includes(lower)
+                  );
+                }
+                return r[field]?.display?.toLowerCase().includes(lower);
+              });
+            }
           }
           continue;
         }
