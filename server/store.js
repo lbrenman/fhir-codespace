@@ -47,12 +47,111 @@ class FhirStore {
     if (!bucket) return { resourceType: 'Bundle', type: 'searchset', total: 0, entry: [] };
     let results = Object.values(bucket);
 
-    // Basic search parameter filtering
-    for (const [key, value] of Object.entries(queryParams)) {
-      if (key.startsWith('_')) continue; // skip special params
-      results = results.filter(r => {
-        return JSON.stringify(r).toLowerCase().includes(value.toLowerCase());
-      });
+    // ── FHIR date field mapping per resource type ──
+    const DATE_FIELDS = {
+      Appointment: ['start'],
+      Encounter: ['period.start'],
+      Observation: ['effectiveDateTime'],
+      Condition: ['onsetDateTime','recordedDate'],
+      Procedure: ['performedDateTime','performedPeriod.start'],
+      MedicationRequest: ['authoredOn'],
+      Immunization: ['occurrenceDateTime'],
+      DiagnosticReport: ['effectiveDateTime','issued'],
+      Claim: ['created'],
+      AllergyIntolerance: ['recordedDate'],
+    };
+
+    // ── FHIR patient/subject reference field mapping ──
+    const PATIENT_FIELDS = {
+      Encounter: 'subject', Observation: 'subject', Condition: 'subject',
+      Procedure: 'subject', MedicationRequest: 'subject', DiagnosticReport: 'subject',
+      AllergyIntolerance: 'patient', Immunization: 'patient', Appointment: '_participant',
+      Claim: 'patient',
+    };
+
+    // Helper: resolve nested dot-path (e.g. "period.start")
+    const getField = (obj, path) => {
+      return path.split('.').reduce((o, k) => o?.[k], obj);
+    };
+
+    // Helper: parse FHIR date prefix (ge2026-06-01 → { prefix: 'ge', date: Date })
+    const parseDateParam = (val) => {
+      const prefixes = ['ge','le','gt','lt','eq'];
+      for (const p of prefixes) {
+        if (val.startsWith(p)) return { prefix: p, date: new Date(val.slice(2)) };
+      }
+      return { prefix: 'eq', date: new Date(val) };
+    };
+
+    // Helper: compare a resource date value against a FHIR date condition
+    const matchesDate = (resourceDateStr, prefix, targetDate) => {
+      if (!resourceDateStr) return false;
+      const rd = new Date(resourceDateStr).getTime();
+      const td = targetDate.getTime();
+      if (isNaN(rd) || isNaN(td)) return false;
+      switch (prefix) {
+        case 'eq': return rd >= td && rd < td + 86400000; // same day
+        case 'ge': return rd >= td;
+        case 'le': return rd <= td;
+        case 'gt': return rd > td;
+        case 'lt': return rd < td;
+        default: return true;
+      }
+    };
+
+    // Process query params
+    for (const [key, rawValue] of Object.entries(queryParams)) {
+      if (key.startsWith('_')) continue; // skip _count, _offset, etc.
+
+      // Support repeated params: ?date=ge...&date=le... comes as array or string
+      const values = Array.isArray(rawValue) ? rawValue : [rawValue];
+
+      // ── Date search parameter ──
+      if (key === 'date') {
+        const dateFields = DATE_FIELDS[resourceType];
+        if (dateFields) {
+          for (const val of values) {
+            const { prefix, date } = parseDateParam(val);
+            if (!isNaN(date.getTime())) {
+              results = results.filter(r =>
+                dateFields.some(f => matchesDate(getField(r, f), prefix, date))
+              );
+            }
+          }
+          continue;
+        }
+      }
+
+      // ── Patient/subject search parameter ──
+      if (key === 'patient' || key === 'subject') {
+        const field = PATIENT_FIELDS[resourceType];
+        if (field) {
+          for (const val of values) {
+            const ref = val.startsWith('Patient/') ? val : `Patient/${val}`;
+            results = results.filter(r => {
+              if (field === '_participant') {
+                // Appointment uses participant array
+                return (r.participant || []).some(p => p.actor?.reference === ref);
+              }
+              return r[field]?.reference === ref;
+            });
+          }
+          continue;
+        }
+      }
+
+      // ── Status search parameter ──
+      if (key === 'status') {
+        for (const val of values) {
+          results = results.filter(r => r.status === val);
+        }
+        continue;
+      }
+
+      // ── Fallback: generic text search ──
+      for (const val of values) {
+        results = results.filter(r => JSON.stringify(r).toLowerCase().includes(val.toLowerCase()));
+      }
     }
 
     // Pagination
