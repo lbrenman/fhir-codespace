@@ -1,6 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const store = require('../store');
+
+// Conditional store: Postgres if DATABASE_URL is set, otherwise in-memory JSON
+const store = process.env.DATABASE_URL
+  ? require('../store-pg')
+  : require('../store');
 
 // Supported FHIR resource types from the spec
 const RESOURCE_TYPES = [
@@ -41,7 +45,6 @@ const RESOURCE_TYPES = [
   'VerificationResult','VisionPrescription',
 ];
 
-// Helper to build OperationOutcome
 function operationOutcome(severity, code, diagnostics) {
   return {
     resourceType: 'OperationOutcome',
@@ -50,82 +53,106 @@ function operationOutcome(severity, code, diagnostics) {
 }
 
 // ── Search (GET /:resourceType) ──
-router.get('/:resourceType', (req, res) => {
-  const { resourceType } = req.params;
-  if (!RESOURCE_TYPES.includes(resourceType)) {
-    return res.status(404).json(operationOutcome('error', 'not-found', `Unknown resource type: ${resourceType}`));
+router.get('/:resourceType', async (req, res) => {
+  try {
+    const { resourceType } = req.params;
+    if (!RESOURCE_TYPES.includes(resourceType)) {
+      return res.status(404).json(operationOutcome('error', 'not-found', `Unknown resource type: ${resourceType}`));
+    }
+    const bundle = await store.search(resourceType, req.query);
+    res.set('Content-Type', 'application/fhir+json');
+    res.json(bundle);
+  } catch (e) {
+    res.status(500).json(operationOutcome('error', 'exception', e.message));
   }
-  const bundle = store.search(resourceType, req.query);
-  res.set('Content-Type', 'application/fhir+json');
-  res.json(bundle);
 });
 
 // ── Read (GET /:resourceType/:id) ──
-router.get('/:resourceType/:id', (req, res) => {
-  const { resourceType, id } = req.params;
-  if (!RESOURCE_TYPES.includes(resourceType)) {
-    return res.status(404).json(operationOutcome('error', 'not-found', `Unknown resource type: ${resourceType}`));
+router.get('/:resourceType/:id', async (req, res) => {
+  try {
+    const { resourceType, id } = req.params;
+    if (!RESOURCE_TYPES.includes(resourceType)) {
+      return res.status(404).json(operationOutcome('error', 'not-found', `Unknown resource type: ${resourceType}`));
+    }
+    const resource = await store.read(resourceType, id);
+    if (!resource) {
+      return res.status(404).json(operationOutcome('error', 'not-found', `${resourceType}/${id} not found`));
+    }
+    res.set('Content-Type', 'application/fhir+json');
+    res.set('ETag', `W/"${resource.meta?.versionId || '1'}"`);
+    res.set('Last-Modified', resource.meta?.lastUpdated || new Date().toISOString());
+    res.json(resource);
+  } catch (e) {
+    res.status(500).json(operationOutcome('error', 'exception', e.message));
   }
-  const resource = store.read(resourceType, id);
-  if (!resource) {
-    return res.status(404).json(operationOutcome('error', 'not-found', `${resourceType}/${id} not found`));
-  }
-  res.set('Content-Type', 'application/fhir+json');
-  res.set('ETag', `W/"${resource.meta?.versionId || '1'}"`);
-  res.set('Last-Modified', resource.meta?.lastUpdated || new Date().toISOString());
-  res.json(resource);
 });
 
 // ── Create (POST /:resourceType) ──
-router.post('/:resourceType', (req, res) => {
-  const { resourceType } = req.params;
-  if (!RESOURCE_TYPES.includes(resourceType)) {
-    return res.status(404).json(operationOutcome('error', 'not-found', `Unknown resource type: ${resourceType}`));
+router.post('/:resourceType', async (req, res) => {
+  try {
+    const { resourceType } = req.params;
+    if (!RESOURCE_TYPES.includes(resourceType)) {
+      return res.status(404).json(operationOutcome('error', 'not-found', `Unknown resource type: ${resourceType}`));
+    }
+    if (!req.body || typeof req.body !== 'object') {
+      return res.status(400).json(operationOutcome('error', 'invalid', 'Request body must be a valid JSON resource'));
+    }
+    const created = await store.create(resourceType, req.body);
+    res.status(201);
+    res.set('Content-Type', 'application/fhir+json');
+    res.set('Location', `/${resourceType}/${created.id}`);
+    res.set('ETag', `W/"${created.meta.versionId}"`);
+    res.json(created);
+  } catch (e) {
+    res.status(500).json(operationOutcome('error', 'exception', e.message));
   }
-  if (!req.body || typeof req.body !== 'object') {
-    return res.status(400).json(operationOutcome('error', 'invalid', 'Request body must be a valid JSON resource'));
-  }
-  const created = store.create(resourceType, req.body);
-  res.status(201);
-  res.set('Content-Type', 'application/fhir+json');
-  res.set('Location', `/${resourceType}/${created.id}`);
-  res.set('ETag', `W/"${created.meta.versionId}"`);
-  res.json(created);
 });
 
 // ── Update (PUT /:resourceType/:id) ──
-router.put('/:resourceType/:id', (req, res) => {
-  const { resourceType, id } = req.params;
-  if (!RESOURCE_TYPES.includes(resourceType)) {
-    return res.status(404).json(operationOutcome('error', 'not-found', `Unknown resource type: ${resourceType}`));
+router.put('/:resourceType/:id', async (req, res) => {
+  try {
+    const { resourceType, id } = req.params;
+    if (!RESOURCE_TYPES.includes(resourceType)) {
+      return res.status(404).json(operationOutcome('error', 'not-found', `Unknown resource type: ${resourceType}`));
+    }
+    if (!req.body || typeof req.body !== 'object') {
+      return res.status(400).json(operationOutcome('error', 'invalid', 'Request body must be a valid JSON resource'));
+    }
+    const { resource, created } = await store.update(resourceType, id, req.body);
+    res.status(created ? 201 : 200);
+    res.set('Content-Type', 'application/fhir+json');
+    res.set('ETag', `W/"${resource.meta.versionId}"`);
+    res.set('Last-Modified', resource.meta.lastUpdated);
+    res.json(resource);
+  } catch (e) {
+    res.status(500).json(operationOutcome('error', 'exception', e.message));
   }
-  if (!req.body || typeof req.body !== 'object') {
-    return res.status(400).json(operationOutcome('error', 'invalid', 'Request body must be a valid JSON resource'));
-  }
-  const { resource, created } = store.update(resourceType, id, req.body);
-  res.status(created ? 201 : 200);
-  res.set('Content-Type', 'application/fhir+json');
-  res.set('ETag', `W/"${resource.meta.versionId}"`);
-  res.set('Last-Modified', resource.meta.lastUpdated);
-  res.json(resource);
 });
 
 // ── Delete (DELETE /:resourceType/:id) ──
-router.delete('/:resourceType/:id', (req, res) => {
-  const { resourceType, id } = req.params;
-  if (!RESOURCE_TYPES.includes(resourceType)) {
-    return res.status(404).json(operationOutcome('error', 'not-found', `Unknown resource type: ${resourceType}`));
+router.delete('/:resourceType/:id', async (req, res) => {
+  try {
+    const { resourceType, id } = req.params;
+    if (!RESOURCE_TYPES.includes(resourceType)) {
+      return res.status(404).json(operationOutcome('error', 'not-found', `Unknown resource type: ${resourceType}`));
+    }
+    const deleted = await store.delete(resourceType, id);
+    if (!deleted) {
+      return res.status(404).json(operationOutcome('error', 'not-found', `${resourceType}/${id} not found`));
+    }
+    res.status(204).send();
+  } catch (e) {
+    res.status(500).json(operationOutcome('error', 'exception', e.message));
   }
-  const deleted = store.delete(resourceType, id);
-  if (!deleted) {
-    return res.status(404).json(operationOutcome('error', 'not-found', `${resourceType}/${id} not found`));
-  }
-  res.status(204).send();
 });
 
 // ── Stats endpoint (custom) ──
-router.get('/_stats', (req, res) => {
-  res.json(store.getStats());
+router.get('/_stats', async (req, res) => {
+  try {
+    res.json(await store.getStats());
+  } catch (e) {
+    res.status(500).json(operationOutcome('error', 'exception', e.message));
+  }
 });
 
 module.exports = router;
