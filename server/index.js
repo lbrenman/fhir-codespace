@@ -104,15 +104,21 @@ app.get('/fhir/r4/metadata', (req, res) => {
 app.use('/fhir/r4', fhirRouter);
 
 // ── Health check (no auth required) ──
-app.get('/health', (req, res) => {
-  const store = require('./store');
-  res.json({
-    status: 'healthy',
-    uptime: process.uptime(),
-    fhirVersion: '4.0.1',
-    authEnabled: !!API_KEY,
-    resources: store.getStats(),
-  });
+app.get('/health', async (req, res) => {
+  try {
+    const store = process.env.DATABASE_URL ? require('./store-pg') : require('./store');
+    const resources = await store.getStats();
+    res.json({
+      status: 'healthy',
+      uptime: process.uptime(),
+      fhirVersion: '4.0.1',
+      authEnabled: !!API_KEY,
+      storeType: process.env.DATABASE_URL ? 'postgres' : 'json',
+      resources,
+    });
+  } catch (e) {
+    res.status(500).json({ status: 'error', error: e.message });
+  }
 });
 
 // ── Serve OpenAPI spec (no auth required) ──
@@ -121,15 +127,24 @@ app.get('/openapi.json', (req, res) => {
 });
 
 // ── Start ──
-app.listen(PORT, '0.0.0.0', () => {
-  const store = require('./store');
-  const total = Object.values(store.getStats()).reduce((s, r) => s + r.count, 0);
-  console.log(`\n🔥 FHIR R4 Server running on http://localhost:${PORT}`);
-  console.log(`   Base URL:  http://localhost:${PORT}/fhir/r4`);
-  console.log(`   Swagger:   http://localhost:${PORT}/swagger`);
-  console.log(`   Metadata:  http://localhost:${PORT}/fhir/r4/metadata`);
-  console.log(`   Health:    http://localhost:${PORT}/health`);
-  console.log(`   Resources: ${total} loaded\n`);
+app.listen(PORT, '0.0.0.0', async () => {
+  const store = process.env.DATABASE_URL ? require('./store-pg') : require('./store');
+  const storeType = process.env.DATABASE_URL ? 'PostgreSQL' : 'In-memory JSON';
+  try {
+    const stats = await store.getStats();
+    const total = Object.values(stats).reduce((s, r) => s + (r.count || 0), 0);
+    console.log(`\n🔥 FHIR R4 Server running on http://localhost:${PORT}`);
+    console.log(`   Store:     ${storeType}`);
+    console.log(`   Base URL:  http://localhost:${PORT}/fhir/r4`);
+    console.log(`   Swagger:   http://localhost:${PORT}/swagger`);
+    console.log(`   Metadata:  http://localhost:${PORT}/fhir/r4/metadata`);
+    console.log(`   Health:    http://localhost:${PORT}/health`);
+    console.log(`   Resources: ${total} loaded\n`);
+  } catch (e) {
+    console.log(`\n🔥 FHIR R4 Server running on http://localhost:${PORT}`);
+    console.log(`   Store:     ${storeType}`);
+    console.log(`   ⚠ Could not load stats: ${e.message}\n`);
+  }
 });
 
 module.exports = app;
