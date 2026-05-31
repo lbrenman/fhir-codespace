@@ -176,6 +176,38 @@ END;
 $$ LANGUAGE plpgsql;
 
 -- ────────────────────────────────────────────────────────────
+-- 5b. Get medications by patient name (partial match)
+--     with optional status filter
+-- Usage: SELECT * FROM fhir_medications_by_patient_name('Margaret');
+--        SELECT * FROM fhir_medications_by_patient_name('Thompson', 'active');
+--        SELECT * FROM fhir_medications_by_patient_name('Mar');
+-- ────────────────────────────────────────────────────────────
+CREATE OR REPLACE FUNCTION fhir_medications_by_patient_name(
+    p_patient_name TEXT,
+    p_status VARCHAR DEFAULT NULL
+)
+RETURNS TABLE (
+    patient_id VARCHAR, patient_name VARCHAR,
+    medication_id VARCHAR, medication VARCHAR, medication_code VARCHAR,
+    status VARCHAR, intent VARCHAR, authored_on DATE,
+    prescriber VARCHAR, dosage TEXT
+) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT p.id, p.full_name,
+           mr.id, mr.medication_display, mr.medication_code,
+           mr.status, mr.intent, mr.authored_on,
+           pr.full_name, mr.dosage_text
+    FROM FHIR_MedicationRequest mr
+    JOIN FHIR_Patient p ON mr.patient_id = p.id
+    LEFT JOIN FHIR_Practitioner pr ON mr.requester_id = pr.id
+    WHERE p.full_name ILIKE '%' || p_patient_name || '%'
+      AND (p_status IS NULL OR mr.status = p_status)
+    ORDER BY p.full_name, mr.authored_on DESC;
+END;
+$$ LANGUAGE plpgsql;
+
+-- ────────────────────────────────────────────────────────────
 -- 6. Get patient's conditions by clinical status
 -- Usage: SELECT * FROM fhir_patient_conditions('pat-001');
 --        SELECT * FROM fhir_patient_conditions('pat-001', 'active');

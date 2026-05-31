@@ -111,6 +111,14 @@ SELECT * FROM fhir_latest_vitals('pat-001');
 \echo '═══ 9. Active medications for pat-001 ═══'
 SELECT * FROM fhir_active_medications('pat-001');
 
+\echo ''
+\echo '═══ 9b. Medications by patient name "Margaret" (active only) ═══'
+SELECT * FROM fhir_medications_by_patient_name('Margaret', 'active');
+
+\echo ''
+\echo '═══ 9c. All medications by patient name "Thompson" ═══'
+SELECT * FROM fhir_medications_by_patient_name('Thompson');
+
 -- ────────────────────────────────────────────────────────────
 -- 10. Stored procedure: conditions
 -- ────────────────────────────────────────────────────────────

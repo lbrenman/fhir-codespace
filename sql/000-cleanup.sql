@@ -31,6 +31,7 @@ DROP FUNCTION IF EXISTS fhir_patient_summary(VARCHAR);
 DROP FUNCTION IF EXISTS fhir_patient_vitals(VARCHAR, TEXT);
 DROP FUNCTION IF EXISTS fhir_search_appointments(DATE, DATE, VARCHAR, VARCHAR);
 DROP FUNCTION IF EXISTS fhir_active_medications(VARCHAR);
+DROP FUNCTION IF EXISTS fhir_medications_by_patient_name(TEXT, VARCHAR);
 DROP FUNCTION IF EXISTS fhir_patient_conditions(VARCHAR, VARCHAR);
 DROP FUNCTION IF EXISTS fhir_patient_allergies(VARCHAR);
 DROP FUNCTION IF EXISTS fhir_search_observations(VARCHAR, VARCHAR, DATE, DATE, INT);
