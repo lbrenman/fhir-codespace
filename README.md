@@ -259,6 +259,7 @@ The startup log will show `Store: PostgreSQL` instead of `Store: In-memory JSON`
 | `fhir_dashboard_stats()` | Resource counts across all tables |
 | `fhir_fulltext_search('Sertraline')` | Cross-table JSONB text search |
 | `fhir_patient_timeline('pat-001')` | Chronological event timeline across all resource types |
+| `fhir_create_appointment_simple('pat-001', '2026-06-15T09:00:00Z')` | Create an appointment (inserts into both tables, returns new ID) |
 
 #### Switching back to JSON
 

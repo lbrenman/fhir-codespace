@@ -168,6 +168,15 @@ SELECT * FROM fhir_fulltext_search('Sertraline');
 \echo '═══ 16. Timeline for pat-001 (first 15 events) ═══'
 SELECT * FROM fhir_patient_timeline('pat-001') LIMIT 15;
 
+\echo ''
+\echo '═══ 17. Create a test appointment for pat-001 ═══'
+SELECT fhir_create_appointment_simple('pat-001', '2026-12-25T10:00:00Z') AS new_appointment_id;
+
+\echo ''
+\echo '═══ 17b. Verify the new appointment exists ═══'
+SELECT id, status, service_type, start_time, end_time, minutes_duration
+FROM FHIR_Appointment WHERE start_time = '2026-12-25T10:00:00Z';
+
 -- ────────────────────────────────────────────────────────────
 -- 17. Ad-hoc: JSONB queries (proving the raw resource works)
 -- ────────────────────────────────────────────────────────────

@@ -39,6 +39,7 @@ DROP FUNCTION IF EXISTS fhir_dashboard_stats();
 DROP FUNCTION IF EXISTS fhir_latest_vitals(VARCHAR);
 DROP FUNCTION IF EXISTS fhir_fulltext_search(TEXT, TEXT, INT);
 DROP FUNCTION IF EXISTS fhir_patient_timeline(VARCHAR);
+DROP FUNCTION IF EXISTS fhir_create_appointment_simple(VARCHAR, VARCHAR);
 
 -- ============================================================
 -- Done — all FHIR objects removed

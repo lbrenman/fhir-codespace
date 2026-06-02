@@ -446,3 +446,48 @@ BEGIN
     ORDER BY event_date DESC NULLS LAST;
 END;
 $$ LANGUAGE plpgsql;
+
+-- ────────────────────────────────────────────────────────────
+-- 13. Create an appointment (simple: patient ID + start time)
+--     Defaults: status=booked, duration=30min, service_type=Follow-up
+-- Usage: SELECT fhir_create_appointment_simple('pat-001', '2026-06-15T09:00:00Z');
+-- In Fusion: SELECT fhir_create_appointment_simple(:patientId, :startTime);
+-- ────────────────────────────────────────────────────────────
+CREATE OR REPLACE FUNCTION fhir_create_appointment_simple(
+    p_patient_id VARCHAR,
+    p_start VARCHAR
+)
+RETURNS VARCHAR AS $$
+DECLARE
+    v_id VARCHAR := 'appt-' || substr(md5(random()::text), 1, 8);
+    v_start TIMESTAMPTZ := p_start::TIMESTAMPTZ;
+    v_end TIMESTAMPTZ := v_start + INTERVAL '30 minutes';
+    v_patient_name VARCHAR;
+    v_json JSONB;
+BEGIN
+    SELECT full_name INTO v_patient_name FROM FHIR_Patient WHERE id = p_patient_id;
+
+    v_json := jsonb_build_object(
+        'resourceType', 'Appointment',
+        'id', v_id,
+        'meta', jsonb_build_object('versionId', '1', 'lastUpdated', to_char(NOW(), 'YYYY-MM-DD"T"HH24:MI:SS.MS"Z"')),
+        'status', 'booked',
+        'serviceType', jsonb_build_array(jsonb_build_object('coding', jsonb_build_array(jsonb_build_object('display', 'Follow-up')))),
+        'start', p_start,
+        'end', to_char(v_end, 'YYYY-MM-DD"T"HH24:MI:SS"Z"'),
+        'minutesDuration', 30,
+        'participant', jsonb_build_array(jsonb_build_object(
+            'actor', jsonb_build_object('reference', 'Patient/' || p_patient_id, 'display', v_patient_name),
+            'status', 'accepted'
+        ))
+    );
+
+    INSERT INTO FHIR_Appointment (id, status, service_type, start_time, end_time, minutes_duration, resource_json)
+    VALUES (v_id, 'booked', 'Follow-up', v_start, v_end, 30, v_json);
+
+    INSERT INTO FHIR_Appointment_Participant (appointment_id, actor_reference, actor_display, actor_type, status)
+    VALUES (v_id, 'Patient/' || p_patient_id, v_patient_name, 'Patient', 'accepted');
+
+    RETURN v_id;
+END;
+$$ LANGUAGE plpgsql;
