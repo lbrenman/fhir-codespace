@@ -31,6 +31,8 @@ const Icons = {
   scissors: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>,
   back: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>,
   json: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>,
+  sun: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>,
+  moon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>,
 };
 
 const NAV = [
@@ -51,11 +53,16 @@ const NAV = [
 ];
 
 const COLORS = ['#4f8fff','#34d399','#fbbf24','#f87171','#a78bfa','#22d3ee','#fb923c','#e879f9'];
-const CT = ({active,payload,label}) => {
+const CHART_THEME = {
+  dark: { bg: '#1a2235', border: '#2a3550', grid: '#2a3550', tick: '#8895aa', text: '#e8ecf4' },
+  light: { bg: '#ffffff', border: '#d8dde6', grid: '#e2e6ed', tick: '#4a5568', text: '#1a202c' },
+};
+const CT = ({active,payload,label,theme='dark'}) => {
   if(!active||!payload?.length) return null;
-  return <div style={{background:'#1a2235',border:'1px solid #2a3550',borderRadius:8,padding:'8px 12px',fontSize:'0.8rem'}}>
-    <div style={{color:'#8895aa',marginBottom:4}}>{label}</div>
-    {payload.map((p,i)=><div key={i} style={{color:p.color||'#e8ecf4'}}>{p.name}: {p.value}</div>)}
+  const c = CHART_THEME[theme] || CHART_THEME.dark;
+  return <div style={{background:c.bg,border:`1px solid ${c.border}`,borderRadius:8,padding:'8px 12px',fontSize:'0.8rem'}}>
+    <div style={{color:c.tick,marginBottom:4}}>{label}</div>
+    {payload.map((p,i)=><div key={i} style={{color:p.color||c.text}}>{p.name}: {p.value}</div>)}
   </div>;
 };
 
@@ -446,6 +453,12 @@ function useToast() {
 }
 
 /* ════════════════════ APP ════════════════════ */
+const getInitialTheme = () => {
+  try { const saved = localStorage.getItem('fhir-theme'); if (saved) return saved; } catch {}
+  const envTheme = typeof __FHIR_THEME__ !== 'undefined' ? __FHIR_THEME__ : '';
+  return envTheme === 'light' ? 'light' : 'dark';
+};
+
 export default function App() {
   const [page, setPage] = useState('overview');
   const [stats, setStats] = useState(null);
@@ -455,8 +468,16 @@ export default function App() {
   const [modal, setModal] = useState(null);
   const [formData, setFormData] = useState({});
   const [detail, setDetail] = useState(null);
+  const [theme, setTheme] = useState(getInitialTheme);
   const { toasts, add: toast } = useToast();
   const refs = useRefData();
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    try { localStorage.setItem('fhir-theme', theme); } catch {}
+  }, [theme]);
+
+  const toggleTheme = () => setTheme(t => t === 'dark' ? 'light' : 'dark');
 
   useEffect(() => { fhir.health().then(setStats).catch(()=>{}); }, []);
 
@@ -526,7 +547,13 @@ export default function App() {
   return (
     <div className="app-layout">
       <aside className="sidebar">
-        <div className="sidebar-header"><h1>FHIR R4 Explorer</h1><div className="version">v4.0.1 • R4</div></div>
+        <div className="sidebar-header">
+          <div style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+            <h1>FHIR R4 Explorer</h1>
+            <button className="btn btn-icon btn-ghost btn-sm" onClick={toggleTheme} title={theme==='dark'?'Switch to light mode':'Switch to dark mode'} style={{color:'var(--text-muted)'}}>{theme==='dark'?Icons.sun:Icons.moon}</button>
+          </div>
+          <div className="version">v4.0.1 • R4</div>
+        </div>
         <nav className="sidebar-nav">
           <div className="nav-section-label">Overview</div>
           <button className={`nav-item${page==='overview'?' active':''}`} onClick={()=>{setPage('overview');setDetail(null);}}>{Icons.home} Dashboard</button>
@@ -542,8 +569,8 @@ export default function App() {
       </aside>
 
       <main className="main-content">
-        {page === 'overview' ? <OverviewPage stats={stats} chartData={chartData} setPage={p=>{setPage(p);setDetail(null);}} />
-        : detail ? <DetailPage detail={detail} page={page} onBack={()=>setDetail(null)} onEdit={r=>openEdit(r)} onDelete={r=>openDelete(r)} />
+        {page === 'overview' ? <OverviewPage stats={stats} chartData={chartData} setPage={p=>{setPage(p);setDetail(null);}} theme={theme} />
+        : detail ? <DetailPage detail={detail} page={page} onBack={()=>setDetail(null)} onEdit={r=>openEdit(r)} onDelete={r=>openDelete(r)} theme={theme} />
         : <ResourcePage type={page} resources={filtered} loading={loading} searchTerm={searchTerm} setSearchTerm={setSearchTerm}
             onView={r=>setDetail({resource:r,type:page})} onEdit={openEdit} onDelete={openDelete} onCreate={openCreate} total={resources.length} />}
       </main>
@@ -587,10 +614,11 @@ export default function App() {
 }
 
 /* ════════════════════ OVERVIEW ════════════════════ */
-function OverviewPage({ stats, chartData, setPage }) {
+function OverviewPage({ stats, chartData, setPage, theme }) {
   if (!stats) return <div className="loading-overlay"><div className="spinner" /> Loading dashboard...</div>;
   const total = Object.values(stats.resources||{}).reduce((s,r) => s + (r.count||0), 0);
   const topResources = NAV.filter(n => stats.resources?.[n.key]?.count > 0);
+  const cc = CHART_THEME[theme] || CHART_THEME.dark;
 
   return <>
     <div className="page-header"><div><h2>Dashboard</h2><div className="subtitle">FHIR R4 Server Overview • {total} total resources</div></div></div>
@@ -606,17 +634,17 @@ function OverviewPage({ stats, chartData, setPage }) {
     <div className="charts-grid">
       <div className="card"><div className="card-header"><h2>Resource Distribution</h2></div><div className="card-body">
         <ResponsiveContainer width="100%" height={250}><PieChart>
-          <Pie data={chartData.distribution||[]} cx="50%" cy="50%" innerRadius={55} outerRadius={95} paddingAngle={3} dataKey="value" label={({name,value})=>`${name}: ${value}`} style={{fontSize:'0.7rem'}}>
+          <Pie data={chartData.distribution||[]} cx="50%" cy="50%" innerRadius={55} outerRadius={95} paddingAngle={3} dataKey="value" label={({name,value,x,y,textAnchor})=><text x={x} y={y} textAnchor={textAnchor} fill={cc.tick} fontSize="0.7rem">{`${name}: ${value}`}</text>}>
             {(chartData.distribution||[]).map((_,i) => <Cell key={i} fill={COLORS[i%COLORS.length]} />)}
-          </Pie><Tooltip content={CT} />
+          </Pie><Tooltip content={<CT theme={theme} />} />
         </PieChart></ResponsiveContainer>
       </div></div>
       <div className="card"><div className="card-header"><h2>Resource Counts</h2></div><div className="card-body">
         <ResponsiveContainer width="100%" height={250}><BarChart data={chartData.distribution||[]} margin={{top:5,right:20,bottom:5,left:0}}>
-          <CartesianGrid strokeDasharray="3 3" stroke="#2a3550" />
-          <XAxis dataKey="name" tick={{fill:'#8895aa',fontSize:11}} angle={-30} textAnchor="end" height={60} />
-          <YAxis tick={{fill:'#8895aa',fontSize:11}} />
-          <Tooltip content={CT} />
+          <CartesianGrid strokeDasharray="3 3" stroke={cc.grid} />
+          <XAxis dataKey="name" tick={{fill:cc.tick,fontSize:11}} angle={-30} textAnchor="end" height={60} />
+          <YAxis tick={{fill:cc.tick,fontSize:11}} />
+          <Tooltip content={<CT theme={theme} />} />
           <Bar dataKey="value" radius={[4,4,0,0]}>{(chartData.distribution||[]).map((_,i) => <Cell key={i} fill={COLORS[i%COLORS.length]} />)}</Bar>
         </BarChart></ResponsiveContainer>
       </div></div>
@@ -665,7 +693,7 @@ function ResourcePage({ type, resources, loading, searchTerm, setSearchTerm, onV
 }
 
 /* ════════════════════ DETAIL PAGE ════════════════════ */
-function DetailPage({ detail, page, onBack, onEdit, onDelete }) {
+function DetailPage({ detail, page, onBack, onEdit, onDelete, theme }) {
   const { resource: r, type } = detail;
   const [showJson, setShowJson] = useState(false);
   const [patientObs, setPatientObs] = useState([]);
@@ -715,13 +743,14 @@ function DetailPage({ detail, page, onBack, onEdit, onDelete }) {
       </div></div>
     )}
 
-    {type === 'Patient' && patientObs.length > 0 && <PatientVitalsCharts observations={patientObs} />}
+    {type === 'Patient' && patientObs.length > 0 && <PatientVitalsCharts observations={patientObs} theme={theme} />}
     {type === 'Patient' && <PatientRelated patientId={r.id} />}
   </>;
 }
 
 /* ════════════════════ PATIENT VITALS CHARTS ════════════════════ */
-function PatientVitalsCharts({ observations }) {
+function PatientVitalsCharts({ observations, theme }) {
+  const cc = CHART_THEME[theme] || CHART_THEME.dark;
   const groups = {};
   observations.forEach(o => {
     const name = getDisplayText(o.code);
@@ -754,20 +783,20 @@ function PatientVitalsCharts({ observations }) {
               <ResponsiveContainer width="100%" height={180}>
                 {isBP ? (
                   <AreaChart data={data} margin={{top:5,right:10,bottom:5,left:0}}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#2a3550" />
-                    <XAxis dataKey="date" tick={{fill:'#8895aa',fontSize:10}} />
-                    <YAxis tick={{fill:'#8895aa',fontSize:10}} />
-                    <Tooltip content={CT} />
+                    <CartesianGrid strokeDasharray="3 3" stroke={cc.grid} />
+                    <XAxis dataKey="date" tick={{fill:cc.tick,fontSize:10}} />
+                    <YAxis tick={{fill:cc.tick,fontSize:10}} />
+                    <Tooltip content={<CT theme={theme} />} />
                     <Area type="monotone" dataKey="Systolic" stroke="#f87171" fill="#f8717133" name="Systolic" />
                     <Area type="monotone" dataKey="Diastolic" stroke="#4f8fff" fill="#4f8fff33" name="Diastolic" />
                     <Legend wrapperStyle={{fontSize:'0.7rem'}} />
                   </AreaChart>
                 ) : (
                   <LineChart data={data} margin={{top:5,right:10,bottom:5,left:0}}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#2a3550" />
-                    <XAxis dataKey="date" tick={{fill:'#8895aa',fontSize:10}} />
-                    <YAxis tick={{fill:'#8895aa',fontSize:10}} />
-                    <Tooltip content={CT} />
+                    <CartesianGrid strokeDasharray="3 3" stroke={cc.grid} />
+                    <XAxis dataKey="date" tick={{fill:cc.tick,fontSize:10}} />
+                    <YAxis tick={{fill:cc.tick,fontSize:10}} />
+                    <Tooltip content={<CT theme={theme} />} />
                     <Line type="monotone" dataKey="Value" stroke="#34d399" strokeWidth={2} dot={{fill:'#34d399',r:3}} name={name} />
                   </LineChart>
                 )}

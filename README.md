@@ -175,6 +175,7 @@ curl -X DELETE http://localhost:3000/fhir/r4/Patient/{id}
 | `FHIR_API_KEY` | *(empty)* | API key for FHIR endpoints. When set, all `/fhir/r4` requests require `X-Api-Key` header. Leave empty to disable. |
 | `FHIR_BASE_URL` | *(empty)* | Remote FHIR server URL for the dashboard. When set, the dashboard calls this URL instead of the local server. Example: `https://hapi.fhir.org/baseR4` |
 | `DATABASE_URL` | *(empty)* | PostgreSQL connection string. When set, the server uses Postgres instead of in-memory JSON files. Example: `postgresql://user:pass@host:5432/dbname?sslmode=require` |
+| `FHIR_THEME` | `dark` | Dashboard theme: `light` or `dark`. Users can also toggle via the sun/moon button in the sidebar. Preference is saved in the browser. |
 
 ### API Key Authentication
 

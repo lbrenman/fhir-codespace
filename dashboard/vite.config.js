@@ -6,6 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd() + '/..', '');
   const fhirBaseUrl = env.FHIR_BASE_URL || '';
   const apiKey = env.FHIR_API_KEY || '';
+  const theme = env.FHIR_THEME || '';
   const backendUrl = `http://localhost:${env.PORT || 3000}`;
 
   return {
@@ -22,6 +23,7 @@ export default defineConfig(({ mode }) => {
     define: {
       '__FHIR_BASE_URL__': JSON.stringify(fhirBaseUrl),
       '__FHIR_API_KEY__': JSON.stringify(apiKey),
+      '__FHIR_THEME__': JSON.stringify(theme),
     },
   };
 });
