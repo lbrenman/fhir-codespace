@@ -538,5 +538,26 @@
         "status": "accepted"
       }
     ]
+  },
+  {
+    "resourceType": "Appointment",
+    "status": "booked",
+    "start": "2027-12-31T09:00:00Z",
+    "end": "2027-12-31T10:30:00Z",
+    "serviceType": "Follow-up",
+    "participant": [
+      {
+        "actor": {
+          "reference": "Patient/pat-008",
+          "display": "Daniel Lee"
+        },
+        "status": "accepted"
+      }
+    ],
+    "id": "641f14234c43",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2026-06-04T14:30:31.046Z"
+    }
   }
 ]
