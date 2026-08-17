@@ -279,12 +279,15 @@ function getFormConfig(type, refs) {
         { key:'given', label:'First Name', required:true },
         { key:'gender', label:'Gender', type:'select', options:[{value:'male',label:'Male'},{value:'female',label:'Female'},{value:'other',label:'Other'},{value:'unknown',label:'Unknown'}] },
         { key:'birthDate', label:'Birth Date', type:'date' },
+        { key:'mrn', label:'MRN' },
         { key:'phone', label:'Phone' },
+        { key:'city', label:'City' },
+        { key:'state', label:'State' },
         { key:'organization', label:'Organization', type:'select', options:orgOptions },
         { key:'practitioner', label:'General Practitioner', type:'select', options:pracOptions },
       ],
-      toResource: d => ({ resourceType:'Patient', active:true, name:[{use:'official',family:d.family,given:[d.given]}], gender:d.gender||'unknown', birthDate:d.birthDate||undefined, telecom:d.phone?[{system:'phone',value:d.phone,use:'mobile'}]:undefined, managingOrganization:d.organization?{reference:`Organization/${d.organization}`,display:orgOptions.find(o=>o.value===d.organization)?.label}:undefined, generalPractitioner:d.practitioner?[{reference:`Practitioner/${d.practitioner}`,display:pracOptions.find(p=>p.value===d.practitioner)?.label}]:undefined }),
-      fromResource: r => ({ family:r.name?.[0]?.family||'', given:r.name?.[0]?.given?.[0]||'', gender:r.gender||'unknown', birthDate:r.birthDate||'', phone:safeArr(r.telecom).find(t=>t?.system==='phone')?.value||'', organization:r.managingOrganization?.reference?.split('/')?.[1]||'', practitioner:safeArr(r.generalPractitioner)[0]?.reference?.split('/')?.[1]||'' }),
+      toResource: d => ({ resourceType:'Patient', active:true, name:[{use:'official',family:d.family,given:[d.given]}], gender:d.gender||'unknown', birthDate:d.birthDate||undefined, identifier:d.mrn?[{system:'MRN',value:d.mrn}]:undefined, telecom:d.phone?[{system:'phone',value:d.phone,use:'mobile'}]:undefined, address:(d.city||d.state)?[{city:d.city||undefined,state:d.state||undefined,country:'US'}]:undefined, managingOrganization:d.organization?{reference:`Organization/${d.organization}`,display:orgOptions.find(o=>o.value===d.organization)?.label}:undefined, generalPractitioner:d.practitioner?[{reference:`Practitioner/${d.practitioner}`,display:pracOptions.find(p=>p.value===d.practitioner)?.label}]:undefined }),
+      fromResource: r => ({ family:r.name?.[0]?.family||'', given:r.name?.[0]?.given?.[0]||'', gender:r.gender||'unknown', birthDate:r.birthDate||'', mrn:safeArr(r.identifier)[0]?.value||'', phone:safeArr(r.telecom).find(t=>t?.system==='phone')?.value||'', city:safeArr(r.address)[0]?.city||'', state:safeArr(r.address)[0]?.state||'', organization:r.managingOrganization?.reference?.split('/')?.[1]||'', practitioner:safeArr(r.generalPractitioner)[0]?.reference?.split('/')?.[1]||'' }),
     },
     Encounter: {
       fields: [
