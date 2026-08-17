@@ -103,6 +103,11 @@ app.get('/fhir/r4/metadata', (req, res) => {
 // ── FHIR Routes ──
 app.use('/fhir/r4', fhirRouter);
 
+// ── Serve built dashboard (production) ──
+// Run `npm run build` in dashboard/ first — this serves the static output.
+const dashboardDist = path.join(__dirname, '..', 'dashboard', 'dist');
+app.use(express.static(dashboardDist));
+
 // ── Health check (no auth required) ──
 app.get('/health', async (req, res) => {
   try {
