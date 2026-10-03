@@ -1,0 +1,13 @@
+{
+  "name": "fhir-codespace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FHIR R4 API server + dashboard (Render / single-service deploy)",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "npm --prefix server install && npm --prefix dashboard install --include=dev && npm --prefix dashboard run build",
+    "start": "node server/index.js"
+  }
+}
